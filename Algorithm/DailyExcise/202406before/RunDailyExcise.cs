@@ -344,14 +344,6 @@ namespace Algorithm.DailyExcise
             var operations = new string[] { "5", "2", "C", "D", "+" };
             var calPointsClass = new CalPointsClass();
             var calPointResult = calPointsClass.CalPoints(operations);//30
-
-            var variables = new int[][] {
-                new int[]{ 2, 3, 3, 10 },
-                new int[]{ 3,3,3,1 },
-                new int[]{ 6, 1, 1, 4 }
-            };
-            var getGoodIndiciesClass = new GetGoodIndicesClass();
-            var getGoodIndiciesResult = getGoodIndiciesClass.GetGoodIndices(variables,2);
             Array.Sort(beauNums);
         }
     }
