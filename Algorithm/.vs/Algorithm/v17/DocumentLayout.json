@@ -1,25 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\projects\\Algorithm\\",
+  "WorkspaceRootPath": "D:\\dev\\git\\learn\\Algorithm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{44CF4238-490F-4301-8150-FC42D05142C5}|Algorithm.csproj|d:\\projects\\algorithm\\dailyexcise\\202406before\\rundailyexcise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{44CF4238-490F-4301-8150-FC42D05142C5}|Algorithm.csproj|d:\\dev\\git\\learn\\algorithm\\dailyexcise\\202407\\getgoodindicesclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44CF4238-490F-4301-8150-FC42D05142C5}|Algorithm.csproj|solutionrelative:dailyexcise\\202407\\getgoodindicesclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44CF4238-490F-4301-8150-FC42D05142C5}|Algorithm.csproj|d:\\dev\\git\\learn\\algorithm\\dailyexcise\\202406before\\rundailyexcise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44CF4238-490F-4301-8150-FC42D05142C5}|Algorithm.csproj|solutionrelative:dailyexcise\\202406before\\rundailyexcise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44CF4238-490F-4301-8150-FC42D05142C5}|Algorithm.csproj|d:\\projects\\algorithm\\kmpalgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{44CF4238-490F-4301-8150-FC42D05142C5}|Algorithm.csproj|d:\\dev\\git\\learn\\algorithm\\kmpalgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44CF4238-490F-4301-8150-FC42D05142C5}|Algorithm.csproj|solutionrelative:kmpalgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44CF4238-490F-4301-8150-FC42D05142C5}|Algorithm.csproj|d:\\projects\\algorithm\\dailyexcise\\202407\\calpointsclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{44CF4238-490F-4301-8150-FC42D05142C5}|Algorithm.csproj|d:\\dev\\git\\learn\\algorithm\\dailyexcise\\202407\\calpointsclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44CF4238-490F-4301-8150-FC42D05142C5}|Algorithm.csproj|solutionrelative:dailyexcise\\202407\\calpointsclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44CF4238-490F-4301-8150-FC42D05142C5}|Algorithm.csproj|d:\\projects\\algorithm\\dailyexcise\\202407\\getsmalleststringclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{44CF4238-490F-4301-8150-FC42D05142C5}|Algorithm.csproj|d:\\dev\\git\\learn\\algorithm\\dailyexcise\\202407\\getsmalleststringclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44CF4238-490F-4301-8150-FC42D05142C5}|Algorithm.csproj|solutionrelative:dailyexcise\\202407\\getsmalleststringclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44CF4238-490F-4301-8150-FC42D05142C5}|Algorithm.csproj|d:\\projects\\algorithm\\dailyexcise\\202407\\findvalueofpartitionclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{44CF4238-490F-4301-8150-FC42D05142C5}|Algorithm.csproj|d:\\dev\\git\\learn\\algorithm\\dailyexcise\\202407\\findvalueofpartitionclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44CF4238-490F-4301-8150-FC42D05142C5}|Algorithm.csproj|solutionrelative:dailyexcise\\202407\\findvalueofpartitionclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,24 +42,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CalPointsClass.cs",
-              "DocumentMoniker": "D:\\projects\\Algorithm\\DailyExcise\\202407\\CalPointsClass.cs",
-              "RelativeDocumentMoniker": "DailyExcise\\202407\\CalPointsClass.cs",
-              "ToolTip": "D:\\projects\\Algorithm\\DailyExcise\\202407\\CalPointsClass.cs",
-              "RelativeToolTip": "DailyExcise\\202407\\CalPointsClass.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAYwFgAAAAXAAAA",
+              "DocumentIndex": 0,
+              "Title": "GetGoodIndicesClass.cs",
+              "DocumentMoniker": "D:\\dev\\git\\learn\\Algorithm\\DailyExcise\\202407\\GetGoodIndicesClass.cs",
+              "RelativeDocumentMoniker": "DailyExcise\\202407\\GetGoodIndicesClass.cs",
+              "ToolTip": "D:\\dev\\git\\learn\\Algorithm\\DailyExcise\\202407\\GetGoodIndicesClass.cs",
+              "RelativeToolTip": "DailyExcise\\202407\\GetGoodIndicesClass.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwDUAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T02:10:01.519Z",
+              "WhenOpened": "2024-07-30T04:47:51.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "CalPointsClass.cs",
+              "DocumentMoniker": "D:\\dev\\git\\learn\\Algorithm\\DailyExcise\\202407\\CalPointsClass.cs",
+              "RelativeDocumentMoniker": "DailyExcise\\202407\\CalPointsClass.cs",
+              "ToolTip": "D:\\dev\\git\\learn\\Algorithm\\DailyExcise\\202407\\CalPointsClass.cs",
+              "RelativeToolTip": "DailyExcise\\202407\\CalPointsClass.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAYwFgAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T02:10:01.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "GetSmallestStringClass.cs",
-              "DocumentMoniker": "D:\\projects\\Algorithm\\DailyExcise\\202407\\GetSmallestStringClass.cs",
+              "DocumentMoniker": "D:\\dev\\git\\learn\\Algorithm\\DailyExcise\\202407\\GetSmallestStringClass.cs",
               "RelativeDocumentMoniker": "DailyExcise\\202407\\GetSmallestStringClass.cs",
-              "ToolTip": "D:\\projects\\Algorithm\\DailyExcise\\202407\\GetSmallestStringClass.cs",
+              "ToolTip": "D:\\dev\\git\\learn\\Algorithm\\DailyExcise\\202407\\GetSmallestStringClass.cs",
               "RelativeToolTip": "DailyExcise\\202407\\GetSmallestStringClass.cs",
               "ViewState": "AQIAACgAAAAAAAAAAAAAAEYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -63,11 +79,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "FindValueOfPartitionClass.cs",
-              "DocumentMoniker": "D:\\projects\\Algorithm\\DailyExcise\\202407\\FindValueOfPartitionClass.cs",
+              "DocumentMoniker": "D:\\dev\\git\\learn\\Algorithm\\DailyExcise\\202407\\FindValueOfPartitionClass.cs",
               "RelativeDocumentMoniker": "DailyExcise\\202407\\FindValueOfPartitionClass.cs",
-              "ToolTip": "D:\\projects\\Algorithm\\DailyExcise\\202407\\FindValueOfPartitionClass.cs",
+              "ToolTip": "D:\\dev\\git\\learn\\Algorithm\\DailyExcise\\202407\\FindValueOfPartitionClass.cs",
               "RelativeToolTip": "DailyExcise\\202407\\FindValueOfPartitionClass.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAUwDYAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -75,11 +91,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "KMPAlgorithm.cs",
-              "DocumentMoniker": "D:\\projects\\Algorithm\\KMPAlgorithm.cs",
+              "DocumentMoniker": "D:\\dev\\git\\learn\\Algorithm\\KMPAlgorithm.cs",
               "RelativeDocumentMoniker": "KMPAlgorithm.cs",
-              "ToolTip": "D:\\projects\\Algorithm\\KMPAlgorithm.cs",
+              "ToolTip": "D:\\dev\\git\\learn\\Algorithm\\KMPAlgorithm.cs",
               "RelativeToolTip": "KMPAlgorithm.cs",
               "ViewState": "AQIAAGcAAAAAAAAAAAAhwHsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -88,13 +104,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "RunDailyExcise.cs",
-              "DocumentMoniker": "D:\\projects\\Algorithm\\DailyExcise\\202406before\\RunDailyExcise.cs",
+              "DocumentMoniker": "D:\\dev\\git\\learn\\Algorithm\\DailyExcise\\202406before\\RunDailyExcise.cs",
               "RelativeDocumentMoniker": "DailyExcise\\202406before\\RunDailyExcise.cs",
-              "ToolTip": "D:\\projects\\Algorithm\\DailyExcise\\202406before\\RunDailyExcise.cs",
+              "ToolTip": "D:\\dev\\git\\learn\\Algorithm\\DailyExcise\\202406before\\RunDailyExcise.cs",
               "RelativeToolTip": "DailyExcise\\202406before\\RunDailyExcise.cs",
-              "ViewState": "AQIAAEEBAAAAAAAAAAD4v1oBAAAMAAAA",
+              "ViewState": "AQIAAEEBAAAAAAAAAAD4v2IBAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-29T15:59:29.584Z",
               "EditorCaption": ""
