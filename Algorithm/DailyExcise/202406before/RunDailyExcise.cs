@@ -352,6 +352,17 @@ namespace Algorithm.DailyExcise
             };
             var getGoodIndicesClass = new GetGoodIndicesClass();
             var getGoodIndicesResult = getGoodIndicesClass.GetGoodIndices(variables, 2);//0,2
+
+            var minPoints = new int[][] { 
+                new int[]{ 2,1},
+                new int[]{ 1,0},
+                new int[]{ 1,4},
+                new int[]{ 1,8},
+                new int[]{ 3,5},
+                new int[]{ 4, 6 }
+            };
+            var minRectangleClass = new MinRectanglesToCoverPointsClass();
+            var minRectangleResult = minRectangleClass.MinRectanglesToCoverPoints(minPoints,1);//2
             Array.Sort(beauNums);
         }
     }
