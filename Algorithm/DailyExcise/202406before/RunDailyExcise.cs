@@ -363,6 +363,10 @@ namespace Algorithm.DailyExcise
             };
             var minRectangleClass = new MinRectanglesToCoverPointsClass();
             var minRectangleResult = minRectangleClass.MinRectanglesToCoverPoints(minPoints,1);//2
+
+            var cards = new int[] { 1, 2, 8, 9 };
+            var maxmiumScoreClass = new MaxmiumScoreClass();
+            var maxmiumScoreResult = maxmiumScoreClass.MaxmiumScore(cards, 3);//18
             Array.Sort(beauNums);
         }
     }
