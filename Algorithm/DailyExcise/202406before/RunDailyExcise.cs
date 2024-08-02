@@ -367,6 +367,14 @@ namespace Algorithm.DailyExcise
             var cards = new int[] { 1, 2, 8, 9 };
             var maxmiumScoreClass = new MaxmiumScoreClass();
             var maxmiumScoreResult = maxmiumScoreClass.MaxmiumScore(cards, 3);//18
+
+            var numGrid = new int[][] { 
+                new int[]{ 0, 1, 0 },
+                new int[]{ 0,1,1 },
+                new int[]{ 0, 1, 0 }
+            };
+            var numberOfRightTriangleClass = new NumberOfRightTrianglesClass();
+            var numberOfRightTriangleResult = numberOfRightTriangleClass.NumberOfRightTriangles(numGrid);//2
             Array.Sort(beauNums);
         }
     }
