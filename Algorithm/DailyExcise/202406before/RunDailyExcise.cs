@@ -375,6 +375,16 @@ namespace Algorithm.DailyExcise
             };
             var numberOfRightTriangleClass = new NumberOfRightTrianglesClass();
             var numberOfRightTriangleResult = numberOfRightTriangleClass.NumberOfRightTriangles(numGrid);//2
+
+            var maxPoints = new int[][] { 
+                new int[]{ 2, 2 },
+                new int[]{ -1,-2 },
+                new int[]{-4,4 },
+                new int[]{-3,1 },
+                new int[]{ 3, -3 }
+            };
+            var maxPointsInsideSquareClass = new MaxPointsInsideSquareClass();
+            var maxPointsInsideSquareResult = maxPointsInsideSquareClass.MaxPointsInsideSquare(maxPoints, "abdca");//2
             Array.Sort(beauNums);
         }
     }
