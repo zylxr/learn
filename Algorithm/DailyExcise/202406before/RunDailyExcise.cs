@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Algorithm.dp;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -385,6 +386,33 @@ namespace Algorithm.DailyExcise
             };
             var maxPointsInsideSquareClass = new MaxPointsInsideSquareClass();
             var maxPointsInsideSquareResult = maxPointsInsideSquareClass.MaxPointsInsideSquare(maxPoints, "abdca");//2
+
+            var models = new int[][] {
+                new int[]{ 1,1,0 },
+                new int[]{ 2,0,1 },
+                new int[]{ 4, 2, 2 }
+            };
+            var getMaximumNumberClass = new GetMaximumNumberClass();
+            var getMaximumNumberResult = getMaximumNumberClass.GetMaximumNumber(models); //2
+
+            var root = new TreeNode {
+                val = 3,
+                left = new TreeNode {
+                    val = 4,
+                    left = new TreeNode {val=1 },
+                    right = new TreeNode {val=2}
+                },
+                right = new TreeNode { val =5 },
+            };
+            var subTree = new TreeNode
+            {
+                val = 4,
+                left = new TreeNode { val = 1 },
+                right = new TreeNode { val = 2 }
+            };
+
+            var subTreeClass = new IsSubtreeClass();
+            var subTreeResult = subTreeClass.IsSubtree(root,subTree);//true
             Array.Sort(beauNums);
         }
     }
