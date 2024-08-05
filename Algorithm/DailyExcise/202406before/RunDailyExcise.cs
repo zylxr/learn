@@ -413,6 +413,9 @@ namespace Algorithm.DailyExcise
 
             var subTreeClass = new IsSubtreeClass();
             var subTreeResult = subTreeClass.IsSubtree(root,subTree);//true
+
+            var findIntegerClass = new FindIntegersClass();
+            var findintegerResult = findIntegerClass.FindIntegers(5);//5
             Array.Sort(beauNums);
         }
     }
