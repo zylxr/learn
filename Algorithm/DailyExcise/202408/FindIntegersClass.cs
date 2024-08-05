@@ -107,20 +107,22 @@ namespace Algorithm.DailyExcise
 
         public int FindIntegers(int n)
         {
-            var dp = new int[31];
+            var dn = GetLength(n) + 1;
+            var dp = new int[dn];
             dp[0] = dp[1] = 1;
-            for (var i = 2; i < 31; i++)
+            for (var i = 2; i < dn; i++)
+            {
                 dp[i] = dp[i - 1] + dp[i - 2];
-            var pre = 0;
+            }
             var res = 0;
-            for(var i=29;i>=0;i--)
+            var pre = 0;
+            for (var i = dn - 2; i >= 0; i--)
             {
                 var val = 1 << i;
-                if ((n & val) != 0)
+                if ((val & n) != 0)
                 {
                     res += dp[i + 1];
-                    if (pre == 1)
-                        break;
+                    if (pre == 1) break;
                     pre = 1;
                 }
                 else
@@ -128,6 +130,16 @@ namespace Algorithm.DailyExcise
                 if (i == 0) res++;
             }
             return res;
+        }
+        public int GetLength(int n)
+        {
+            var len = 0;
+            while (n > 0)
+            {
+                len++;
+                n >>= 1;
+            }
+            return len;
         }
     }
 }
