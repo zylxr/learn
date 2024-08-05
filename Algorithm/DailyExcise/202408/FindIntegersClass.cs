@@ -141,5 +141,19 @@ namespace Algorithm.DailyExcise
             }
             return len;
         }
+
+        public int RemoveDuplicates(int[] nums)
+        {
+            var k = 0;
+            for (var i = 0; i < nums.Length - 1;)
+            {
+                while (nums[i] == nums[i + 1])
+                {
+                    i++;
+                }
+                nums[++k] = nums[++i];
+            }
+            return k;
+        }
     }
 }
