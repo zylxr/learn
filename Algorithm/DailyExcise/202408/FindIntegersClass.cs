@@ -147,13 +147,14 @@ namespace Algorithm.DailyExcise
             var k = 0;
             for (var i = 0; i < nums.Length - 1;)
             {
-                while (nums[i] == nums[i + 1])
+                while (i < nums.Length - 1 && nums[i] == nums[i + 1] )
                 {
                     i++;
                 }
+                if (i >= nums.Length - 1) break;
                 nums[++k] = nums[++i];
             }
-            return k;
+            return k+1;
         }
     }
 }
