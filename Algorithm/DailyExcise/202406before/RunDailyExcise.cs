@@ -418,6 +418,9 @@ namespace Algorithm.DailyExcise
             var findintegerResult = findIntegerClass.FindIntegers(5);//5
 
             var removeDuplicates = findIntegerClass.RemoveDuplicates(new int[] { 1,1,2}); //[1,2]
+
+            var numberOfStableArrayClass = new NumberOfStableArraysClass();
+            var numberOfStableArrayResult = numberOfStableArrayClass.NumberOfStableArrays(1,1,2);//2
             Array.Sort(beauNums);
         }
     }
