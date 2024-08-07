@@ -421,6 +421,10 @@ namespace Algorithm.DailyExcise
 
             var numberOfStableArrayClass = new NumberOfStableArraysClass();
             var numberOfStableArrayResult = numberOfStableArrayClass.NumberOfStableArrays(1,1,2);//2
+
+            var numberOfStableArrayClass2 = new NumberOfStableArraysClass2();
+            var numberOfStableArrayResult2 = numberOfStableArrayClass2.NumberOfStableArrays(1, 1, 2);//2
+            numberOfStableArrayResult2 = numberOfStableArrayClass2.NumberOfStableArraysDP(1, 1, 2);//2
             Array.Sort(beauNums);
         }
     }
