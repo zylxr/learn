@@ -134,6 +134,8 @@ namespace Algorithm
             var maximalSquareClass = new MaximalSquareClass();
             var maximalSquareResult = maximalSquareClass.MaximalSquare(charMatrix);//4
 
+            maximalSquareResult = maximalSquareClass.MaximalSquare2(charMatrix);//4
+
             var s = "babad";
             var longestPalindromeClass = new LongestPalindromeClass();
             var longestPalindromeResult = longestPalindromeClass.LongestPalindrome(s);//3
