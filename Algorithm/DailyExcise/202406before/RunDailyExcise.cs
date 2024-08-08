@@ -425,6 +425,9 @@ namespace Algorithm.DailyExcise
             var numberOfStableArrayClass2 = new NumberOfStableArraysClass2();
             var numberOfStableArrayResult2 = numberOfStableArrayClass2.NumberOfStableArrays(1, 1, 2);//2
             numberOfStableArrayResult2 = numberOfStableArrayClass2.NumberOfStableArraysDP(1, 1, 2);//2
+
+            var addedIntegerClass = new AddedIntegerClass();
+            var addedIntegerResult = addedIntegerClass.AddedInteger(new int[] {2,6,4 },new int[] { 9,7,5});//3
             Array.Sort(beauNums);
         }
     }
