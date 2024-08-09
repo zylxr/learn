@@ -428,6 +428,9 @@ namespace Algorithm.DailyExcise
 
             var addedIntegerClass = new AddedIntegerClass();
             var addedIntegerResult = addedIntegerClass.AddedInteger(new int[] {2,6,4 },new int[] { 9,7,5});//3
+
+            var minimumAddedIntegerClass = new MinimumAddedIntegerClass();
+            var minimumAddedIntegerResult = minimumAddedIntegerClass.MinimumAddedInteger(new int[] { 4, 20, 16, 12, 8 }, new int[] { 14, 18, 10 });//-2
             Array.Sort(beauNums);
         }
     }
