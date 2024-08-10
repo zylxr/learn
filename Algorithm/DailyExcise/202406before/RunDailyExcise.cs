@@ -462,7 +462,8 @@ namespace Algorithm.DailyExcise
             };
             leftMostBuildingQueriesResult = leftMostBuildingQueries.LeftmostBuildingQueries(heights, queries);//[0,1,3,3,5,5,1,1,-1]
 
-
+            var maxUncrossLinesClass = new MaxUncrossedLinesClass();
+            var maxUncrossLinesResult = maxUncrossLinesClass.MaxUncrossedLines(new int[] { 1,4,2},new int[] {1,2,4 }); //2
             Array.Sort(beauNums);
         }
     }
