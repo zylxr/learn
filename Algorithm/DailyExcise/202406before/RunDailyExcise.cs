@@ -431,6 +431,38 @@ namespace Algorithm.DailyExcise
 
             var minimumAddedIntegerClass = new MinimumAddedIntegerClass();
             var minimumAddedIntegerResult = minimumAddedIntegerClass.MinimumAddedInteger(new int[] { 4, 20, 16, 12, 8 }, new int[] { 14, 18, 10 });//-2
+
+            var heights = new int[] { 6, 4, 8, 5, 2, 7 };
+            var queries = new int[][] {
+                new int[] {0,1 },
+                new int[] { 0,3},
+                new int[] { 2,4}, 
+                new int[] {3,4 },
+                new int[] { 2, 2 }
+
+            };
+            var leftMostBuildingQueries = new LeftmostBuildingQueriesClass();
+            var leftMostBuildingQueriesResult = leftMostBuildingQueries.LeftmostBuildingQueries(heights, queries);//[2,5,-1,5,2]
+
+            leftMostBuildingQueriesResult = leftMostBuildingQueries.LeftmostBuildingQueries2(heights, queries);//[2,5,-1,5,2]
+            leftMostBuildingQueriesResult = leftMostBuildingQueries.LeftmostBuildingQueries3(heights, queries);//[2,5,-1,5,2]
+
+            heights = new int[] { 1, 2, 1, 2, 1, 2 };
+            queries = new int[][] { 
+                new int[]{ 0, 0 },
+                new int[]{ 0,1 },
+                new int[]{ 2, 0 },
+                new int[]{ 0,3 },
+                new int[]{ 0,4 },
+                new int[]{0,5 },
+                new int[]{ 1,0 },
+                new int[]{ 1,1},
+                new int[]{ 1, 2 }
+
+            };
+            leftMostBuildingQueriesResult = leftMostBuildingQueries.LeftmostBuildingQueries(heights, queries);//[0,1,3,3,5,5,1,1,-1]
+
+
             Array.Sort(beauNums);
         }
     }
