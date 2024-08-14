@@ -23,6 +23,11 @@ namespace Algorithm.DailyExcise
             magicDictResult = magicDict.Search2("hhllo");//true
             magicDictResult = magicDict.Search2("hell");//false
             magicDictResult = magicDict.Search2("leetcoded");//false
+
+            var isArraySpecialClass = new IsArraySpecialClass();
+            var isArraySpecialResult = isArraySpecialClass.IsArraySpecial(new int[] { 3, 4, 1, 2, 6 }, new int[][] { new int[] { 0, 4 } });//[false]
+
+            isArraySpecialResult = isArraySpecialClass.IsArraySpecial(new int[] { 4, 3, 1, 6 }, new int[][] { new int[] { 0, 2 },new int[] { 2, 3 } });//[false,true]
         }
     }
 }
