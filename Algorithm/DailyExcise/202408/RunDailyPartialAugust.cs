@@ -28,6 +28,18 @@ namespace Algorithm.DailyExcise
             var isArraySpecialResult = isArraySpecialClass.IsArraySpecial(new int[] { 3, 4, 1, 2, 6 }, new int[][] { new int[] { 0, 4 } });//[false]
 
             isArraySpecialResult = isArraySpecialClass.IsArraySpecial(new int[] { 4, 3, 1, 6 }, new int[][] { new int[] { 0, 2 },new int[] { 2, 3 } });//[false,true]
+
+            var maxScoreClass = new MaxScoreClass2();
+            var grid = new int[][] { 
+                new int[]{ 9, 5, 7, 3 },
+                new int[]{ 8, 9, 6, 1 },
+                new int[]{ 6,7,14,3 },
+                new int[]{ 2, 5, 3, 1 }
+            };
+            var maxScoreResult = maxScoreClass.MaxScore1(grid);//9
+            maxScoreResult = maxScoreClass.MaxScore2(grid);//9
+            maxScoreResult = maxScoreClass.MaxScore3(grid);//9
+            maxScoreResult = maxScoreClass.MaxScore4(grid);//9
         }
     }
 }
