@@ -40,6 +40,9 @@ namespace Algorithm.DailyExcise
             maxScoreResult = maxScoreClass.MaxScore2(grid);//9
             maxScoreResult = maxScoreClass.MaxScore3(grid);//9
             maxScoreResult = maxScoreClass.MaxScore4(grid);//9
+
+            var minimumValuesSumClass = new MinimumValueSumClass();
+            var minimuValuesSumResult = minimumValuesSumClass.MinimumValueSum(new int[] { 1, 4, 3, 3, 2 },new int[] { 0, 3, 3, 2 });//12
         }
     }
 }
