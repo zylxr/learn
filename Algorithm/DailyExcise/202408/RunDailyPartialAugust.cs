@@ -43,6 +43,9 @@ namespace Algorithm.DailyExcise
 
             var minimumValuesSumClass = new MinimumValueSumClass();
             var minimuValuesSumResult = minimumValuesSumClass.MinimumValueSum(new int[] { 1, 4, 3, 3, 2 },new int[] { 0, 3, 3, 2 });//12
+
+            var minimumoperationsToMakePeriodicClass = new MinimumOperationsToMakeKPeriodicClass();
+            var minimumoperationToMakePeriodicResult = minimumoperationsToMakePeriodicClass.MinimumOperationsToMakeKPeriodic("leetcodeleet",4);//1
         }
     }
 }
