@@ -46,6 +46,11 @@ namespace Algorithm.DailyExcise
 
             var minimumoperationsToMakePeriodicClass = new MinimumOperationsToMakeKPeriodicClass();
             var minimumoperationToMakePeriodicResult = minimumoperationsToMakePeriodicClass.MinimumOperationsToMakeKPeriodic("leetcodeleet",4);//1
+       
+            var checkRecordClass = new CheckRecordClass();
+            var checkRecordResult = checkRecordClass.CheckRecord(2);//8
+            checkRecordResult = checkRecordClass.CheckRecord1(2);//8
+            checkRecordResult = checkRecordClass.CheckRecord2(2);//8
         }
     }
 }
