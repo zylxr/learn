@@ -51,6 +51,9 @@ namespace Algorithm.DailyExcise
             var checkRecordResult = checkRecordClass.CheckRecord(2);//8
             checkRecordResult = checkRecordClass.CheckRecord1(2);//8
             checkRecordResult = checkRecordClass.CheckRecord2(2);//8
+
+            var waysToReachStair = new WaysToReachStairClass();
+            var waysToreachStairResult = waysToReachStair.WaysToReachStair(0);//2
         }
     }
 }
