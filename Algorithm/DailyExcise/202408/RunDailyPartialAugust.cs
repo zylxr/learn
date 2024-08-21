@@ -54,6 +54,9 @@ namespace Algorithm.DailyExcise
 
             var waysToReachStair = new WaysToReachStairClass();
             var waysToreachStairResult = waysToReachStair.WaysToReachStair(0);//2
+
+            var findMaximuNumberClass = new FindMaximumNumberClass();
+            var findMaximuNumberResult = findMaximuNumberClass.FindMaximumNumber(9, 1);//6
         }
     }
 }
