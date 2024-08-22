@@ -308,6 +308,12 @@ namespace Algorithm.DailyExcise
             };
             var minimumMoveClass2 = new MinimumMovesClass2();
             var minimumMoveResult2 = minimumMoveClass2.MinimumMoves(minimumGrid);//3
+            minimumGrid = new int[][] {
+                new int[]{1,3,0 },
+                new int[]{1,0,0},
+                new int[]{1,0,3},
+            };
+            minimumMoveResult2 = minimumMoveClass2.MinimumMoves(minimumGrid);//4
 
             var bombs = new int[][] { 
                 new int[]{2,1,3 },

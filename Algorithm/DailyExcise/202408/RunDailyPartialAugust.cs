@@ -55,8 +55,14 @@ namespace Algorithm.DailyExcise
             var waysToReachStair = new WaysToReachStairClass();
             var waysToreachStairResult = waysToReachStair.WaysToReachStair(0);//2
 
+            var hs = new HashSet<int>();
+            hs.Add(5);
+            hs.Add(1);
             var findMaximuNumberClass = new FindMaximumNumberClass();
             var findMaximuNumberResult = findMaximuNumberClass.FindMaximumNumber(9, 1);//6
+
+            var minEndClass = new MinEndClass();
+            var minEndResult = minEndClass.MinEnd(3,4);//6
         }
     }
 }
