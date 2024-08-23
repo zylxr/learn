@@ -331,6 +331,7 @@ namespace Algorithm.DailyExcise
             var sumNums = new int[] { 1, 2, 3, 4 };
             var sumOfPowerClass = new SumOfPowersClass();
             var sumOfPowerResult = sumOfPowerClass.SumOfPowersDP(sumNums,3);//4
+            sumOfPowerResult = sumOfPowerClass.SumOfPowers2(sumNums, 3);//4
 
             var relNums = new int[] { 1, 6, 7, 8 };
             var moveFrom = new int[] { 1, 7, 2 };

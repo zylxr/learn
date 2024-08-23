@@ -63,6 +63,11 @@ namespace Algorithm.DailyExcise
 
             var minEndClass = new MinEndClass();
             var minEndResult = minEndClass.MinEnd(3,4);//6
+
+            var findProductsOfElementsClass = new FindProductsOfElementsClass();
+            var findProductsOfElementsResult = findProductsOfElementsClass.FindProductsOfElements(
+                new long[][] { new long[] { 1,3,7} }
+                );//[4]
         }
     }
 }
