@@ -68,6 +68,29 @@ namespace Algorithm.DailyExcise
             var findProductsOfElementsResult = findProductsOfElementsClass.FindProductsOfElements(
                 new long[][] { new long[] { 1,3,7} }
                 );//[4]
+
+            GetPrime();
+        }
+
+        public static void GetPrime()
+        {
+            var visited = new bool[1005];
+            visited[0] = visited[1]= true;
+            var tot = 0;
+            var p = new int[1005];
+            for(var i=2;i<1005;i++)
+            {
+                if(!visited[i])
+                {
+                    p[++tot] = i;
+                }
+                for (var j = 1; j <= tot && i * p[j] < 1005; j++)
+                {
+                    visited[i * p[j]] = true;
+                    if (i % p[j] == 0) break;
+                }
+            }
+
         }
     }
 }
