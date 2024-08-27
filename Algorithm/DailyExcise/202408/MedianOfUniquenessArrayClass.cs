@@ -62,7 +62,7 @@ namespace Algorithm.DailyExcise
         public int MedianOfUniquenessArray(int[] nums)
         {
             var n = nums.Length;
-            var median = ((long)n*(n+1)>>1+1)>> 1;
+            var median = (((long)n*(n+1)>>1)+1)>> 1;
             var res = 0;
             int l = 1, h = n;
             while(l<=h)
