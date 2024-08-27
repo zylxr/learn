@@ -86,6 +86,8 @@ namespace Algorithm.DailyExcise
                 new Employee{ Id= 3, Importance=3 ,SubOrdinates = new List<int>()}
             }, 1);//11
 
+            var medianOfUniqueneseArray = new MedianOfUniquenessArrayClass();
+            var medianOfUniqueneseResult = medianOfUniqueneseArray.MedianOfUniquenessArray(new int[] { 1,2,3});//1
             GetPrime();
         }
 
