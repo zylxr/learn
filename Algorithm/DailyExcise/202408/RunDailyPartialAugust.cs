@@ -88,6 +88,9 @@ namespace Algorithm.DailyExcise
 
             var medianOfUniqueneseArray = new MedianOfUniquenessArrayClass();
             var medianOfUniqueneseResult = medianOfUniqueneseArray.MedianOfUniquenessArray(new int[] { 1,2,3});//1
+
+            var minimumSubStringInPartition = new MinimumSubstringsInPartitionClass();
+            var minimumSubStringInPartitionResult = minimumSubStringInPartition.MinimumSubstringsInPartition("fabccddg");//3:"fab, "ccdd", "g") 或者 ("fabc", "cd", "dg") 
             GetPrime();
         }
 
