@@ -91,6 +91,9 @@ namespace Algorithm.DailyExcise
 
             var minimumSubStringInPartition = new MinimumSubstringsInPartitionClass();
             var minimumSubStringInPartitionResult = minimumSubStringInPartition.MinimumSubstringsInPartition("fabccddg");//3:"fab, "ccdd", "g") 或者 ("fabc", "cd", "dg") 
+
+            var sumDigitDiffClass = new SumDigitDifferencesClass();
+            var sumDigitDiffResult = sumDigitDiffClass.SumDigitDifferences(new int[] {12,23,12});//4
             GetPrime();
         }
 
