@@ -94,6 +94,11 @@ namespace Algorithm.DailyExcise
 
             var sumDigitDiffClass = new SumDigitDifferencesClass();
             var sumDigitDiffResult = sumDigitDiffClass.SumDigitDifferences(new int[] {12,23,12});//4
+
+            var canMakeSquarClass = new CanMakeSquareClass();
+            var canMakeSquareResult = canMakeSquarClass.CanMakeSquare(new char[][] { new char[] { 'B', 'W', 'B' } ,
+            new char[]{ 'B', 'W', 'W' },
+            new char[]{ 'B', 'W', 'B' } });//true
             GetPrime();
         }
 
