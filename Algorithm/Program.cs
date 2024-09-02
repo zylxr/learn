@@ -37,6 +37,7 @@ namespace Algorithm
             RunBackTracking.Run();
             RunDailyExcise.Run();
             RunDailyPartialAugust.Run();
+            RunDailySeptempber.Run();
             Console.WriteLine("Hello, World!");
         }
     }
