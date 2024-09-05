@@ -19,6 +19,11 @@ namespace Algorithm.DailyExcise
 
             var countWayClass = new CountWaysClass();
             var countWayResult = countWayClass.CountWays(new List<int> { 1,1});//2
+
+            var clearDigitsClass = new ClearDigitsClass();
+            var clearDigitsResult = clearDigitsClass.ClearDigits("ag3");//"a"
+
+            clearDigitsResult = clearDigitsClass.ClearDigits("cb34");//""
         }
     }
 }
