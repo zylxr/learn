@@ -24,6 +24,11 @@ namespace Algorithm.DailyExcise
             var clearDigitsResult = clearDigitsClass.ClearDigits("ag3");//"a"
 
             clearDigitsResult = clearDigitsClass.ClearDigits("cb34");//""
+
+            var maximumLengthClass2 = new MaximumLengthClass2();
+            var maximumLengthResult = maximumLengthClass2.MaximumLength(new int[] { 1, 2, 1, 1, 3 },2);//4
+
+            maximumLengthResult = maximumLengthClass2.MaximumLengthOptimize(new int[] { 1, 2, 1, 1, 3 }, 2);//4
         }
     }
 }
