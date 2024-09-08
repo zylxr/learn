@@ -16,7 +16,7 @@ df.info()
 
 # 看下原始数据
 sns.lmplot(x='population',y='profit',data=df,height=6,fit_reg=False)
-plot.show()
+#plot.show()
 
 def get_X(df): #读取特征
 # """
@@ -24,8 +24,8 @@ def get_X(df): #读取特征
 # not efficient for big dataset though
 # """
     ones = pd.DataFrame({'ones':np.ones(len(df))}) #ones 是m 行 1 列的 dataframe
-    data = pd.contact([ones, df],axis=1) # 合并数据，根据列合并
-    return data.iloc[:,:-1].as_matrix() #返回 ndarray,不是矩阵
+    data = pd.concat([ones, df],axis=1) # 合并数据，根据列合并
+    return data.iloc[:, :-1].to_numpy() #返回 ndarray,不是矩阵
 
 def get_y(df): #读取标签
 #   ''' assume the last column is the target '''
@@ -35,11 +35,11 @@ def normalize_feature(df):
 #   """ Applies function along input axis(default 0) of DataFrame """
     return df.apply(lambda column:(column-column.mean())/column.std()) #特征缩放
 
-def linear_regression(X_data, y_data, alpha,epoch,optimizer=tf.train.GradientDescentOptimizer):
+def linear_regression(X_data, y_data, alpha,epoch):
         #placeholder for graph input
     X = tf.placeholder(tf.float32,shape=X_data.shape)
     y = tf.placeholder(tf.float32, shape=y_data.shape)
-
+    optimizer=tf.keras.Optimizer.SGD(learning_rate=alpha,momentum=0.0)
     #construct the graph
     with tf.variable_scope('linear-regression'):
         W = tf.get_variable("weights",
@@ -66,3 +66,10 @@ def linear_regression(X_data, y_data, alpha,epoch,optimizer=tf.train.GradientDes
     #clear the graph
     tf.reset_default_graph()
     return {'loss':loss_data,'parameters':W_val} #just want to return in row vector format
+
+X=get_X(df)
+print(X.shape,type(X))
+ones1 = pd.DataFrame({'ones':np.ones(len(df))})
+data1 = pd.concat([ones1,df],axis=1)
+data2 = data1.iloc[:5,[True,False,True]]
+print(data2)
