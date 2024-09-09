@@ -29,6 +29,40 @@ namespace Algorithm.DailyExcise
             var maximumLengthResult = maximumLengthClass2.MaximumLength(new int[] { 1, 2, 1, 1, 3 },2);//4
 
             maximumLengthResult = maximumLengthClass2.MaximumLengthOptimize(new int[] { 1, 2, 1, 1, 3 }, 2);//4
+
+            var mergeNodeClass = new MergeNodesClass();
+            var mergeNodeResult = mergeNodeClass.MergeNodes(
+                new ListNode { 
+                    Val =0,
+                    Next = new ListNode { 
+                        Val = 3,
+                        Next = new ListNode
+                        {
+                            Val = 1,
+                            Next = new ListNode
+                            {
+                                Val = 0,
+                                Next = new ListNode
+                                {
+                                    Val = 4,
+                                    Next = new ListNode
+                                    {
+                                        Val = 5,
+                                        Next = new ListNode
+                                        {
+                                            Val = 2,
+                                            Next = new ListNode
+                                            {
+                                                Val = 0
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                );//[4,11]
         }
     }
 }
