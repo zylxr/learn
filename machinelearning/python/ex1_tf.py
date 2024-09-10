@@ -100,9 +100,9 @@ def batch_gradient_descent(theta, X, y, epoch, alpha=0.01):
         cost_data.append(lr_cost(_theta,X,y))
     return _theta,cost_data
 
-
-X=get_X(df)
-y=get_y(df)
+data = normalize_feature(df)
+X=get_X(data)
+y=get_y(data)
 theta = np.zeros(X.shape[1]) # X.shape[1]=2,代表特征数 n
 jCost = lr_cost(theta,X,y) #
 print(f"Cost:{jCost}")
@@ -112,11 +112,17 @@ final_theta, cost_data = batch_gradient_descent(theta,X,y,epoch)
 print(f"{final_theta=}\n")
 #print(f" {cost_data=} \n")
 
-#visualize cost data(代价数据可视化)
-#ax = sns.lineplot(x=np.arange(epoch+1),y=cost_data)
-#ax.set_xlabel('epoch')
-#ax.set_ylabel('cost')
-#plot.show()
+# #visualize cost data(代价数据可视化)
+cdf = pd.DataFrame({
+    'epoch':np.arange(epoch+1),
+    'cost': cost_data
+})
+plot.figure(figsize=(10,6))
+ax = sns.lineplot(data=cdf, x='epoch',y='cost')
+#ax = sns.lineplot(x=cost_data, y=np.arange(epoch+1))
+ax.set_xlabel('epoch')
+ax.set_ylabel('cost')
+plot.show()
 
 b = final_theta[0]; #intercept , Y 轴上的截距
 m = final_theta[1]; # slope ,斜率
@@ -133,7 +139,6 @@ fig,ax = plot.subplots(figsize=(16,9))
 for alpha in candidate:
     _,cost_data = batch_gradient_descent(theta,X,y, epoch, alpha=alpha)
     ax.plot(np.arange(epoch+1),cost_data,label=f"{alpha:.2e}")
-    print(cost_data)
 
 ax.set_xlabel('epoch',fontsize=18)
 ax.set_ylabel('cost',fontsize=18)
