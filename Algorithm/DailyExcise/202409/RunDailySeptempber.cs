@@ -63,6 +63,9 @@ namespace Algorithm.DailyExcise
                     }
                 }
                 );//[4,11]
+
+            var countQuadruplets = new CountQuadrupletsClass();
+            var countQuadRupletResult = countQuadruplets.CountQuadruplets(new int[] { 1,3,2,4,5});//2
         }
     }
 }
