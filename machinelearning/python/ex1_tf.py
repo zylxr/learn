@@ -112,6 +112,35 @@ final_theta, cost_data = batch_gradient_descent(theta,X,y,epoch)
 print(f"{final_theta=}\n")
 #print(f" {cost_data=} \n")
 
+#visualize cost data(代价数据可视化)
+#ax = sns.lineplot(x=np.arange(epoch+1),y=cost_data)
+#ax.set_xlabel('epoch')
+#ax.set_ylabel('cost')
+#plot.show()
+
+b = final_theta[0]; #intercept , Y 轴上的截距
+m = final_theta[1]; # slope ,斜率
+plot.scatter(df.population,df.profit,label="Training data")
+plot.plot(df.population,df.population*m+b,label="Prediction")
+plot.legend(loc=2)
+plot.show()
+
+# learning rate （学习率）
+base = np.logspace(-3,-1,num=4)
+candidate = np.sort(np.concatenate((base,base*3)))
+epoch = 50
+fig,ax = plot.subplots(figsize=(16,9))
+for alpha in candidate:
+    _,cost_data = batch_gradient_descent(theta,X,y, epoch, alpha=alpha)
+    ax.plot(np.arange(epoch+1),cost_data,label=f"{alpha:.2e}")
+    print(cost_data)
+
+ax.set_xlabel('epoch',fontsize=18)
+ax.set_ylabel('cost',fontsize=18)
+ax.legend(bbox_to_anchor=(1.05,1),loc=2,borderaxespad=0.)
+ax.set_title('learning rate',fontsize=18)
+plot.show()
+
 #测试 python 代码，与机器学习练习无关
 ones1 = pd.DataFrame({'ones':np.ones(len(df))})
 data1 = pd.concat([ones1,df],axis=1)
