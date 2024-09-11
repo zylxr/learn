@@ -14,9 +14,9 @@ print(df.head(5)) #看前五行
 
 df.info()
 
-# 看下原始数据
-sns.lmplot(x='population',y='profit',data=df,height=6,fit_reg=False)
-#plot.show()
+# # 看下原始数据
+# sns.lmplot(x='population',y='profit',data=df,height=6,fit_reg=False)
+# plot.show()
 
 def get_X(df): #读取特征
 # """
@@ -35,37 +35,37 @@ def normalize_feature(df):
 #   """ Applies function along input axis(default 0) of DataFrame """
     return df.apply(lambda column:(column-column.mean())/column.std()) #特征缩放
 
-def linear_regression(X_data, y_data, alpha,epoch):
-        #placeholder for graph input
-    X = tf.placeholder(tf.float32,shape=X_data.shape)
-    y = tf.placeholder(tf.float32, shape=y_data.shape)
-    optimizer=tf.keras.Optimizer.SGD(learning_rate=alpha,momentum=0.0)
-    #construct the graph
-    with tf.variable_scope('linear-regression'):
-        W = tf.get_variable("weights",
-                            (X_data.shape[1],1),
-                            initializer=tf.constant_initializer()) #n*1
-        y_pred = tf.matmul(X,W) # m*n @n*1->m*1
+import tensorflow as tf
+import numpy as np
 
-        loss = 1/(2*len(X_data))*tf.matmul((y_pred-y),(y_pred),transpose_a=True) #(m*1).T@m*1=1*1                    
-    opt = optimizer(learning_rate=alpha)
-    opt_operation = opt_minimize(loss)
+def linear_regression(X_data, y_data, alpha, epoch, optimizer):
+    # Define variables using tf.Variable
+    W = tf.Variable(tf.zeros([X_data.shape[1], 1]), name="weights")  # n*1
+    
+    # Define the prediction and loss functions
+    @tf.function
+    def compute_loss(X, y, W):
+        y_pred = tf.matmul(X, W)
+        loss = 1 / (2 * len(X_data)) * tf.reduce_sum(tf.square(y_pred - y))
+        return loss
+    
+    
+    # Initialize variables
+    loss_data = []
+    for i in range(epoch):
+        with tf.GradientTape() as tape:
+            loss_val = compute_loss(X_data, y_data, W)
+        gradients = tape.gradient(loss_val, W)
+        optimizer.apply_gradients([(gradients, W)])
+        
+        loss_data.append(loss_val.numpy()[0, 0])
+        
+        if len(loss_data) > 1 and np.abs(loss_data[-1] - loss_data[-2]) < 1e-9:  # Early break when it's converged
+            break
+    
+    return {'loss': loss_data, 'parameters': W.numpy().reshape(1, -1)}  # Return in row vector format
 
-    #run the session
-    with tf.Session() as sess:
-        sess.run(tf.global_variables_initializer())
-        loss_data = []
 
-        for i in range(epoch):
-            _,loss_val, W_val = sess.run([opt_operation, loss,W],feed_dict={X:X_data,y:y_data})
-            loss_data.append(loss_val[0,0]) # because every loss_val is 1*1 
-            
-            if len(loss_data) > 1 and np.abs(loss_data[-1]-loss_data[-2])<10 ** -9: #early break when it's converged
-                #print ('Converged at epoch {}'.format(i))
-                break
-    #clear the graph
-    tf.reset_default_graph()
-    return {'loss':loss_data,'parameters':W_val} #just want to return in row vector format
 
 def lr_cost(theta, X, y):
 # """
@@ -145,6 +145,32 @@ ax.set_ylabel('cost',fontsize=18)
 ax.legend(bbox_to_anchor=(1.05,1),loc=2,borderaxespad=0.)
 ax.set_title('learning rate',fontsize=18)
 plot.show()
+
+# normal equation (正规方程)
+def normalEqn(X,y):
+    theta = np.linalg.inv(X.T@X)@X.T@y #X.T@X 等价于 X.T.dot(X)
+    return theta
+
+final_theta2 = normalEqn(X,y)
+print(f"{final_theta2=}")
+
+#run the tensor flow graph over several optimizer
+optimizer_dict = {
+    'GD': tf.keras.optimizers.SGD,
+    'Adagrad':tf.keras.optimizers.Adagrad,
+    'Adam':tf.keras.optimizers.Adam,
+    'Ftrl':tf.keras.optimizers.Ftrl,
+    'RMS': tf.keras.optimizers.RMSprop
+}
+results = []
+alpha=0.01
+X_data = get_X(df)
+y_data = get_y(df).reshape(len(X_data),1) # special treatment for tensorflow input data
+for name in optimizer_dict:
+    optimizer = optimizer_dict[name](learning_rate = alpha)
+    res = linear_regression(X_data,y_data,alpha,epoch,optimizer)
+    res['name'] = name
+    results.append(res)
 
 #测试 python 代码，与机器学习练习无关
 ones1 = pd.DataFrame({'ones':np.ones(len(df))})
