@@ -66,6 +66,13 @@ namespace Algorithm.DailyExcise
 
             var countQuadruplets = new CountQuadrupletsClass();
             var countQuadRupletResult = countQuadruplets.CountQuadruplets(new int[] { 1,3,2,4,5});//2
+
+            var maximizeWinClass = new MaximizeWinClass();
+            var maximizeWinResult = maximizeWinClass.MaximizeWin(new int[] { 1, 1, 2, 2, 3, 3, 5 },2); //7
+
+            maximizeWinResult = maximizeWinClass.MaximizeWin(new int[] { 1, 2, 3, 4 }, 0);//2
+
+            maximizeWinResult = maximizeWinClass.MaximizeWin2(new int[] { 1, 2, 3, 4 }, 0);//2
         }
     }
 }
