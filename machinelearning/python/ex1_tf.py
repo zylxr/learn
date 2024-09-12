@@ -8,6 +8,8 @@ import matplotlib.pyplot as plot
 import tensorflow as tf
 import numpy as np
 import datetime
+from sklearn import linear_model #pip install scikit-learn
+
 df = pd.read_csv('ex1data1.txt',names=['population','profit']) #读取数据并赋予列名
 
 print(df.head(5)) #看前五行
@@ -201,6 +203,21 @@ ax.set_xlabel('epoch',fontsize=18)
 ax.set_ylabel('cost',fontsize=18)
 ax.legend(bbox_to_anchor=(1.05,1),loc=2,borderaxespad=0.)
 ax.set_title('different optimizer',fontsize=18)
+plot.show()
+
+#scikit-learn 
+model = linear_model.LinearRegression()
+model.fit(X,y)
+
+x11 = np.array(X[:,1])
+f=model.predict(X).flatten()
+fig,ax = plot.subplots(figsize=(12,8))
+ax.plot(x11,f,'r',label='Prediction')
+ax.scatter(df.population, df.profit,label='Training Data')
+ax.legend(loc=2)
+ax.set_xlabel('Populcation')
+ax.set_ylabel('Profit')
+ax.set_title('Predicted Profit vs. Population Size')
 plot.show()
 
 #测试 python 代码，与机器学习练习无关
