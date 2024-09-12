@@ -73,6 +73,10 @@ namespace Algorithm.DailyExcise
             maximizeWinResult = maximizeWinClass.MaximizeWin(new int[] { 1, 2, 3, 4 }, 0);//2
 
             maximizeWinResult = maximizeWinClass.MaximizeWin2(new int[] { 1, 2, 3, 4 }, 0);//2
+
+            var maxNumOfMarketIndicesClass = new MaxNumOfMarkedIndicesClass();
+            var maxNumOfMarketIndicesResult = maxNumOfMarketIndicesClass.MaxNumOfMarkedIndices(new int[] { 9, 2, 5, 4 });//4
+            maxNumOfMarketIndicesResult = maxNumOfMarketIndicesClass.MaxNumOfMarketIndices2(new int[] { 9,2,5,4});//4
         }
     }
 }
