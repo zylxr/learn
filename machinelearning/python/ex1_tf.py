@@ -40,8 +40,8 @@ import numpy as np
 
 def linear_regression(X_data, y_data, alpha, epoch, optimizer):
     # Define variables using tf.Variable
-    W = tf.Variable(tf.zeros([X_data.shape[1], 1]), name="weights")  # n*1
-    
+    W = tf.Variable(tf.zeros([X_data.shape[1], 1],dtype=tf.float64), name="weights")  # n*1
+   
     # Define the prediction and loss functions
     @tf.function
     def compute_loss(X, y, W):
@@ -58,7 +58,7 @@ def linear_regression(X_data, y_data, alpha, epoch, optimizer):
         gradients = tape.gradient(loss_val, W)
         optimizer.apply_gradients([(gradients, W)])
         
-        loss_data.append(loss_val.numpy()[0, 0])
+        loss_data.append(loss_val.numpy())
         
         if len(loss_data) > 1 and np.abs(loss_data[-1] - loss_data[-2]) < 1e-9:  # Early break when it's converged
             break
@@ -155,6 +155,25 @@ final_theta2 = normalEqn(X,y)
 print(f"{final_theta2=}")
 
 #run the tensor flow graph over several optimizer
+# 1. 'GD': tf.keras.optimizers.SGD
+#       SGD（随机梯度下降）是最基本的优化算法之一。它通过沿着梯度方向调整权重来最小化损失函数。
+#       在传统的批量梯度下降（Batch Gradient Descent）中，每次更新都基于整个训练集的梯度，
+#       而在 SGD 中，每次更新通常是基于单个样本（或一个小批量样本）。这种方法有助于快速收敛，但路径可能会比较不稳定。
+# 2. 'Adagrad': tf.keras.optimizers.Adagrad
+#       Adagrad 是一种自适应学习率的方法，它根据每个参数的历史梯度来调整学习率。
+#       随着迭代次数增加，Adagrad 的学习率会逐渐减小，这对稀疏数据集特别有效。然而，学习率的单调递减有时会导致学习过早停止。
+# 3. 'Adam': tf.keras.optimizers.Adam
+#       Adam（自适应矩估计）结合了 Momentum 和 RMSProp 的优点。它维护了梯度的一阶动量（移动平均）和二阶动量（未经中心化的方差），
+#       并且在初始阶段进行偏差校正。Adam 通常能提供较好的收敛性能，并且在实践中表现得非常好。
+# 4. 'Ftrl': tf.keras.optimizers.Ftrl
+#       FTRL（跟随正则化的领导者）是一种优化算法，特别适合于稀疏数据。它结合了在线凸优化的思想，能够有效地处理大量特征，
+#       并且对于稀疏数据集具有良好的表现。FTRL 可以看作是 Adagrad 和 RDA（Regularized Dual Averaging）的组合。
+# 5. 'RMS': tf.keras.optimizers.RMSprop
+#       RMSprop 是为了改进 Adagrad 的一些缺点而设计的。Adagrad 的学习率随着迭代减少，
+#       而 RMSprop 使用了一个滑动窗口的梯度平方的平均值来动态调整学习率。这有助于在梯度稀疏的情况下保持合理的学习率，并且在实践中通常比 Adagrad 更好。
+# 每种优化器都有自己的特点和适用场景，选择哪种优化器取决于特定的任务需求、数据特性和模型架构。通常情况下，
+# Adam 因为其良好的通用性和较少的超参数调整要求，在很多场景下是一个不错的选择。然而，在某些情况下，
+# 其他的优化器可能会有更好的表现，比如对于稀疏数据，Adagrad 或 FTRL 可能更合适。
 optimizer_dict = {
     'GD': tf.keras.optimizers.SGD,
     'Adagrad':tf.keras.optimizers.Adagrad,
@@ -171,6 +190,18 @@ for name in optimizer_dict:
     res = linear_regression(X_data,y_data,alpha,epoch,optimizer)
     res['name'] = name
     results.append(res)
+
+#画图
+fig,ax = plot.subplots(figsize=(16,9))
+for res in results:
+    loss_data = res['loss']
+    ax.plot(np.arange(len(loss_data)),loss_data,label=res['name'])
+
+ax.set_xlabel('epoch',fontsize=18)
+ax.set_ylabel('cost',fontsize=18)
+ax.legend(bbox_to_anchor=(1.05,1),loc=2,borderaxespad=0.)
+ax.set_title('different optimizer',fontsize=18)
+plot.show()
 
 #测试 python 代码，与机器学习练习无关
 ones1 = pd.DataFrame({'ones':np.ones(len(df))})
