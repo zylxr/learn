@@ -77,6 +77,9 @@ namespace Algorithm.DailyExcise
             var maxNumOfMarketIndicesClass = new MaxNumOfMarkedIndicesClass();
             var maxNumOfMarketIndicesResult = maxNumOfMarketIndicesClass.MaxNumOfMarkedIndices(new int[] { 9, 2, 5, 4 });//4
             maxNumOfMarketIndicesResult = maxNumOfMarketIndicesClass.MaxNumOfMarketIndices2(new int[] { 9,2,5,4});//4
+
+            var maximumRobotClass = new MaximumRobotsClass();
+            var maximumRobotResult = maximumRobotClass.MaximumRobots(new int[] { 3, 6, 1, 3, 4 },new int[] { 2, 1, 3, 4, 5 },25);//3
         }
     }
 }
