@@ -9,6 +9,7 @@ import tensorflow as tf
 import numpy as np
 import datetime
 from sklearn import linear_model #pip install scikit-learn
+import tensorflow as tf
 
 df = pd.read_csv('ex1data1.txt',names=['population','profit']) #读取数据并赋予列名
 
@@ -19,6 +20,7 @@ df.info()
 # # 看下原始数据
 # sns.lmplot(x='population',y='profit',data=df,height=6,fit_reg=False)
 # plot.show()
+
 
 def get_X(df): #读取特征
 # """
@@ -37,8 +39,7 @@ def normalize_feature(df):
 #   """ Applies function along input axis(default 0) of DataFrame """
     return df.apply(lambda column:(column-column.mean())/column.std()) #特征缩放
 
-import tensorflow as tf
-import numpy as np
+
 
 def linear_regression(X_data, y_data, alpha, epoch, optimizer):
     # Define variables using tf.Variable
