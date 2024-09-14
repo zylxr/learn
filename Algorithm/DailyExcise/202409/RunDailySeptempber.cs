@@ -80,6 +80,9 @@ namespace Algorithm.DailyExcise
 
             var maximumRobotClass = new MaximumRobotsClass();
             var maximumRobotResult = maximumRobotClass.MaximumRobots(new int[] { 3, 6, 1, 3, 4 },new int[] { 2, 1, 3, 4, 5 },25);//3
+        
+            var removeStarsClass = new RemoveStarsClass();
+            var removeStarsResult = removeStarsClass.RemoveStars("leet**cod*e");//lecoe
         }
     }
 }
