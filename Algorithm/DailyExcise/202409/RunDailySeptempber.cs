@@ -83,6 +83,17 @@ namespace Algorithm.DailyExcise
         
             var removeStarsClass = new RemoveStarsClass();
             var removeStarsResult = removeStarsClass.RemoveStars("leet**cod*e");//lecoe
+
+            var numBusesToDesClass = new NumBusesToDestinationClass();
+            var numBusesResult = numBusesToDesClass.NumBusesToDestination(new int[][] {
+                new int[]{ 1, 2, 7 },
+                new int[]{ 3, 6, 7 }
+            },1,6); //2
+
+            numBusesResult = numBusesToDesClass.NumBusesToDestination(new int[][] {
+                new int[]{ 1, 7 },
+                new int[]{ 3, 5 }
+            }, 5, 5); //0
         }
     }
 }
