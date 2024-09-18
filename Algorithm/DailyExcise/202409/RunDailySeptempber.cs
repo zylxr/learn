@@ -94,6 +94,29 @@ namespace Algorithm.DailyExcise
                 new int[]{ 1, 7 },
                 new int[]{ 3, 5 }
             }, 5, 5); //0
+
+            var latesTimeClass = new LatestTimeCatchTheBusClass();
+            var latestTimeResult = latesTimeClass.LatestTimeCatchTheBus(new int[] { 10,20},new int[] { 2, 17, 18, 19 },2);//16
+
+            latestTimeResult = latesTimeClass.LatestTimeCatchTheBus(new int[] { 20, 30, 10 }, new int[] { 19, 13, 26, 4, 25, 11, 21 }, 2);//20
+
+            latestTimeResult = latesTimeClass.LatestTimeCatchTheBus(new int[] { 3},new int[] {2,4 },2);//3
+
+            latestTimeResult = latesTimeClass.LatestTimeCatchTheBus(new int[] { 3 }, new int[] { 2, 3 }, 2);//1
+
+            latestTimeResult = latesTimeClass.LatestTimeCatchTheBus(new int[] { 3 }, new int[] { 4 }, 1);//3
+
+            latestTimeResult = latesTimeClass.LatestTimeCatchTheBus(new int[] { 5 }, new int[] { 2,3 }, 10000);//5
+
+            latestTimeResult = latesTimeClass.LatestTimeCatchTheBus(new int[] { 2 }, new int[] { 2 }, 2);//1
+
+            latestTimeResult = latesTimeClass.LatestTimeCatchTheBus(new int[] { 6,8,18,17 }, new int[] { 6,8,17 }, 1);//18
+
+            latestTimeResult = latesTimeClass.LatestTimeCatchTheBus(new int[] { 10,20 }, new int[] { 2,17,18,19 }, 2);//16
+
+            latestTimeResult = latesTimeClass.LatestTimeCatchTheBus(new int[] { 3, 4 }, new int[] { 2, 4 }, 1);//3
+
+            latestTimeResult = latesTimeClass.LatestTimeCatchTheBus2(new int[] { 3, 4 }, new int[] { 2, 4 }, 1);//3
         }
     }
 }
