@@ -117,6 +117,9 @@ namespace Algorithm.DailyExcise
             latestTimeResult = latesTimeClass.LatestTimeCatchTheBus(new int[] { 3, 4 }, new int[] { 2, 4 }, 1);//3
 
             latestTimeResult = latesTimeClass.LatestTimeCatchTheBus2(new int[] { 3, 4 }, new int[] { 2, 4 }, 1);//3
+
+            var longestContinuousSubstringClass = new LongestContinuousSubstringClass();
+            var longestContinuousSubStringResult = longestContinuousSubstringClass.LongestContinuousSubstring("abcde");//5
         }
     }
 }
