@@ -72,7 +72,7 @@ def gradient(theta, X, y):
 #     '''just 1 batch gradient'''
     return (1 / len(X)) * X.T @ (sigmoid(X @ theta) - y)
 
-gradient(theta, X, y)
+print(gradient(theta, X, y))
 
 # 拟合参数
 # * 这里我使用 [`scipy.optimize.minimize`](http://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html#scipy.optimize.minimize) 去寻找参数  
