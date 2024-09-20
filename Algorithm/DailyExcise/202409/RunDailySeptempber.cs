@@ -120,6 +120,10 @@ namespace Algorithm.DailyExcise
 
             var longestContinuousSubstringClass = new LongestContinuousSubstringClass();
             var longestContinuousSubStringResult = longestContinuousSubstringClass.LongestContinuousSubstring("abcde");//5
+
+            var countSpecialNumbers = new CountSpecialNumbersClass();
+            var countSpecialNumbersResult = countSpecialNumbers.CountSpecialNumbers(20);//19
+            countSpecialNumbersResult = countSpecialNumbers.CountSpecialNumbers2(20);//19
         }
     }
 }
