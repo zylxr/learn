@@ -124,6 +124,10 @@ namespace Algorithm.DailyExcise
             var countSpecialNumbers = new CountSpecialNumbersClass();
             var countSpecialNumbersResult = countSpecialNumbers.CountSpecialNumbers(20);//19
             countSpecialNumbersResult = countSpecialNumbers.CountSpecialNumbers2(20);//19
+
+            var edgeScoreClass = new EdgeScoreClass();
+            var edgeScoreResult = edgeScoreClass.EdgeScore(new int[] { 1, 0, 0, 0, 0, 7, 7, 5 });//7
+
         }
     }
 }
