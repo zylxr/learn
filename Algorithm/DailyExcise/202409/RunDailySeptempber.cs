@@ -128,6 +128,8 @@ namespace Algorithm.DailyExcise
             var edgeScoreClass = new EdgeScoreClass();
             var edgeScoreResult = edgeScoreClass.EdgeScore(new int[] { 1, 0, 0, 0, 0, 7, 7, 5 });//7
 
+            var maxScoreSightseeingPairClass = new MaxScoreSightseeingPairClass();
+            var maxScoreSightResult = maxScoreSightseeingPairClass.MaxScoreSightseeingPair(new int[] { 8, 1, 5, 2, 6 }); //11
         }
     }
 }
