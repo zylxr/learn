@@ -130,6 +130,9 @@ namespace Algorithm.DailyExcise
 
             var maxScoreSightseeingPairClass = new MaxScoreSightseeingPairClass();
             var maxScoreSightResult = maxScoreSightseeingPairClass.MaxScoreSightseeingPair(new int[] { 8, 1, 5, 2, 6 }); //11
+
+            var maximuSubSequenceCountClass = new MaximumSubsequenceCountClass();
+            var maximumSubSeqCountResult = maximuSubSequenceCountClass.MaximumSubsequenceCount("abdcdbc", "ac");//4
         }
     }
 }
