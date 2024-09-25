@@ -133,6 +133,12 @@ namespace Algorithm.DailyExcise
 
             var maximuSubSequenceCountClass = new MaximumSubsequenceCountClass();
             var maximumSubSeqCountResult = maximuSubSequenceCountClass.MaximumSubsequenceCount("abdcdbc", "ac");//4
+
+            var distinctNamesClass = new DistinctNamesClass();
+            var distinctNameResult = distinctNamesClass.DistinctNames(new string[] { "coffee", "donuts", "time", "toffee" });//6
+
+            distinctNameResult = distinctNamesClass.DistinctNames2(new string[] { "coffee", "donuts", "time", "toffee" });//6
+
         }
     }
 }
