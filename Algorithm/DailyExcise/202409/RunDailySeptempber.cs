@@ -139,6 +139,11 @@ namespace Algorithm.DailyExcise
 
             distinctNameResult = distinctNamesClass.DistinctNames2(new string[] { "coffee", "donuts", "time", "toffee" });//6
 
+            var takeCharactersClass = new TakeCharactersClass();
+            var takeCharactersClassResult = takeCharactersClass.TakeCharacters("aabaaaacaabc",2);//8
+            takeCharactersClassResult = takeCharactersClass.TakeCharacters("abc",1);//3
+
+            takeCharactersClassResult = takeCharactersClass.TakeCharacters2("aabaaaacaabc", 2);//8
         }
     }
 }
