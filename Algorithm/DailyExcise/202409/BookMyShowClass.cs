@@ -57,76 +57,77 @@ namespace Algorithm.DailyExcise
         private int cols;
         private HashSet<(int, int)> hs;
         private int[] minTree;
-        private int[] sumTree;
+        private long[] sumTree;
         public BookMyShowClass(int n, int m)
         {
             rows = n;
             cols = m;
             hs = new HashSet<(int, int)>();
             minTree = new int[4 * n];
-            sumTree = new int[4 * n];
+            sumTree = new long[4 * n];
         }
 
-        private void Modify(int i, int l, int r, int index, int val)
+        private void BuildTree(int index, int l, int r, int i, int val)
         {
             if (l == r)
             {
-                minTree[i] = val;
-                sumTree[i] = val;
+                minTree[index] = val;
+                sumTree[index] = val;
                 return;
             }
             var mid = (l + r) >> 1;
-            if (index <= mid)
-                Modify(i << 1, l, mid, index, val);
+            if (i <= mid)
+                BuildTree(index << 1, l, mid, i, val);
             else
-                Modify(i << 1 | 1, mid + 1, r, index, val);
-            minTree[i] = Math.Min(minTree[i << 1], minTree[i << 1 | 1]);
-            sumTree[i] = sumTree[i << 1] + sumTree[i << 1 | 1];
+                BuildTree(index << 1 | 1, mid + 1, r, i, val);
+            minTree[index] = Math.Min(minTree[index << 1], minTree[index << 1 | 1]);
+            sumTree[index] = sumTree[index << 1] + sumTree[index << 1 | 1];
+
         }
-        private int QueryMinRow(int i, int l,int r,int val)
+        public int SearchMinTree(int i, int l, int r, int val)
         {
-            if(l==r)
+            if (l == r)
             {
                 if (minTree[i] > val) return rows;
                 return l;
             }
             var mid = (l + r) >> 1;
             if (minTree[i << 1] <= val)
-                return QueryMinRow(i << 1, l, mid, val);
+                return SearchMinTree(i << 1, l, mid, val);
             else
-                return QueryMinRow(i << 1 | 1, mid + 1, r, val);
+                return SearchMinTree(i << 1 | 1, mid + 1, r, val);
         }
-        private long QuerySum(int i, int l, int r,int l2,int r2)
+        public long SearchSumTree(int i, int l, int r, int l2, int r2)
         {
-            if (r < l2 || l > r2) return 0;
+            if (l > r2 || r < l2) return 0;
             if (l >= l2 && r <= r2) return sumTree[i];
             var mid = (l + r) >> 1;
-            return QuerySum(i << 1, l, mid, l2, r2) + QuerySum(i << 1 | 1, mid + 1, r, l2, r2);
+            return SearchSumTree(i << 1, l, mid, l2, r2) + SearchSumTree(i << 1 | 1, mid + 1, r, l2, r2);
         }
-
         public int[] Gather2(int k, int maxRow)
         {
-            var i = QueryMinRow(1, 0, rows-1, cols - k);
+            var i = SearchMinTree(1, 0, rows - 1, cols - k);
             if (i > maxRow) return new int[0];
-            long used = QuerySum(1, 0, rows - 1, i, i);
-            Modify(1, 0, rows - 1, i, (int)(used + k));
-            return new int[] {i,(int)used };
+            var c = (int)SearchSumTree(1, 0, rows - 1, i, i);
+            BuildTree(1, 0, rows - 1, i, c + k);
+            return new int[] { i, c };
         }
         public bool Scatter2(int k, int maxRow)
         {
-            long usedTotal = QuerySum(1, 0, rows - 1, 0, maxRow);
-            if ((maxRow + 1L) * cols - usedTotal < k) return false;
-            var i = QueryMinRow(1, 0, rows - 1, cols - 1);
-            while(true)
+            var total = SearchSumTree(1, 0, rows - 1, 0, maxRow);
+            if (total + k > (long)(maxRow + 1) * cols) return false;
+            var i = SearchMinTree(1, 0, rows - 1, cols - 1);
+            while (true)
             {
-                long used = QuerySum(1, 0, rows - 1, i, i);
-                if(cols-used>=k)
+                var c = SearchSumTree(1, 0, rows - 1, i, i);
+                if (cols - c >= k)
                 {
-                    Modify(1, 0, rows - 1, i, (int)(used + k));
+                    BuildTree(1, 0, rows - 1, i, (int)c + k);
                     break;
                 }
-                k -= cols - (int)used;
-                Modify(1, 0, rows - 1, i, cols);
+
+                k -= (int)(cols - c);
+                BuildTree(1, 0, rows - 1, i, cols);
                 i++;
             }
             return true;

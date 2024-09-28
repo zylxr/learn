@@ -151,10 +151,25 @@ namespace Algorithm.DailyExcise
             var bookMyShowClassResult2 = bookMyShowClass.Scatter(5,1); //true
             bookMyShowClassResult2 = bookMyShowClass.Scatter(5, 1); //false
 
-            bookMyShowClassResult1 = bookMyShowClass.Gather2(4, 0);//[0,0]
-            bookMyShowClassResult1 = bookMyShowClass.Gather2(2, 0);//[]
-            bookMyShowClassResult2 = bookMyShowClass.Scatter2(5, 1); //true
-            bookMyShowClassResult2 = bookMyShowClass.Scatter2(5, 1); //false
+            bookMyShowClass = new BookMyShowClass(5, 9);
+            bookMyShowClassResult1 = bookMyShowClass.Gather2(10, 1);//[]
+            bookMyShowClassResult2 = bookMyShowClass.Scatter2(3, 3); //true
+            bookMyShowClassResult1 = bookMyShowClass.Gather2(9, 1);//[1,0]
+            bookMyShowClassResult1 = bookMyShowClass.Gather2(10, 2);//[]
+            bookMyShowClassResult1 = bookMyShowClass.Gather2(2, 0);//[0,3]
+
+            bookMyShowClass = new BookMyShowClass(4, 5);
+            bookMyShowClassResult2 = bookMyShowClass.Scatter2(6, 2); //true
+            bookMyShowClassResult1 = bookMyShowClass.Gather2(6, 3);//[]
+            bookMyShowClassResult2 = bookMyShowClass.Scatter2(9, 1); //false
+
+            bookMyShowClass = new BookMyShowClass(3, 999999999);
+            bookMyShowClassResult2 = bookMyShowClass.Scatter2(1000000000, 2); //true
+            bookMyShowClassResult1 = bookMyShowClass.Gather2(999999999, 2);//[2,0]
+            bookMyShowClassResult1 = bookMyShowClass.Gather2(999999999, 2); //[]
+            bookMyShowClassResult1 = bookMyShowClass.Gather2(999999999, 2);//[]
+
+
         }
     }
 }
