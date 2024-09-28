@@ -144,6 +144,17 @@ namespace Algorithm.DailyExcise
             takeCharactersClassResult = takeCharactersClass.TakeCharacters("abc",1);//3
 
             takeCharactersClassResult = takeCharactersClass.TakeCharacters2("aabaaaacaabc", 2);//8
+
+            var bookMyShowClass = new BookMyShowClass(2,5);
+            var bookMyShowClassResult1 = bookMyShowClass.Gather(4,0);//[0,0]
+            bookMyShowClassResult1 = bookMyShowClass.Gather(2, 0);//[]
+            var bookMyShowClassResult2 = bookMyShowClass.Scatter(5,1); //true
+            bookMyShowClassResult2 = bookMyShowClass.Scatter(5, 1); //false
+
+            bookMyShowClassResult1 = bookMyShowClass.Gather2(4, 0);//[0,0]
+            bookMyShowClassResult1 = bookMyShowClass.Gather2(2, 0);//[]
+            bookMyShowClassResult2 = bookMyShowClass.Scatter2(5, 1); //true
+            bookMyShowClassResult2 = bookMyShowClass.Scatter2(5, 1); //false
         }
     }
 }
