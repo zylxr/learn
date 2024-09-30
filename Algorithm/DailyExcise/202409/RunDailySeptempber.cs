@@ -169,7 +169,15 @@ namespace Algorithm.DailyExcise
             bookMyShowClassResult1 = bookMyShowClass.Gather2(999999999, 2); //[]
             bookMyShowClassResult1 = bookMyShowClass.Gather2(999999999, 2);//[]
 
-
+            var seatManagerClass = new SeatManagerClass(5);
+            var seatManagerResult = seatManagerClass.Reserve();//1
+            seatManagerResult = seatManagerClass.Reserve();//2
+            seatManagerClass.Unreserve(2);
+            seatManagerResult =seatManagerClass.Reserve();//2
+            seatManagerResult = seatManagerClass.Reserve();//3
+            seatManagerResult = seatManagerClass.Reserve();//4
+            seatManagerResult = seatManagerClass.Reserve();//5
+            seatManagerClass.Unreserve(5);
         }
     }
 }
