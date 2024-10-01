@@ -38,6 +38,7 @@ namespace Algorithm
             RunDailyExcise.Run();
             RunDailyPartialAugust.Run();
             RunDailySeptempber.Run();
+            RunOctoberDailyExcercise.Run();
             Console.WriteLine("Hello, World!");
         }
     }
