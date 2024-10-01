@@ -14,6 +14,9 @@ namespace Algorithm.DailyExcise
             var minCostTicketsResult = minCosTicketsClass.MincostTickets(new int[] { 1, 4, 6, 7, 8, 20 },new int[] { 2, 7, 15 });//11
 
             minCostTicketsResult = minCosTicketsClass.MincostTickets(new int[] { 1, 4, 6, 7, 8, 365 }, new int[] { 2,7,15});//11
+
+            minCostTicketsResult = minCosTicketsClass.MincostTickets2(new int[] { 1, 4, 6, 7, 8, 20 }, new int[] { 2, 7, 15 });//11
+
         }
     }
 }

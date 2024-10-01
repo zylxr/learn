@@ -74,5 +74,27 @@ namespace Algorithm.DailyExcise
             }
             return dp[1];
         }
+
+        public int MincostTickets2(int[] days, int[] costs)
+        {
+            var max = days[days.Length - 1];
+            var dp = new int[max + 1];
+            var costIndex = new int[3] { 1, 7, 30 };
+            Array.Fill(dp, int.MaxValue >> 1);
+            dp[0] = 0;
+            for (var i = 1; i <= max; i++)
+            {
+                if (days.Contains(i))
+                {
+                    for (var j = 0; j < costIndex.Length; j++)
+                    {
+                        dp[i] = Math.Min(dp[i], dp[Math.Max(i - costIndex[j], 0)] + costs[j]);
+                    }
+                }
+                else
+                    dp[i] = Math.Min(dp[i], dp[i - 1]);
+            }
+            return dp[max];
+        }
     }
 }
