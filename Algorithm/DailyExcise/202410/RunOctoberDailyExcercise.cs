@@ -53,6 +53,10 @@ namespace Algorithm.DailyExcise
 
             var nthPersonGetNthSeatClass = new NthPersonGetsNthSeatClass();
             var nthPersonGetNthSeatResult = nthPersonGetNthSeatClass.NthPersonGetsNthSeat(4);//0.5
+
+            var minimumTimeClass = new MinimumTimeClass2();
+            var minimumTimeResult = minimumTimeClass.MinimumTime(new int[] { 1,2,3},5);//3
+            minimumTimeResult = minimumTimeClass.MinimumTime(new int[] { 2 }, 1);//2
         }
     }
 }
