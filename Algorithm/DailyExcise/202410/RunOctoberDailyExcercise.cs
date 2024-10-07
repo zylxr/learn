@@ -57,6 +57,36 @@ namespace Algorithm.DailyExcise
             var minimumTimeClass = new MinimumTimeClass2();
             var minimumTimeResult = minimumTimeClass.MinimumTime(new int[] { 1,2,3},5);//3
             minimumTimeResult = minimumTimeClass.MinimumTime(new int[] { 2 }, 1);//2
+
+            var minRefuelStopsClass = new MinRefuelStopsClass();
+            var minRefuleStopsResult = minRefuelStopsClass.MinRefuelStops(100,10,new int[][] { 
+                new int[]{ 10,60},
+                new int[]{20,30 }, 
+                new int[]{ 30,30},
+                new int[]{ 60,40}
+            });//2
+
+            minRefuleStopsResult = minRefuelStopsClass.MinRefuelStops(1, 1, new int[][]{ } );//0
+
+            minRefuleStopsResult = minRefuelStopsClass.MinRefuelStops(100, 1, new int[][] { new int[] { 10, 100 } });//-1
+
+            minRefuleStopsResult = minRefuelStopsClass.MinRefuelStops(100, 25, new int[][] {
+                new int[] { 25, 25 },
+                new int[]{ 50,25},
+                new int[]{ 75,25},
+                });//3
+
+            minRefuleStopsResult = minRefuelStopsClass.MinRefuelStops2(100, 25, new int[][] {
+                new int[] { 25, 25 },
+                new int[]{ 50,25},
+                new int[]{ 75,25},
+                });//3
+
+            minRefuleStopsResult = minRefuelStopsClass.MinRefuelStops3(100, 25, new int[][] {
+                new int[] { 25, 25 },
+                new int[]{ 50,25},
+                new int[]{ 75,25},
+                });//3
         }
     }
 }
