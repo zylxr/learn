@@ -87,6 +87,11 @@ namespace Algorithm.DailyExcise
                 new int[]{ 50,25},
                 new int[]{ 75,25},
                 });//3
+
+            var minimumDifferenceClass = new MinimumDifferenceClass();
+            var minimumDifferenceResult = minimumDifferenceClass.MinimumDifference(new int[] { 1, 2, 4, 5 },3); //0
+
+            minimumDifferenceResult = minimumDifferenceClass.MinimumDifference2(new int[] { 1},10);//9
         }
     }
 }
