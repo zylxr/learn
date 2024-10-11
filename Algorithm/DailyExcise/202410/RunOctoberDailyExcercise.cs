@@ -92,6 +92,9 @@ namespace Algorithm.DailyExcise
             var minimumDifferenceResult = minimumDifferenceClass.MinimumDifference(new int[] { 1, 2, 4, 5 },3); //0
 
             minimumDifferenceResult = minimumDifferenceClass.MinimumDifference2(new int[] { 1},10);//9
+
+            var numberOfPairsClass = new NumberOfPairsClass();
+            var numberOfPairsResult = numberOfPairsClass.NumberOfPairs(new int[] { 1, 3, 4 },new int[] { 1, 3, 4 },1); //5
         }
     }
 }
