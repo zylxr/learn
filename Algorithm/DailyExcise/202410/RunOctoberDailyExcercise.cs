@@ -11,14 +11,14 @@ namespace Algorithm.DailyExcise
         public static void Run()
         {
             var minCosTicketsClass = new MincostTicketsClass();
-            var minCostTicketsResult = minCosTicketsClass.MincostTickets(new int[] { 1, 4, 6, 7, 8, 20 },new int[] { 2, 7, 15 });//11
+            var minCostTicketsResult = minCosTicketsClass.MincostTickets(new int[] { 1, 4, 6, 7, 8, 20 }, new int[] { 2, 7, 15 });//11
 
-            minCostTicketsResult = minCosTicketsClass.MincostTickets(new int[] { 1, 4, 6, 7, 8, 365 }, new int[] { 2,7,15});//11
+            minCostTicketsResult = minCosTicketsClass.MincostTickets(new int[] { 1, 4, 6, 7, 8, 365 }, new int[] { 2, 7, 15 });//11
 
             minCostTicketsResult = minCosTicketsClass.MincostTickets2(new int[] { 1, 4, 6, 7, 8, 20 }, new int[] { 2, 7, 15 });//11
 
             var minSpeedOnTimeClass = new MinSpeedOnTimeClass();
-            var minSpeedOnTimeResult = minSpeedOnTimeClass.MinSpeedOnTime(new int[] { 1, 3, 2 },6);//1
+            var minSpeedOnTimeResult = minSpeedOnTimeClass.MinSpeedOnTime(new int[] { 1, 3, 2 }, 6);//1
 
             minSpeedOnTimeResult = minSpeedOnTimeClass.MinSpeedOnTime(new int[] { 1, 3, 2 }, 2.7);//3
 
@@ -27,9 +27,9 @@ namespace Algorithm.DailyExcise
             minSpeedOnTimeResult = minSpeedOnTimeClass.MinSpeedOnTime(new int[] { 37, 64, 81 }, 3.11);//73
 
             var minCostClass = new MinCostClass();
-            var minCostResult = minCostClass.MinCost(30,new int[][] { 
+            var minCostResult = minCostClass.MinCost(30, new int[][] {
                 new int[]{ 0,1,10},
-                new int[]{ 1,2,10}, 
+                new int[]{ 1,2,10},
                 new int[]{2,5,10},
                 new int[]{0,3,1 },
                 new int[]{3,4,10},
@@ -39,7 +39,7 @@ namespace Algorithm.DailyExcise
 
             minCostResult = minCostClass.MinCost(100, new int[][] {
                 new int[]{ 0,1,100}
-            }, new int[] { 2,5 });//7
+            }, new int[] { 2, 5 });//7
 
 
             minCostResult = minCostClass.MinCost2(30, new int[][] {
@@ -55,18 +55,18 @@ namespace Algorithm.DailyExcise
             var nthPersonGetNthSeatResult = nthPersonGetNthSeatClass.NthPersonGetsNthSeat(4);//0.5
 
             var minimumTimeClass = new MinimumTimeClass2();
-            var minimumTimeResult = minimumTimeClass.MinimumTime(new int[] { 1,2,3},5);//3
+            var minimumTimeResult = minimumTimeClass.MinimumTime(new int[] { 1, 2, 3 }, 5);//3
             minimumTimeResult = minimumTimeClass.MinimumTime(new int[] { 2 }, 1);//2
 
             var minRefuelStopsClass = new MinRefuelStopsClass();
-            var minRefuleStopsResult = minRefuelStopsClass.MinRefuelStops(100,10,new int[][] { 
+            var minRefuleStopsResult = minRefuelStopsClass.MinRefuelStops(100, 10, new int[][] {
                 new int[]{ 10,60},
-                new int[]{20,30 }, 
+                new int[]{20,30 },
                 new int[]{ 30,30},
                 new int[]{ 60,40}
             });//2
 
-            minRefuleStopsResult = minRefuelStopsClass.MinRefuelStops(1, 1, new int[][]{ } );//0
+            minRefuleStopsResult = minRefuelStopsClass.MinRefuelStops(1, 1, new int[][] { });//0
 
             minRefuleStopsResult = minRefuelStopsClass.MinRefuelStops(100, 1, new int[][] { new int[] { 10, 100 } });//-1
 
@@ -89,12 +89,17 @@ namespace Algorithm.DailyExcise
                 });//3
 
             var minimumDifferenceClass = new MinimumDifferenceClass();
-            var minimumDifferenceResult = minimumDifferenceClass.MinimumDifference(new int[] { 1, 2, 4, 5 },3); //0
+            var minimumDifferenceResult = minimumDifferenceClass.MinimumDifference(new int[] { 1, 2, 4, 5 }, 3); //0
 
-            minimumDifferenceResult = minimumDifferenceClass.MinimumDifference2(new int[] { 1},10);//9
+            minimumDifferenceResult = minimumDifferenceClass.MinimumDifference2(new int[] { 1 }, 10);//9
 
             var numberOfPairsClass = new NumberOfPairsClass();
-            var numberOfPairsResult = numberOfPairsClass.NumberOfPairs(new int[] { 1, 3, 4 },new int[] { 1, 3, 4 },1); //5
+            var numberOfPairsResult = numberOfPairsClass.NumberOfPairs(new int[] { 1, 3, 4 }, new int[] { 1, 3, 4 }, 1); //5
+
+            var duplicateNumberClass = new DuplicateNumbersXORClass();
+            var duplicateNumberResult = duplicateNumberClass.DuplicateNumbersXOR(new int[] { 1, 2, 2, 1 });//3
+
+            duplicateNumberResult = duplicateNumberClass.DuplicateNumbersXOR2(new int[] { 1, 2, 2, 1 });//3
         }
     }
 }
