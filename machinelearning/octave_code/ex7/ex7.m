@@ -20,6 +20,7 @@
 
 %% Initialization
 clear ; close all; clc
+pkg load statistics
 
 %% ================= Part 1: Find Closest Centroids ====================
 %  To help you implement K-Means, we have divided the learning algorithm 
