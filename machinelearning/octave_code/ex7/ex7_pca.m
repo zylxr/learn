@@ -60,7 +60,9 @@ hold on;
 drawLine(mu, mu + 1.5 * S(1,1) * U(:,1)', '-k', 'LineWidth', 2);
 drawLine(mu, mu + 1.5 * S(2,2) * U(:,2)', '-k', 'LineWidth', 2);
 hold off;
-
+mu
+U
+S
 fprintf('Top eigenvector: \n');
 fprintf(' U(:,1) = %f %f \n', U(1,1), U(2,1));
 fprintf('\n(you should expect to see -0.707107 -0.707107)\n');
@@ -95,7 +97,7 @@ fprintf('\n(this value should be about  -1.047419 -1.047419)\n\n');
 
 %  Draw lines connecting the projected points to the original points
 hold on;
-plot(X_rec(:, 1), X_rec(:, 2), 'ro');
+plot(X_rec(:, 1), X_rec(:, 2), 'r+');
 for i = 1:size(X_norm, 1)
     drawLine(X_norm(i,:), X_rec(i,:), '--k', 'LineWidth', 1);
 end
@@ -132,7 +134,8 @@ fprintf(['\nRunning PCA on face dataset.\n' ...
 
 %  Run PCA
 [U, S] = pca(X_norm);
-
+size(U)
+size(S)
 %  Visualize the top 36 eigenvectors found
 displayData(U(:, 1:36)');
 
@@ -202,7 +205,7 @@ K = 16;
 max_iters = 10;
 initial_centroids = kMeansInitCentroids(X, K);
 [centroids, idx] = runkMeans(X, initial_centroids, max_iters);
-
+size(idx)
 %  Sample 1000 random indexes (since working with all the data is
 %  too expensive. If you have a fast computer, you may increase this.
 sel = floor(rand(1000, 1) * size(X, 1)) + 1;
@@ -210,6 +213,7 @@ sel = floor(rand(1000, 1) * size(X, 1)) + 1;
 %  Setup Color Palette
 palette = hsv(K);
 colors = palette(idx(sel), :);
+size(colors)
 
 %  Visualize the data and centroid memberships in 3D
 figure;
