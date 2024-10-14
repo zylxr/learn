@@ -100,6 +100,14 @@ namespace Algorithm.DailyExcise
             var duplicateNumberResult = duplicateNumberClass.DuplicateNumbersXOR(new int[] { 1, 2, 2, 1 });//3
 
             duplicateNumberResult = duplicateNumberClass.DuplicateNumbersXOR2(new int[] { 1, 2, 2, 1 });//3
+
+            var superEggDropClass = new SuperEggDropClass();
+            var superEggDropResult = superEggDropClass.SuperEggDrop(1,2); //2
+            superEggDropResult = superEggDropClass.SuperEggDrop(2, 6); //3
+
+            superEggDropResult = superEggDropClass.SuperEggDrop2(2, 6); //3
+
+            superEggDropResult = superEggDropClass.SuperEggDrop3(2, 6); //3
         }
     }
 }
