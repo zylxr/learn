@@ -108,6 +108,9 @@ namespace Algorithm.DailyExcise
             superEggDropResult = superEggDropClass.SuperEggDrop2(2, 6); //3
 
             superEggDropResult = superEggDropClass.SuperEggDrop3(2, 6); //3
+
+            var maxHeightOfTriangle = new MaxHeightOfTriangleClass();
+            var maxHeightOfTriangleResult = maxHeightOfTriangle.MaxHeightOfTriangle(10,1);//2
         }
     }
 }
