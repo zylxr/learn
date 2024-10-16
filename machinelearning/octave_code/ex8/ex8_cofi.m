@@ -214,7 +214,7 @@ pause;
 %  After training the model, you can now make recommendations by computing
 %  the predictions matrix.
 %
-
+size(Theta)
 p = X * Theta';
 my_predictions = p(:,1) + Ymean;
 
