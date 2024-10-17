@@ -111,6 +111,11 @@ namespace Algorithm.DailyExcise
 
             var maxHeightOfTriangle = new MaxHeightOfTriangleClass();
             var maxHeightOfTriangleResult = maxHeightOfTriangle.MaxHeightOfTriangle(10,1);//2
+
+            var numberOfPermutationClass = new NumberOfPermutationsClass();
+            var numberOfPermutationResult = numberOfPermutationClass.NumberOfPermutations(3,new int[][] { new int[] { 2,2},new int[] { 0,0} }); //2
+
+            numberOfPermutationResult = numberOfPermutationClass.NumberOfPermutations2(3, new int[][] { new int[] { 2, 2 }, new int[] { 0, 0 } }); //2
         }
     }
 }
