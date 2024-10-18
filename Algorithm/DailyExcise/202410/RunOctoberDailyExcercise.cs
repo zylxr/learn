@@ -116,6 +116,9 @@ namespace Algorithm.DailyExcise
             var numberOfPermutationResult = numberOfPermutationClass.NumberOfPermutations(3,new int[][] { new int[] { 2,2},new int[] { 0,0} }); //2
 
             numberOfPermutationResult = numberOfPermutationClass.NumberOfPermutations2(3, new int[][] { new int[] { 2, 2 }, new int[] { 0, 0 } }); //2
+
+            var minOperationsClass = new MinOperationsClass();
+            var minOperationsResult = minOperationsClass.MinOperations(new int[] { 0, 1, 1, 1, 0, 0 }); //3
         }
     }
 }
