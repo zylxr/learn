@@ -215,6 +215,7 @@ pause;
 %  the predictions matrix.
 %
 size(Theta)
+mean(Ymean)
 p = X * Theta';
 my_predictions = p(:,1) + Ymean;
 
