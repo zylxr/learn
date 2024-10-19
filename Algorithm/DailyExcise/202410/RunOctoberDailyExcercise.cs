@@ -119,6 +119,10 @@ namespace Algorithm.DailyExcise
 
             var minOperationsClass = new MinOperationsClass();
             var minOperationsResult = minOperationsClass.MinOperations(new int[] { 0, 1, 1, 1, 0, 0 }); //3
+
+            var minOperationClass2 = new MinOperations2Class();
+            var minOperationResult2 = minOperationClass2.MinOperations(new int[] { 0, 1, 1, 0, 1 }); //4
+            minOperationResult2 = minOperationClass2.MinOperations2(new int[] { 0, 1, 1, 0, 1 });//4
         }
     }
 }
