@@ -44,6 +44,9 @@ namespace Algorithm.DailyExcise
         //0 <= k <= 104
         public int SmallestRangeII(int[] nums, int k)
         {
+            //这个循环遍历数组的所有相邻元素对(a, b)。对于每一对(a, b)，考虑将所有小于等于 a 的元素增加 k，将所有大于 a 的元素减少 k（这里假设 b 大于 a，因为数组已排序）。然后计算在这种情况下新的最大值和最小值之差，并更新结果 res。
+            //Math.Max(ma - k, a + k) 计算的是在这种调整后可能的新最大值。
+            //Math.Min(mi + k, b - k) 计算的是在这种调整后可能的新最小值。
             var n = nums.Length;
             Array.Sort(nums);
             var min = nums[0];
