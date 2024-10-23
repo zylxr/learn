@@ -126,6 +126,11 @@ namespace Algorithm.DailyExcise
 
             var smallestRangeIIClass = new SmallestRangeIIClass();
             var smallestRangeIIResult = smallestRangeIIClass.SmallestRangeII(new int[] { 0, 10 },2); //6
+
+            var countCompletDayPairsClass = new CountCompleteDayPairsClass();
+            var countCompleteDayPairsResult = countCompletDayPairsClass.CountCompleteDayPairs(new int[] {
+                12,12,30,24,24
+            });//2
         }
     }
 }
