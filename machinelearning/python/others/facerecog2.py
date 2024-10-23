@@ -20,10 +20,30 @@ import dlib
 import numpy as np
 from sklearn.svm import SVC
 from sklearn.preprocessing import LabelEncoder
+import os
+import matplotlib.pyplot as plt
+
+model_path = r'shape_predictor_68_face_landmarks.dat'
+print("Model path:", model_path)
+
+# 尝试使用 os.open 打开文件
+try:
+    with open(model_path, 'rb') as file:
+        # 读取文件的前几个字节以确认文件可以被读取
+        content = file.read(10)
+        print("File opened successfully. First 10 bytes:", content)
+except IOError as e:
+    print("Error opening file:", e)
+    exit(1)  # 退出程序，因为文件无法打开
 
 # 初始化人脸检测器和特征提取器
 detector = dlib.get_frontal_face_detector()
-sp = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
+try:
+    # 初始化形状预测器
+    sp = dlib.shape_predictor(model_path)
+    print("Shape predictor loaded successfully.")
+except Exception as e:
+    print("Error loading shape predictor:", e)
 facerec = dlib.face_recognition_model_v1('dlib_face_recognition_resnet_model_v1.dat')
 
 # 准备训练数据
@@ -46,16 +66,42 @@ def load_faces_from_directory(directory):
     return features, labels
 
 # 加载训练数据
-train_dir = 'path_to_train_directory'
+train_dir = './traindata/'
 features, labels = load_faces_from_directory(train_dir)
+
+# 打印部分数据以检查
+print("Features (前5个):")
+for feature in features[:5]:
+    print(feature)
+
+print("\nLabels (前5个):")
+print(labels[:5])
+
+# 可视化部分特征向量
+fig, axes = plt.subplots(nrows=2, ncols=5, figsize=(15, 6))
+for ax, feature in zip(axes.flatten(), features[:10]):
+    ax.plot(feature)
+    ax.set_title('Feature Vector')
+plt.tight_layout()
+plt.show()
+
+# 可视化标签分布
+plt.figure(figsize=(10, 5))
+plt.hist(labels, bins=len(set(labels)), edgecolor='black')
+plt.xlabel('Label')
+plt.ylabel('Frequency')
+plt.title('Label Distribution')
+plt.show()
 
 # 将标签转换为数字
 le = LabelEncoder()
 labels = le.fit_transform(labels)
+print(labels)
 
 # 训练SVM分类器
 clf = SVC(kernel='linear', probability=True)
 clf.fit(features, labels)
+
 
 # 识别特定的人
 def recognize_face(image, clf, le):
@@ -78,7 +124,7 @@ def recognize_face(image, clf, le):
     return image
 
 # 测试识别功能
-test_image_path = 'path_to_test_image.jpg'
+test_image_path = 'songjiang.jpg'
 test_image = cv2.imread(test_image_path)
 recognized_image = recognize_face(test_image, clf, le)
 cv2.imshow('Recognized Face', recognized_image)
