@@ -1,0 +1,6 @@
+1.打开 Developer Command Prompt：
+    在开始菜单中搜索“Developer Command Prompt for VS 2022”并打开它。
+2.编译测试程序：
+    在 Developer Command Prompt 中，导航到 test.cpp 所在的目录。
+    运行以下命令：
+        cl  test.cpp

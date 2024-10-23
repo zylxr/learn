@@ -1,0 +1,2 @@
+1.shape_predictor_68_face_landmarks.dat,dlib_face_recognition_resnet_model_v1.dat 下载地址
+https://github.com/davisking/dlib-models?spm=5176.28103460.0.0.297c5d27rkg2Xv
