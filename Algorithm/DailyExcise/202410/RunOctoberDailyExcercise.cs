@@ -131,6 +131,10 @@ namespace Algorithm.DailyExcise
             var countCompleteDayPairsResult = countCompletDayPairsClass.CountCompleteDayPairs(new int[] {
                 12,12,30,24,24
             });//2
+
+            var findWinningPlayerClass = new FindWinningPlayerClass();
+            var findWinningPlayerResult = findWinningPlayerClass.FindWinningPlayer(new int[] { 4, 2, 6, 3, 9 },2); //2
+            findWinningPlayerResult = findWinningPlayerClass.FindWinningPlayer2(new int[] { 4, 2, 6, 3, 9 }, 2); //2
         }
     }
 }
