@@ -135,6 +135,11 @@ namespace Algorithm.DailyExcise
             var findWinningPlayerClass = new FindWinningPlayerClass();
             var findWinningPlayerResult = findWinningPlayerClass.FindWinningPlayer(new int[] { 4, 2, 6, 3, 9 },2); //2
             findWinningPlayerResult = findWinningPlayerClass.FindWinningPlayer2(new int[] { 4, 2, 6, 3, 9 }, 2); //2
+
+            var maxTotalRewardClass = new MaxTotalRewardClass();
+            var maxTotalRewardResult = maxTotalRewardClass.MaxTotalReward(new int[] { 1, 1, 3, 3 });//4
+
+            maxTotalRewardResult = maxTotalRewardClass.MaxTotalReward2(new int[] { 1, 1, 3, 3 });//4
         }
     }
 }
