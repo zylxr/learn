@@ -140,6 +140,14 @@ namespace Algorithm.DailyExcise
             var maxTotalRewardResult = maxTotalRewardClass.MaxTotalReward(new int[] { 1, 1, 3, 3 });//4
 
             maxTotalRewardResult = maxTotalRewardClass.MaxTotalReward2(new int[] { 1, 1, 3, 3 });//4
+
+            var findRedundantDirectedConnectionClass = new FindRedundantDirectedConnectionClass();
+            var findRedundantDirectedConnectionResult = findRedundantDirectedConnectionClass.FindRedundantDirectedConnection(new int[][]
+            {
+                new int[]{ 1, 2 },
+                new int[]{ 1, 3 },
+                new int[]{ 2, 3 },
+            });//[2,3]
         }
     }
 }
