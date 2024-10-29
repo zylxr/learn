@@ -148,6 +148,10 @@ namespace Algorithm.DailyExcise
                 new int[]{ 1, 3 },
                 new int[]{ 2, 3 },
             });//[2,3]
+
+            var validStringsClass = new ValidStringsClass();
+            var validStringsResult = validStringsClass.ValidStrings(3);//"010","011","101","110","111"
+            validStringsResult = validStringsClass.ValidStrings2(3);//"010","011","101","110","111"
         }
     }
 }
