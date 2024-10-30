@@ -152,6 +152,9 @@ namespace Algorithm.DailyExcise
             var validStringsClass = new ValidStringsClass();
             var validStringsResult = validStringsClass.ValidStrings(3);//"010","011","101","110","111"
             validStringsResult = validStringsClass.ValidStrings2(3);//"010","011","101","110","111"
+
+            var getSmallestStringClass = new GetSmallestStringClass2();
+            var getSmallestStringResult = getSmallestStringClass.GetSmallestString("45320"); //43520
         }
     }
 }
