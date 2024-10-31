@@ -155,6 +155,15 @@ namespace Algorithm.DailyExcise
 
             var getSmallestStringClass = new GetSmallestStringClass2();
             var getSmallestStringResult = getSmallestStringClass.GetSmallestString("45320"); //43520
+
+            var dnf = new DutchNationalFlagProlem();
+            dnf.Test();
+
+            var maximumSum = new MaximumSumSubsequenceClass();
+            var maximumSumResult = maximumSum.MaximumSumSubsequence(new int[] { 3, 5, 9 }, new int[][] {
+                new int[]{ 1,-2},
+                new int[]{ 0,-3},
+            });//21
         }
     }
 }
