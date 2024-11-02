@@ -12,6 +12,9 @@ namespace Algorithm.DailyExcise
         {
             var maxEnergyBoost = new MaxEnergyBoostClass();
             var maxEnergyBoostResult = maxEnergyBoost.MaxEnergyBoost(new int[] { 1, 3, 1 }, new int[] { 3, 1, 1 });//5
+
+            var minChangesClass = new MinChangesClass();
+            var minChangesResult = minChangesClass.MinChanges(11, 56);//-1
         }
     }
 }
