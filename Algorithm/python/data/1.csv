@@ -1,0 +1,3 @@
+name,sex,birthdate,mail,address,blook_group,income,consume_per,consume
+zhangsan,F,2001.04.02,zhangsan@gmail.com,beijing,A+,100,0.2,20
+wangwu,M,2000.01.04,wangwu@163.com,shanghai,B+,300,0.3,
