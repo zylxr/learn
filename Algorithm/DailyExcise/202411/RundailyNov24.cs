@@ -15,6 +15,10 @@ namespace Algorithm.DailyExcise
 
             var minChangesClass = new MinChangesClass();
             var minChangesResult = minChangesClass.MinChanges(11, 56);//-1
+
+            var judgeSquareSumClass = new JudgeSquareSumClass();
+            var judgeSquareSumResult = judgeSquareSumClass.JudgeSquareSum(5); //true
+            judgeSquareSumResult = judgeSquareSumClass.JudgeSquareSum2(5);//true
         }
     }
 }
