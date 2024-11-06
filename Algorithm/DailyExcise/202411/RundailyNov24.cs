@@ -19,6 +19,9 @@ namespace Algorithm.DailyExcise
             var judgeSquareSumClass = new JudgeSquareSumClass();
             var judgeSquareSumResult = judgeSquareSumClass.JudgeSquareSum(5); //true
             judgeSquareSumResult = judgeSquareSumClass.JudgeSquareSum2(5);//true
+
+            var resultArrayClass = new ResultsArrayClass2();
+            var resultArrayResult = resultArrayClass.ResultsArray(new int[] { 1, 2, 3, 4, 3, 2, 5 },3);//[3,4,-1,-1,-1]
         }
     }
 }
