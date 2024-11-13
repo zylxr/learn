@@ -22,6 +22,15 @@ namespace Algorithm.DailyExcise
 
             var resultArrayClass = new ResultsArrayClass2();
             var resultArrayResult = resultArrayClass.ResultsArray(new int[] { 1, 2, 3, 4, 3, 2, 5 },3);//[3,4,-1,-1,-1]
+
+            var minCostClass = new MinCostClass2();
+            var minCostClassResult = minCostClass.MinCost(7,new int[] { 1, 3, 4, 5 });//16
+
+            var countKConstraintSubString = new CountKConstraintSubstringsClass();
+            var countKConstraintSubStringResult = countKConstraintSubString.CountKConstraintSubstrings("10101",1);//12
+
+            var countKConstraintSubString2 = new CountKConstraintSubstringsClass2();
+            var countKConstraintSubString2Result = countKConstraintSubString2.CountKConstraintSubstrings("0001111",2,new int[][] { new int[] {0,6 } });//[26]
         }
     }
 }
