@@ -31,6 +31,16 @@ namespace Algorithm.DailyExcise
 
             var countKConstraintSubString2 = new CountKConstraintSubstringsClass2();
             var countKConstraintSubString2Result = countKConstraintSubString2.CountKConstraintSubstrings("0001111",2,new int[][] { new int[] {0,6 } });//[26]
+        
+            var countGoodNodesClass = new CountGoodNodesClass();
+            var countGoodNodesResult = countGoodNodesClass.CountGoodNodes(new int[][] {
+                new int[]{0,1 },
+                new int[]{0,2 },
+                new int[]{1,3 },
+                new int[]{1,4 },
+                new int[]{2,5 },
+                new int[]{2,6 }
+            });//7
         }
     }
 }
