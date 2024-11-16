@@ -44,6 +44,12 @@ namespace Algorithm.DailyExcise
 
             var minFlipsClass = new MinFlipsClass();
             var minFlipsClassResult = minFlipsClass.MinFlips(new int[][] { new int[] { 1, 0, 0 },new int[] { 0, 0, 0 },new int[] { 0, 0, 1 } });//2
+
+            var minFlipsClass2 = new MinFlipsClass2();
+            var minFlipsClass2Result = minFlipsClass2.MinFlips(new int[][] { new int[] { 1, 0, 0 }, new int[] { 0, 1, 0 }, new int[] { 0, 0, 1 } });//3
+
+            minFlipsClass2Result = minFlipsClass2.MinFlips2(new int[][] { new int[] { 1, 0, 0 }, new int[] { 0, 1, 0 }, new int[] { 0, 0, 1 } });//3
+
         }
     }
 }
