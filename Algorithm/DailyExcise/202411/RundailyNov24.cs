@@ -50,6 +50,18 @@ namespace Algorithm.DailyExcise
 
             minFlipsClass2Result = minFlipsClass2.MinFlips2(new int[][] { new int[] { 1, 0, 0 }, new int[] { 0, 1, 0 }, new int[] { 0, 0, 1 } });//3
 
+            var shortestDistanceAfterQueriesClass = new ShortestDistanceAfterQueriesClass();
+            var shortestDistanceAfterQueriesResult = shortestDistanceAfterQueriesClass.ShortestDistanceAfterQueries(5,new int[][] { 
+                new int[]{ 2,4},
+                new int[]{ 0,2}, 
+                new int[]{ 0,4}
+            });//[3,2,1]
+
+            shortestDistanceAfterQueriesResult = shortestDistanceAfterQueriesClass.ShortestDistanceAfterQueries2(5, new int[][] {
+                new int[]{ 2,4},
+                new int[]{ 0,2},
+                new int[]{ 0,4}
+            });//[3,2,1]
         }
     }
 }
