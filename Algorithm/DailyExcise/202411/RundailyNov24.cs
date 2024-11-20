@@ -62,6 +62,13 @@ namespace Algorithm.DailyExcise
                 new int[]{ 0,2},
                 new int[]{ 0,4}
             });//[3,2,1]
+
+            var shortestDistanceAfterQueriesClass2 = new ShortestDistanceAfterQueriesClass2();
+            var shortestDistanceAfterQueriesResult2 = shortestDistanceAfterQueriesClass2.ShortestDistanceAfterQueries(5, new int[][] {
+                new int[]{ 2,4},
+                new int[]{ 0,2},
+                new int[]{ 0,4}
+            });//[3,2,1]
         }
     }
 }
