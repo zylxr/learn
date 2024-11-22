@@ -69,6 +69,9 @@ namespace Algorithm.DailyExcise
                 new int[]{ 0,2},
                 new int[]{ 0,4}
             });//[3,2,1]
+
+            var nonSpecialCountClass = new NonSpecialCountClass();
+            var nonSpecialCountResult = nonSpecialCountClass.NonSpecialCount(5,7);//3
         }
     }
 }
