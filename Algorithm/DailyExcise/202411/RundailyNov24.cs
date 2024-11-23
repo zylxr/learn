@@ -72,6 +72,18 @@ namespace Algorithm.DailyExcise
 
             var nonSpecialCountClass = new NonSpecialCountClass();
             var nonSpecialCountResult = nonSpecialCountClass.NonSpecialCount(5,7);//3
+
+            var winningPlayerCountClass = new WinningPlayerCountClass();
+            var WinningPlayerCountResult = winningPlayerCountClass.WinningPlayerCount(4,
+                new int[][] { 
+                    new int[]{0,0 },
+                    new int[]{ 1,0},
+                    new int[]{ 1,0},
+                    new int[]{ 2,1},
+                    new int[]{ 2,1},
+                    new int[] { 2,0}
+                }
+                );
         }
     }
 }
