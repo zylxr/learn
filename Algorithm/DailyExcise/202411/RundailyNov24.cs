@@ -108,6 +108,12 @@ namespace Algorithm.DailyExcise
                   new int[]{ 2, 1, 3}
                 },
                 2, 2);//3
+
+            var numberOfAlteringGroupsClass = new NumberOfAlternatingGroupsClass();
+            var numberOfAlteringGroupResult = numberOfAlteringGroupsClass.NumberOfAlternatingGroups(
+                new int[] { 0, 1, 0, 1, 0 },3
+                );//3
         }
+        
     }
 }
