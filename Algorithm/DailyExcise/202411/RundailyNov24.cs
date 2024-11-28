@@ -113,6 +113,11 @@ namespace Algorithm.DailyExcise
             var numberOfAlteringGroupResult = numberOfAlteringGroupsClass.NumberOfAlternatingGroups(
                 new int[] { 0, 1, 0, 1, 0 },3
                 );//3
+
+            var countOfPairsClass = new CountOfPairsClass();
+            var countOfPairsClassResult = countOfPairsClass.CountOfPairs(new int[] { 2,3,2});//4
+
+            countOfPairsClassResult = countOfPairsClass.CountOfPairs2(new int[] { 2, 3, 2 });//4
         }
         
     }
