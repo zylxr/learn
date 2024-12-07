@@ -13,6 +13,9 @@ namespace Algorithm.DailyExcise
             var totalNQueensClass = new TotalNQueensClass();
             var totalNQueenClassResult = totalNQueensClass.TotalNQueens(4);//2
             totalNQueenClassResult = totalNQueensClass.TotalNQueens2(4);//2
+
+            var knightProbabilityClass = new KnightProbabilityClass();
+            var knightProbabilityResult = knightProbabilityClass.KnightProbability(3,2,0,0);//0.0625
         }
     }
 }
