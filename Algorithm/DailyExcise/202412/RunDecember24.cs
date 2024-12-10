@@ -16,6 +16,10 @@ namespace Algorithm.DailyExcise
 
             var knightProbabilityClass = new KnightProbabilityClass();
             var knightProbabilityResult = knightProbabilityClass.KnightProbability(3,2,0,0);//0.0625
+
+            var knightDialerClass = new KnightDialerClass();
+            var knightDialerResult = knightDialerClass.KnightDialer(2);//20
+            knightDialerResult = knightDialerClass.KnightDialer2(2);//20
         }
     }
 }
