@@ -20,6 +20,15 @@ namespace Algorithm.DailyExcise
             var knightDialerClass = new KnightDialerClass();
             var knightDialerResult = knightDialerClass.KnightDialer(2);//20
             knightDialerResult = knightDialerClass.KnightDialer2(2);//20
+
+            var maxSpendingClass = new MaxSpendingClass();
+            var maxSpendingResult = maxSpendingClass.MaxSpending(
+                new int[][] {
+                    new int[]{ 8, 5, 2 },
+                    new int[]{ 6,4,1 },
+                    new int[]{ 9,7,3 },
+                }
+                );//285
         }
     }
 }
