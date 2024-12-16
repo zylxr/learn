@@ -29,6 +29,18 @@ namespace Algorithm.DailyExcise
                     new int[]{ 9,7,3 },
                 }
                 );//285
+
+            var closestRoomClass = new ClosestRoomClass();
+            var closestRoomResult = closestRoomClass.ClosestRoom(new int[][] {
+                new int[]{ 2,2},
+                new int[]{ 1,2},
+                new int[]{ 3,2},
+            },
+            new int[][] {
+                new int[]{3,1 },
+                new int[]{3,3},
+                new int[]{5,2 }
+            });//[3,-1,3]
         }
     }
 }
