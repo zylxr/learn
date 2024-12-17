@@ -41,6 +41,9 @@ namespace Algorithm.DailyExcise
                 new int[]{3,3},
                 new int[]{5,2 }
             });//[3,-1,3]
+
+            var minValidStringClass = new MinValidStringsClass();
+            var minValidStringResult = minValidStringClass.MinValidStrings(new string[] { "abc","aaaaa","bcdef" }, "aabcdabc");//3
         }
     }
 }
