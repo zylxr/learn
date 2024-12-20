@@ -47,6 +47,9 @@ namespace Algorithm.DailyExcise
 
             var minValidStringClass2 = new MinValidStringsClass2();
             var minValidStringResult2 = minValidStringClass2.MinValidStrings(new string[] { "abc", "aaaaa", "bcdef" }, "aabcdabc");//3
+        
+            var minAnagramLength = new MinAnagramLengthClass();
+            var minAnagramLengthResult = minAnagramLength.MinAnagramLength("abba");//2
         }
     }
 }
