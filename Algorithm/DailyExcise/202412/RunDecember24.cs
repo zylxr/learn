@@ -50,6 +50,13 @@ namespace Algorithm.DailyExcise
         
             var minAnagramLength = new MinAnagramLengthClass();
             var minAnagramLengthResult = minAnagramLength.MinAnagramLength("abba");//2
+
+            var sortTheStudentClass = new SortTheStudentsClass();
+            var sortTheStudentResult = sortTheStudentClass.SortTheStudents(new int[][] { 
+                new int[]{ 10, 6, 9, 1 },
+                new int[]{ 7,5,11,2 },
+                new int[]{ 4,8,3,15 }
+            },2); // [[7,5,11,2],[10,6,9,1],[4,8,3,15]]
         }
     }
 }
