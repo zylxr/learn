@@ -57,6 +57,15 @@ namespace Algorithm.DailyExcise
                 new int[]{ 7,5,11,2 },
                 new int[]{ 4,8,3,15 }
             },2); // [[7,5,11,2],[10,6,9,1],[4,8,3,15]]
+
+            var examRoomClass = new ExamRoomClass(10);
+            examRoomClass.Seat();//0
+            examRoomClass.Seat();//9
+            examRoomClass.Seat();//4
+            examRoomClass.Seat();//2
+            examRoomClass.Leave(4);
+            examRoomClass.Seat();//5
+
         }
     }
 }
