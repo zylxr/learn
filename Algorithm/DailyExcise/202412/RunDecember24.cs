@@ -73,6 +73,11 @@ namespace Algorithm.DailyExcise
             var minimumCostResult = minimumCostClass.MinimumCost(
                 3,2,new int[] { 1,3},new int[] { 5 }
                 );//13
+
+            var occurrencesOfElementClass = new OccurrencesOfElementClass();
+            var occurrencesOfElementResult = occurrencesOfElementClass.OccurrencesOfElement(
+                new int[] { 1,3,1,7},
+                new int[] {1,3,2,4 },1);//[0,-1,2,-1]
         }
     }
 }
