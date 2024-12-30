@@ -78,6 +78,55 @@ namespace Algorithm.DailyExcise
             var occurrencesOfElementResult = occurrencesOfElementClass.OccurrencesOfElement(
                 new int[] { 1,3,1,7},
                 new int[] {1,3,2,4 },1);//[0,-1,2,-1]
+
+            var isSubPathClass = new IsSubPathClass();
+            var isSubPathResult = isSubPathClass.IsSubPath(
+                new IsSubPathClass.ListNode(4,
+                    new IsSubPathClass.ListNode(2,
+                        new IsSubPathClass.ListNode(8)
+                    )
+                ),
+                new IsSubPathClass.TreeNode
+                {
+                    val = 1,
+                    left = new IsSubPathClass.TreeNode
+                    {
+                        val = 4,
+                        right = new IsSubPathClass.TreeNode
+                        {
+                            val = 2,
+                            left = new IsSubPathClass.TreeNode
+                            {
+                                val = 1
+                            }
+                        }
+                    },
+                    right = new IsSubPathClass.TreeNode
+                    {
+                        val = 4,
+                        left = new IsSubPathClass.TreeNode
+                        {
+                            val = 2,
+                            left = new IsSubPathClass.TreeNode
+                            {
+                                val = 6
+                            },
+                            right = new IsSubPathClass.TreeNode
+                            {
+                                val = 8,
+                                left = new IsSubPathClass.TreeNode
+                                {
+                                    val = 1
+                                },
+                                right = new IsSubPathClass.TreeNode
+                                {
+                                    val = 3
+                                }
+                            }
+                        }
+                    }
+                }
+                 );// true
         }
     }
 }
