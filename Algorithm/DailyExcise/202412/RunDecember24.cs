@@ -127,6 +127,11 @@ namespace Algorithm.DailyExcise
                     }
                 }
                  );// true
+
+            var minimumCostClass2 = new MinimumCostClass2();
+            var minimumCostResult2 = minimumCostClass2.MinimumCost(
+                3, 2, new int[] { 1, 3 }, new int[] { 5 }
+                );//13
         }
     }
 }
