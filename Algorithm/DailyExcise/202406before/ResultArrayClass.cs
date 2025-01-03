@@ -121,7 +121,7 @@ namespace Algorithm.DailyExcise
                 while (i < _tree.Length)
                 {
                     _tree[i]++;
-                    i += i & -i;// 相当于去掉最低位的1,返回非负整数x 在二进制表示下，第一个1和后面的0表示的数值（十进制的值）。
+                    i += i & -i;// 相当于取最低位的1,返回非负整数x 在二进制表示下，第一个1和后面的0表示的数值（十进制的值）。
                 }
             }
 
@@ -131,7 +131,7 @@ namespace Algorithm.DailyExcise
                 while(i>0)
                 {
                     sum += _tree[i];
-                    i -= i & -i;// 移除最低位的1
+                    i -= i & -i;
                 }
                 return sum;
             }
