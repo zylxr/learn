@@ -41,6 +41,7 @@ namespace Algorithm
             RunOctoberDailyExcercise.Run();
             RundailyNov24.Run();
             RunDecember24.Run();
+            RunJan25.Run();
             Console.WriteLine("Hello, World!");
         }
     }
