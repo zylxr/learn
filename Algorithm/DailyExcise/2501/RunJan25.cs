@@ -18,6 +18,14 @@ namespace Algorithm.DailyExcise
             Console.WriteLine(myCalendarTwo.Book(5, 10)); // 返回 True，能够预定该日程，因为它不使用已经双重预订的时间 10。
             Console.WriteLine(myCalendarTwo.Book(25, 55)); // 返回 True，能够预定该日程，因为时间段 [25, 40) 将被第三个日程重复预定，时间段 [40, 50) 将被单独预定，而时间段 [50, 55) 将被第二个日程重复预定。
 
+            var myCalendarThree = new MyCalendarThreeClass3();
+            Console.WriteLine(myCalendarThree.Book(10, 20)); // 返回 1 ，第一个日程安排可以预订并且不存在相交，所以最大 k 次预订是 1 次预订。
+            Console.WriteLine(myCalendarThree.Book(50, 60)); // 返回 1 ，第二个日程安排可以预订并且不存在相交，所以最大 k 次预订是 1 次预订。
+            Console.WriteLine(myCalendarThree.Book(10, 40)); // 返回 2 ，第三个日程安排 [10, 40) 与第一个日程安排相交，所以最大 k 次预订是 2 次预订。
+            Console.WriteLine(myCalendarThree.Book(5, 15)); // 返回 3 ，剩下的日程安排的最大 k 次
+            Console.WriteLine(myCalendarThree.Book(5, 10)); // 返回 3
+            Console.WriteLine(myCalendarThree.Book(25, 55)); // 返回 3
+
 
         }
     }
