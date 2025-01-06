@@ -26,7 +26,8 @@ namespace Algorithm.DailyExcise
             Console.WriteLine(myCalendarThree.Book(5, 10)); // 返回 3
             Console.WriteLine(myCalendarThree.Book(25, 55)); // 返回 3
 
-
+            var maxConsecutiveClass = new MaxConsecutiveClass();
+            var maxConsecutiveResult = maxConsecutiveClass.MaxConsecutive(2, 9, new int[] { 4, 6 });//3
         }
     }
 }
