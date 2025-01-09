@@ -28,6 +28,10 @@ namespace Algorithm.DailyExcise
 
             var maxConsecutiveClass = new MaxConsecutiveClass();
             var maxConsecutiveResult = maxConsecutiveClass.MaxConsecutive(2, 9, new int[] { 4, 6 });//3
+
+            var validSubstringCountClass = new ValidSubstringCountClass();
+            var validSubstringCountResult = validSubstringCountClass.ValidSubstringCount("bcca", "abc");//1
+            validSubstringCountResult = validSubstringCountClass.ValidSubstringCount2("abcabc", "abc");//10
         }
     }
 }
