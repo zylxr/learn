@@ -1,4 +1,4 @@
-XGBoost底层实现了GBDT算法，并对GBDT算法做了一系列优化：
+XGBoost(extreme gradient boosting)底层实现了GBDT算法，并对GBDT算法做了一系列优化：
 
 对目标函数进行了泰勒展示的二阶展开，可以更加高效拟合误差。
 提出了一种估计分裂点的算法加速CART树的构建过程，同时可以处理稀疏数据。
