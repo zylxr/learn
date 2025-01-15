@@ -32,6 +32,9 @@ namespace Algorithm.DailyExcise
             var validSubstringCountClass = new ValidSubstringCountClass();
             var validSubstringCountResult = validSubstringCountClass.ValidSubstringCount("bcca", "abc");//1
             validSubstringCountResult = validSubstringCountClass.ValidSubstringCount2("abcabc", "abc");//10
+
+            var minOperationsClass = new MinOperationsClass2();
+            var minOperationsResult = minOperationsClass.MinOperations(new int[] { 2, 11, 10, 1, 3 }, 10);//2
         }
     }
 }
