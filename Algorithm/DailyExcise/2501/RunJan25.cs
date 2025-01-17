@@ -35,6 +35,9 @@ namespace Algorithm.DailyExcise
 
             var minOperationsClass = new MinOperationsClass2();
             var minOperationsResult = minOperationsClass.MinOperations(new int[] { 2, 11, 10, 1, 3 }, 10);//2
-        }
+
+            var minSubArrayLenClass = new MinimumSubarrayLengthClass();
+            var minSubArrayLenResult = minSubArrayLenClass.MinimumSubarrayLength(new int[] { 2,1,8 }, 10);//3
+           }
     }
 }
