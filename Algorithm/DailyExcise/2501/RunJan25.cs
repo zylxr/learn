@@ -38,6 +38,9 @@ namespace Algorithm.DailyExcise
 
             var minSubArrayLenClass = new MinimumSubarrayLengthClass();
             var minSubArrayLenResult = minSubArrayLenClass.MinimumSubarrayLength(new int[] { 2,1,8 }, 10);//3
-           }
+
+            var maxValueClass = new MaxValueClass();
+            var maxValueResult = maxValueClass.MaxValue(new int[] { 4,2,5,6,7 },2);//2
+        }
     }
 }
