@@ -72,8 +72,25 @@ namespace Algorithm.DailyExcise
             //先按照逆序枚举操作次数（重量）i，再枚举 t，这样可以保证在计算 f[i] 时，
             //f[i−t] 都没有用到第 j 个栈对应的任何物品，这样就保证了正确性。
 
+            //var f = new int[k + 1];
+            //Array.Fill(f, -1);
+            //f[0] = 0;
+            //foreach (var pile in piles)
+            //{
+            //    for (var i = k; i > 0; i--)
+            //    {
+            //        var val = 0;
+            //        for (var t = 1; t <= pile.Count; t++)
+            //        {
+            //            val += pile[t - 1];
+            //            if (i >= t && f[i - t] != -1)
+            //                f[i] = Math.Max(f[i], f[i - t] + val);
+            //        }
+            //    }
+            //}
+            //return f[k];
+
             var f = new int[k + 1];
-            Array.Fill(f, -1);
             f[0] = 0;
             foreach (var pile in piles)
             {
@@ -82,9 +99,9 @@ namespace Algorithm.DailyExcise
                     var val = 0;
                     for (var t = 1; t <= pile.Count; t++)
                     {
+                        if (i < t) break;
                         val += pile[t - 1];
-                        if (i >= t && f[i - t] != -1)
-                            f[i] = Math.Max(f[i], f[i - t] + val);
+                        f[i] = Math.Max(f[i], f[i - t] + val);
                     }
                 }
             }
