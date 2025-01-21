@@ -41,6 +41,18 @@ namespace Algorithm.DailyExcise
 
             var maxValueClass = new MaxValueClass();
             var maxValueResult = maxValueClass.MaxValue(new int[] { 4,2,5,6,7 },2);//2
+
+            var piles = new List<IList<int>> {
+                    new List<int>{ 1,100,3},
+                    new List<int>{ 7,8,9 }
+                };
+            var maxValueOfCoinsClass = new MaxValueOfCoinsClass();
+            var maxValueOfCoinsResult = maxValueOfCoinsClass.MaxValueOfCoins(piles, 2);//101
+
+            piles = new List<IList<int>> { 
+                new List<int>{ 48, 14, 23, 38, 33, 79, 3, 52, 73, 58, 49, 23, 74, 44, 69, 76, 83, 41, 46, 32, 28 }
+            };
+            maxValueOfCoinsResult = maxValueOfCoinsClass.MaxValueOfCoins(piles, 10);//421
         }
     }
 }
