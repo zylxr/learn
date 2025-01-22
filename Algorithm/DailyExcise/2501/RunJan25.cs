@@ -53,6 +53,9 @@ namespace Algorithm.DailyExcise
                 new List<int>{ 48, 14, 23, 38, 33, 79, 3, 52, 73, 58, 49, 23, 74, 44, 69, 76, 83, 41, 46, 32, 28 }
             };
             maxValueOfCoinsResult = maxValueOfCoinsClass.MaxValueOfCoins(piles, 10);//421
+
+            var maxCoinsClass = new MaxCoinsClass();
+            var maxCoinsResult = maxCoinsClass.MaxCoins(new int[] { 2, 4, 1, 2, 7, 8 });//9
         }
     }
 }
