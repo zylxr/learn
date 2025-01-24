@@ -61,6 +61,9 @@ namespace Algorithm.DailyExcise
             var maximuPointsResult = maximuPointsClass.MaximumPoints(
                 new int[][] { new int[] {0,1 },new int[] { 1,2},new int[] { 2,3} }, 
                 new int[] { 10,10,3,3 },5);//11
+
+            var minimuCoinsClass = new MinimumCoinsClass();
+            var minimumCoinsResult = minimuCoinsClass.MinimumCoins(new int[] { 3,1,2});//4
         }
     }
 }
