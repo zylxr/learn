@@ -64,6 +64,18 @@ namespace Algorithm.DailyExcise
 
             var minimuCoinsClass = new MinimumCoinsClass();
             var minimumCoinsResult = minimuCoinsClass.MinimumCoins(new int[] { 3,1,2});//4
+
+            var minimuMoneyClass = new MinimumMoneyClass();
+            var minimumMoneyResult = minimuMoneyClass.MinimumMoney(new int[][] { new int[] {2,1 },new int[] {5,0 },new int[] {4,2 } });//10
+            minimumMoneyResult = minimuMoneyClass.MinimumMoney(
+                    new int[][] { 
+                        new int[] { 7,2 }, 
+                        new int[] { 0,10 }, 
+                        new int[] { 5,0 },
+                        new int[] { 4,1 },
+                        new int[] { 5,8 },
+                        new int[] { 5,9 }
+                    });//18
         }
     }
 }
