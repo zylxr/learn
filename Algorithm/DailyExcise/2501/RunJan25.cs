@@ -76,6 +76,15 @@ namespace Algorithm.DailyExcise
                         new int[] { 5,8 },
                         new int[] { 5,9 }
                     });//18
+
+            var jumpClass = new JumpClass();
+            var jumpResult = jumpClass.Jump(new int[] { 2, 3, 1, 1, 4 });//2
+            jumpResult = jumpClass.Jump(new int[] { 1 });//0
+
+            jumpResult = jumpClass.Jump2(new int[] { 2, 3, 1, 1, 4 });//2
+
+            jumpResult = jumpClass.Jump3(new int[] { 2, 3, 1, 1, 4 });//2
+
         }
     }
 }
