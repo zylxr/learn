@@ -85,6 +85,9 @@ namespace Algorithm.DailyExcise
 
             jumpResult = jumpClass.Jump3(new int[] { 2, 3, 1, 1, 4 });//2
 
+            var intersectClass = new IntersectClass();
+            var insertResult = intersectClass.Intersect(new int[] { 4, 9, 5 }, new int[] { 9, 4, 9, 8, 4 });//[4,9]
+
         }
     }
 }
