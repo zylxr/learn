@@ -12,6 +12,12 @@ namespace Algorithm.DailyExcise
         {
             var validPalindromeClass = new ValidPalindromeClass();
             var validPalindrome = validPalindromeClass.ValidPalindrome("abca");//true
+
+            var subsetsWithDupClass = new SubsetsWithDupClass();
+            var subsetsWithDup = subsetsWithDupClass.SubsetsWithDup(new int[] { 1, 2, 2 });//[[],[1],[1,2],[1,2,2],[2],[2,2]]
+            subsetsWithDup = subsetsWithDupClass.SubsetsWithDup(new int[] { 1,1 });//[[],[1],[1,1]]
+
+            subsetsWithDup = subsetsWithDupClass.SubsetsWithDup2(new int[] { 1, 1 });//[[],[1],[1,1]]
         }
     }
 }
