@@ -18,6 +18,9 @@ namespace Algorithm.DailyExcise
             subsetsWithDup = subsetsWithDupClass.SubsetsWithDup(new int[] { 1,1 });//[[],[1],[1,1]]
 
             subsetsWithDup = subsetsWithDupClass.SubsetsWithDup2(new int[] { 1, 1 });//[[],[1],[1,1]]
+
+            var permuteUniqueClass = new PermuteUniqueClass();
+            var permuteUnique = permuteUniqueClass.PermuteUnique(new int[] { 1, 1, 2 });//[[1,1,2],[1,2,1],[2,1,1]]
         }
     }
 }
