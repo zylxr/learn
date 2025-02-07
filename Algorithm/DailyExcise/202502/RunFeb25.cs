@@ -21,6 +21,11 @@ namespace Algorithm.DailyExcise
 
             var permuteUniqueClass = new PermuteUniqueClass();
             var permuteUnique = permuteUniqueClass.PermuteUnique(new int[] { 1, 1, 2 });//[[1,1,2],[1,2,1],[2,1,1]]
+
+            var generateMatrixClass = new GenerateMatrixClass();
+            var generateMatrix = generateMatrixClass.GenerateMatrix(3);//[[1,2,3],[8,9,4],[7,6,5]]
+
+            generateMatrix = generateMatrixClass.GenerateMatrix2(3);//[[1,2,3],[8,9,4],[7,6,5]]
         }
     }
 }
