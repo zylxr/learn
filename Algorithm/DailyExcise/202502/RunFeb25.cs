@@ -26,6 +26,12 @@ namespace Algorithm.DailyExcise
             var generateMatrix = generateMatrixClass.GenerateMatrix(3);//[[1,2,3],[8,9,4],[7,6,5]]
 
             generateMatrix = generateMatrixClass.GenerateMatrix2(3);//[[1,2,3],[8,9,4],[7,6,5]]
+
+            var uniquePathsWithObstaclesClass = new UniquePathsWithObstaclesClass();
+            var uniquePathsWithObstacles = uniquePathsWithObstaclesClass.UniquePathsWithObstacles(new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 1, 0 }, new int[] { 0, 0, 0 } });//2
+            uniquePathsWithObstacles = uniquePathsWithObstaclesClass.UniquePathsWithObstacles(new int[][] { new int[] { 0, 0 } });//1
+            
+            uniquePathsWithObstacles = uniquePathsWithObstaclesClass.UniquePathsWithObstacles2(new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 1, 0 }, new int[] { 0, 0, 0 } });//2
         }
     }
 }
