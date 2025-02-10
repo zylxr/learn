@@ -32,6 +32,11 @@ namespace Algorithm.DailyExcise
             uniquePathsWithObstacles = uniquePathsWithObstaclesClass.UniquePathsWithObstacles(new int[][] { new int[] { 0, 0 } });//1
             
             uniquePathsWithObstacles = uniquePathsWithObstaclesClass.UniquePathsWithObstacles2(new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 1, 0 }, new int[] { 0, 0, 0 } });//2
+        
+            var catMouseGameClass = new CatMouseGameClass();
+            var catMouseGame = catMouseGameClass.CatMouseGame(new int[][] { new int[] { 2, 5 }, new int[] { 3 }, new int[] { 0, 4, 5 }, new int[] { 1, 4, 5 }, new int[] { 2, 3 }, new int[] { 0, 2, 3 } });//0
+
+            catMouseGame = catMouseGameClass.CatMouseGame2(new int[][] { new int[] { 2, 5 }, new int[] { 3 }, new int[] { 0, 4, 5 }, new int[] { 1, 4, 5 }, new int[] { 2, 3 }, new int[] { 0, 2, 3 } });//0
         }
     }
 }
