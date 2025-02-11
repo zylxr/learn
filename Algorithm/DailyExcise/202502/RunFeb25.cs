@@ -37,6 +37,9 @@ namespace Algorithm.DailyExcise
             var catMouseGame = catMouseGameClass.CatMouseGame(new int[][] { new int[] { 2, 5 }, new int[] { 3 }, new int[] { 0, 4, 5 }, new int[] { 1, 4, 5 }, new int[] { 2, 3 }, new int[] { 0, 2, 3 } });//0
 
             catMouseGame = catMouseGameClass.CatMouseGame2(new int[][] { new int[] { 2, 5 }, new int[] { 3 }, new int[] { 0, 4, 5 }, new int[] { 1, 4, 5 }, new int[] { 2, 3 }, new int[] { 0, 2, 3 } });//0
+        
+            var canMouseWinClass = new CanMouseWinClass();
+            var canMouseWinClassResult = canMouseWinClass.CanMouseWin(new string[] { "####F", "#C...", "M...." },1,2);//true
         }
     }
 }
