@@ -40,6 +40,11 @@ namespace Algorithm.DailyExcise
         
             var canMouseWinClass = new CanMouseWinClass();
             var canMouseWinClassResult = canMouseWinClass.CanMouseWin(new string[] { "####F", "#C...", "M...." },1,2);//true
+        
+            var minimumSizeClass = new MinimumSizeClass();
+            var minimumSizeResult = minimumSizeClass.MinimumSize(new int[] {9 },2);//3
+            minimumSizeResult = minimumSizeClass.MinimumSize(new int[] {7,17 }, 2);//7
+            minimumSizeResult = minimumSizeClass.MinimumSize(new int[] {9 }, 200);//1
         }
     }
 }
