@@ -45,6 +45,9 @@ namespace Algorithm.DailyExcise
             var minimumSizeResult = minimumSizeClass.MinimumSize(new int[] {9 },2);//3
             minimumSizeResult = minimumSizeClass.MinimumSize(new int[] {7,17 }, 2);//7
             minimumSizeResult = minimumSizeClass.MinimumSize(new int[] {9 }, 200);//1
+
+            var maxDistanceClass = new MaxDistanceClass();
+            var maxDistanceResult = maxDistanceClass.MaxDistance(new int[] {1,2,3,4,7 }, 3);//3
         }
     }
 }
