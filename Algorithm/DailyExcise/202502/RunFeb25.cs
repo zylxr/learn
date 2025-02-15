@@ -48,6 +48,23 @@ namespace Algorithm.DailyExcise
 
             var maxDistanceClass = new MaxDistanceClass();
             var maxDistanceResult = maxDistanceClass.MaxDistance(new int[] {1,2,3,4,7 }, 3);//3
+
+            var findBallClass = new FindBallClass();
+            var findBallResult = findBallClass.FindBall(new int[][] { new int[] { -1 } });//[-1]
+
+            findBallResult = findBallClass.FindBall(new int[][] {
+                new int[] {1,1,1,1,1,1            },
+                new int[] { -1,-1,-1,-1,-1,-1 },
+                new int[] { 1,1,1,1,1,1 },
+                new int[] { -1, -1, -1, -1, -1, -1 }
+            });//[0,1,2,3,4,-1]
+
+            findBallResult = findBallClass.FindBall2(new int[][] {
+                new int[] {1,1,1,1,1,1            },
+                new int[] { -1,-1,-1,-1,-1,-1 },
+                new int[] { 1,1,1,1,1,1 },
+                new int[] { -1, -1, -1, -1, -1, -1 }
+            });//[0,1,2,3,4,-1]
         }
     }
 }
