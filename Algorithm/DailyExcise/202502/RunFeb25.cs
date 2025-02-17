@@ -65,6 +65,10 @@ namespace Algorithm.DailyExcise
                 new int[] { 1,1,1,1,1,1 },
                 new int[] { -1, -1, -1, -1, -1, -1 }
             });//[0,1,2,3,4,-1]
+
+            var findSpecialIntegerClass = new FindSpecialIntegerClass();
+            var findSpecialIntegerResult = findSpecialIntegerClass.FindSpecialInteger(new int[] { 1, 2, 2, 6, 6, 6, 6, 7, 10 });//6
+            findSpecialIntegerResult = findSpecialIntegerClass.FindSpecialInteger(new int[] { 1,2,3,3});//3
         }
     }
 }
