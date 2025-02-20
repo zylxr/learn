@@ -73,6 +73,16 @@ namespace Algorithm.DailyExcise
             var rangeFreqQueryClass = new RangeFreqQueryClass(new int[] { 12, 33, 4, 56, 22, 2, 34, 33, 22, 12, 34, 56 });
             var rangeFreqQueryResult = rangeFreqQueryClass.Query(1,2,4); // 1
             rangeFreqQueryResult = rangeFreqQueryClass.Query(0,11,33);//2
+
+            var maxDistanceClass2 =  new MaxDistanceClass2();
+            var maxDistanceClassResult = maxDistanceClass2.MaxDistance(new List<IList<int>> { 
+                new List<int>{ 1, 2, 3 },
+                new List<int>{ 4,5 },
+                new List<int>{ 1, 2, 3 }
+            });//4
+
+            var evenOddBitClass = new EvenOddBitClass();
+            var evenOddBitResult = evenOddBitClass.EvenOddBit(50);//[1,2]
         }
     }
 }
