@@ -87,6 +87,14 @@ namespace Algorithm.DailyExcise
             var minimumWhiteTileClass = new MinimumWhiteTilesClass();
             var minimumWhiteTileResult = minimumWhiteTileClass.MinimumWhiteTiles("10110101",2,2);//2
             minimumWhiteTileResult = minimumWhiteTileClass.MinimumWhiteTiles2("10110101", 2, 2);//2
+
+            var similarPairClass = new SimilarPairsClass();
+            var similarPairResult = similarPairClass.SimilarPairs(
+                new string[] { "aba", "aabb", "abcd", "bac", "aabc" }
+                );//2
+            similarPairResult = similarPairClass.SimilarPairs2(
+                new string[] { "aba", "aabb", "abcd", "bac", "aabc" }
+                );//2
         }
     }
 }
