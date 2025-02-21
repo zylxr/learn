@@ -83,6 +83,10 @@ namespace Algorithm.DailyExcise
 
             var evenOddBitClass = new EvenOddBitClass();
             var evenOddBitResult = evenOddBitClass.EvenOddBit(50);//[1,2]
+
+            var minimumWhiteTileClass = new MinimumWhiteTilesClass();
+            var minimumWhiteTileResult = minimumWhiteTileClass.MinimumWhiteTiles("10110101",2,2);//2
+            minimumWhiteTileResult = minimumWhiteTileClass.MinimumWhiteTiles2("10110101", 2, 2);//2
         }
     }
 }
