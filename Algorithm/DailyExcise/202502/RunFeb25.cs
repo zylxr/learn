@@ -95,6 +95,14 @@ namespace Algorithm.DailyExcise
             similarPairResult = similarPairClass.SimilarPairs2(
                 new string[] { "aba", "aabb", "abcd", "bac", "aabc" }
                 );//2
+
+            var orderedStreamClass = new OrderedStreamClass(5);//["OrderedStream","insert","insert","insert","insert","insert"]
+            //[[5],[3,"ccccc"],[1,"aaaaa"],[2,"bbbbb"],[5,"eeeee"],[4,"ddddd"]]
+            var orderedStreamResult = orderedStreamClass.Insert(3, "ccccc");//[]
+            orderedStreamResult = orderedStreamClass.Insert(1, "aaaaa");//["aaaaa"]
+            orderedStreamResult = orderedStreamClass.Insert(2, "bbbbb");//["bbbbb","ccccc"]
+            orderedStreamResult = orderedStreamClass.Insert(5, "eeeee");//[]
+            orderedStreamResult = orderedStreamClass.Insert(4, "ddddd");//["ddddd","eeeee"]
         }
     }
 }
