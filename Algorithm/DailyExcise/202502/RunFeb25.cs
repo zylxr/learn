@@ -103,6 +103,15 @@ namespace Algorithm.DailyExcise
             orderedStreamResult = orderedStreamClass.Insert(2, "bbbbb");//["bbbbb","ccccc"]
             orderedStreamResult = orderedStreamClass.Insert(5, "eeeee");//[]
             orderedStreamResult = orderedStreamClass.Insert(4, "ddddd");//["ddddd","eeeee"]
+
+            var allocatorClass = new AllocatorClass(10);
+            var allocatorResult = allocatorClass.Allocate(1,1);//0
+            allocatorResult = allocatorClass.Allocate(1,2);//1
+            allocatorResult = allocatorClass.Allocate(1, 3);//2
+            allocatorResult = allocatorClass.FreeMemory(2);//1
+            allocatorResult = allocatorClass.Allocate(3, 4);//3
+            allocatorResult = allocatorClass.Allocate(1, 1);//1
+            allocatorResult = allocatorClass.Allocate(1, 1);//6
         }
     }
 }
