@@ -125,6 +125,18 @@ namespace Algorithm.DailyExcise
             browserHistoryResult = browserHistory.Forward(2);                // 你原本在浏览 "linkedin.com" ，你无法前进任何步数。
             browserHistoryResult = browserHistory.Back(2);                   // 你原本在浏览 "linkedin.com" ，后退两步依次先到 "facebook.com" ，然后到 "google.com" ，并返回 "google.com"
             browserHistoryResult = browserHistory.Back(7);                   // 你原本在浏览 "google.com"， 你只能后退一步到 "leetcode.com" ，并返回 "leetcode.com"
+
+            var foodRatingClass = new FoodRatingsClass(
+                new string[] { "kimchi", "miso", "sushi", "moussaka", "ramen", "bulgogi" },
+                new string[] { "korean", "japanese", "japanese", "greek", "japanese", "korean" },
+                new int[] { 9, 12, 8, 15, 14, 7 }
+                );
+            var foodRatingResult = foodRatingClass.HighestRated("korean");//kimchi
+            foodRatingResult = foodRatingClass.HighestRated("japanese");//ramen
+            foodRatingClass.ChangeRating("sushi", 16);
+            foodRatingResult = foodRatingClass.HighestRated("japanese");//sushi
+            foodRatingClass.ChangeRating("ramen", 16);
+            foodRatingResult = foodRatingClass.HighestRated("japanese");//ramen
         }
     }
 }
