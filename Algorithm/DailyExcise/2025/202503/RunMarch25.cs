@@ -12,6 +12,10 @@ namespace Algorithm.DailyExcise
         {
             var partitionClass = new PartitionClass();
             var partitionResult = partitionClass.Partition("aab");//[["a","a","b"],["aa","b"]]
+
+            var palindromePartitionClass = new PalindromePartitionClass();
+            var palindromePartitionResult = palindromePartitionClass.PalindromePartition("abc",2);//1
+            palindromePartitionResult = palindromePartitionClass.PalindromePartition2("abc", 2);//1
         }
     }
 }
