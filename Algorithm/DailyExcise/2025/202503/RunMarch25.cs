@@ -16,6 +16,11 @@ namespace Algorithm.DailyExcise
             var palindromePartitionClass = new PalindromePartitionClass();
             var palindromePartitionResult = palindromePartitionClass.PalindromePartition("abc",2);//1
             palindromePartitionResult = palindromePartitionClass.PalindromePartition2("abc", 2);//1
+
+            var checkPartitionClass = new CheckPartitioningClass();
+            var checkPartitionResult = checkPartitionClass.CheckPartitioning("abcbdd");//true
+            checkPartitionResult = checkPartitionClass.CheckPartitioning("bcbddxy");//false
+            checkPartitionResult = checkPartitionClass.CheckPartitioning("xxdtzghekllxsiqydgnsktyjpshdbhbkiutwdxjgikdpowshccjfcgdeldgaloovpwpvzopqvpvgvpfpogzwzgrtuuezvqcqoymmcoabiaydtiyvfbgqpzkucdqnwkgfwg");//false
         }
     }
 }
