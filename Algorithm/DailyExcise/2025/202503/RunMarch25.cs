@@ -21,6 +21,9 @@ namespace Algorithm.DailyExcise
             var checkPartitionResult = checkPartitionClass.CheckPartitioning("abcbdd");//true
             checkPartitionResult = checkPartitionClass.CheckPartitioning("bcbddxy");//false
             checkPartitionResult = checkPartitionClass.CheckPartitioning("xxdtzghekllxsiqydgnsktyjpshdbhbkiutwdxjgikdpowshccjfcgdeldgaloovpwpvzopqvpvgvpfpogzwzgrtuuezvqcqoymmcoabiaydtiyvfbgqpzkucdqnwkgfwg");//false
+
+            var beautifulSubArraysClass = new BeautifulSubarraysClass();
+            var beautifulSubArrayResult = beautifulSubArraysClass.BeautifulSubarrays(new int[] { 4, 3, 1, 2, 4 });//2
         }
     }
 }
