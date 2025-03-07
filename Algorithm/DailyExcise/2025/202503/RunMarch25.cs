@@ -24,6 +24,10 @@ namespace Algorithm.DailyExcise
 
             var beautifulSubArraysClass = new BeautifulSubarraysClass();
             var beautifulSubArrayResult = beautifulSubArraysClass.BeautifulSubarrays(new int[] { 4, 3, 1, 2, 4 });//2
+
+            var beautifulSubsetsClass = new BeautifulSubsetsClass();
+            var beautifulSubsetsResult = beautifulSubsetsClass.BeautifulSubsets(new int[] { 2,4,6},2);//4
+            beautifulSubsetsResult = beautifulSubsetsClass.BeautifulSubsets2(new int[] { 2, 4, 6 }, 2);//4
         }
     }
 }
