@@ -28,6 +28,9 @@ namespace Algorithm.DailyExcise
             var beautifulSubsetsClass = new BeautifulSubsetsClass();
             var beautifulSubsetsResult = beautifulSubsetsClass.BeautifulSubsets(new int[] { 2,4,6},2);//4
             beautifulSubsetsResult = beautifulSubsetsClass.BeautifulSubsets2(new int[] { 2, 4, 6 }, 2);//4
+
+            var maximumBeautyClass = new MaximumBeautyClass2();
+            var maximumBeautyResult = maximumBeautyClass.MaximumBeauty(new int[] { 1,3,1,1},7,6,12,1);//14
         }
     }
 }
