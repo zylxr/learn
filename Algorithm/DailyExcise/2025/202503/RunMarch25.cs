@@ -31,6 +31,9 @@ namespace Algorithm.DailyExcise
 
             var maximumBeautyClass = new MaximumBeautyClass2();
             var maximumBeautyResult = maximumBeautyClass.MaximumBeauty(new int[] { 1,3,1,1},7,6,12,1);//14
+
+            var countOfSubstringsClass = new CountOfSubstringsClass();
+            var countOfSubstringsClassResult = countOfSubstringsClass.CountOfSubstrings("aeiou",0);//1
         }
     }
 }
