@@ -34,6 +34,9 @@ namespace Algorithm.DailyExcise
 
             var countOfSubstringsClass = new CountOfSubstringsClass();
             var countOfSubstringsClassResult = countOfSubstringsClass.CountOfSubstrings("aeiou",0);//1
+
+            var minSwapClass = new MinSwapsClass();
+            var minSwapResult = minSwapClass.MinSwaps("][][");//1
         }
     }
 }
