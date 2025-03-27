@@ -37,6 +37,10 @@ namespace Algorithm.DailyExcise
 
             var minSwapClass = new MinSwapsClass();
             var minSwapResult = minSwapClass.MinSwaps("][][");//1
+
+            var minimumCostClass = new MinimumCostClass3();
+            var minimumCostResult = minimumCostClass.MinimumCost("0011");//2
+            minimumCostResult = minimumCostClass.MinimumCost2("0011");//2
         }
     }
 }
