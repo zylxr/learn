@@ -44,27 +44,30 @@ namespace Algorithm.DailyExcise
 
         public long MinimumCost(string s)
         {
+            var res = long.MaxValue;
             var n = s.Length;
             var suf = new long[n + 1, 2];
-            for(var i=n-1;i>=0;i--)
+            for (var i = n - 1; i >= 0; i--)
             {
                 if (s[i] == '1')
                 {
                     suf[i, 1] = suf[i + 1, 1];
-                    suf[i, 0] = suf[i + 1, 1] + n - i;
-                } else
+                    suf[i, 0] = suf[i + 1, 0] + n - i;
+                }
+                else
                 {
-                    suf[i, 1] = suf[i + 1, 0] + n - i;
+                    suf[i, 1] = suf[i + 1, 1] + n - i;
                     suf[i, 0] = suf[i + 1, 0];
                 }
             }
             var pre = new long[2];
-            var res = long.MaxValue;
-            for(var i=0;i<n;i++)
+            for (var i = 0; i < n; i++)
             {
-                if (s[i] == '1') pre[0] = pre[1] + i + 1;
-                else pre[1] = pre[0] + i + 1;
-                res = Math.Min(res, Math.Min(pre[0] + suf[i+1,0], pre[1] + suf[i+1,1]));
+                if (s[i] == '1')
+                    pre[0] = pre[1] + i + 1;
+                else
+                    pre[1] = pre[0] + i + 1;
+                res = Math.Min(res, Math.Min(pre[0] + suf[i + 1, 0], pre[1] + suf[i + 1, 1]));
             }
             return res;
         }
