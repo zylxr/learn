@@ -41,6 +41,9 @@ namespace Algorithm.DailyExcise
             var minimumCostClass = new MinimumCostClass3();
             var minimumCostResult = minimumCostClass.MinimumCost("0011");//2
             minimumCostResult = minimumCostClass.MinimumCost2("0011");//2
+
+            var minimizeStringLengthClass = new MinimizedStringLengthClass();
+            var minimizedStringLengthResult = minimizeStringLengthClass.MinimizedStringLength("aaabc");//3
         }
     }
 }
