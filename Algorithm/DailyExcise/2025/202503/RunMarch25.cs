@@ -44,6 +44,9 @@ namespace Algorithm.DailyExcise
 
             var minimizeStringLengthClass = new MinimizedStringLengthClass();
             var minimizedStringLengthResult = minimizeStringLengthClass.MinimizedStringLength("aaabc");//3
+
+            var longestCycleClass = new LongestCycleClass();
+            var longestCycleResult = longestCycleClass.LongestCycle(new int[] { 3,3,4,2,3});//3
         }
     }
 }
