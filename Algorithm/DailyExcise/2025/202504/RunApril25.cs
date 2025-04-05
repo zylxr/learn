@@ -34,6 +34,15 @@ namespace Algorithm.DailyExcise
                new int[]{4,4},
                new int[]{5,5},
             });//7
+
+            var subSetXORSumClass = new SubsetXORSumClass();
+            var subSetXORSumResult = subSetXORSumClass.SubsetXORSum(new int[] { 5, 1, 6 });//28
+
+            subSetXORSumResult = subSetXORSumClass.SubsetXORSum2(new int[] { 5, 1, 6 });//28
+
+            subSetXORSumResult = subSetXORSumClass.SubsetXORSum2(new int[] { 1,3 });//6
+
+            subSetXORSumResult = subSetXORSumClass.SubsetXORSum3(new int[] { 1, 3 });//6
         }
     }
 }
