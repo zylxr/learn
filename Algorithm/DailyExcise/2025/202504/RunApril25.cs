@@ -43,6 +43,9 @@ namespace Algorithm.DailyExcise
             subSetXORSumResult = subSetXORSumClass.SubsetXORSum2(new int[] { 1,3 });//6
 
             subSetXORSumResult = subSetXORSumClass.SubsetXORSum3(new int[] { 1, 3 });//6
+
+            var canPartitionClass = new CanPartitionClass();
+            var canPartitionClassResult = canPartitionClass.CanPartition(new int[] {1,5,11,5 });//true
         }
     }
 }
