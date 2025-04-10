@@ -46,6 +46,11 @@ namespace Algorithm.DailyExcise
 
             var canPartitionClass = new CanPartitionClass();
             var canPartitionClassResult = canPartitionClass.CanPartition(new int[] {1,5,11,5 });//true
+
+            var numberOfPowerfulIntClass = new NumberOfPowerfulIntClass();
+            var numberOfPowerfulIntResult = numberOfPowerfulIntClass.NumberOfPowerfulInt(1,6000,4,"124");//5
+
+            numberOfPowerfulIntResult = numberOfPowerfulIntClass.NumberOfPowerfulInt(20, 1159, 5, "20");//8
         }
     }
 }
