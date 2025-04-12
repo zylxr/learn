@@ -51,6 +51,9 @@ namespace Algorithm.DailyExcise
             var numberOfPowerfulIntResult = numberOfPowerfulIntClass.NumberOfPowerfulInt(1,6000,4,"124");//5
 
             numberOfPowerfulIntResult = numberOfPowerfulIntClass.NumberOfPowerfulInt(20, 1159, 5, "20");//8
+
+            var countGoodIntegersClass = new CountGoodIntegersClass();
+            var countGoodIntegersResult = countGoodIntegersClass.CountGoodIntegers(3, 5);//27
         }
     }
 }
