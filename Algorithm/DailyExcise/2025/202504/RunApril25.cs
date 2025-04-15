@@ -54,6 +54,12 @@ namespace Algorithm.DailyExcise
 
             var countGoodIntegersClass = new CountGoodIntegersClass();
             var countGoodIntegersResult = countGoodIntegersClass.CountGoodIntegers(3, 5);//27
+
+            var goodTripletsClass = new GoodTripletsClass();
+            var goodTripletsResult = goodTripletsClass.GoodTriplets(new int[] { 4, 0, 1, 3, 2 },new int[] { 4, 1, 0, 2, 3 } );//4
+
+            goodTripletsResult = goodTripletsClass.GoodTriplets2(new int[] { 4, 0, 1, 3, 2 }, new int[] { 4, 1, 0, 2, 3 });//4
+
         }
     }
 }
