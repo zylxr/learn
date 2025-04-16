@@ -60,6 +60,9 @@ namespace Algorithm.DailyExcise
 
             goodTripletsResult = goodTripletsClass.GoodTriplets2(new int[] { 4, 0, 1, 3, 2 }, new int[] { 4, 1, 0, 2, 3 });//4
 
+            var countGoodClass = new CountGoodClass();
+            var countGoodResult = countGoodClass.CountGood(new int[] { 3, 1, 4, 3, 2, 2, 4 },2);//4
+
         }
     }
 }
