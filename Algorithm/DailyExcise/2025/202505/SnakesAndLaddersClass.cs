@@ -66,7 +66,7 @@ namespace Algorithm.DailyExcise
                     if (next > n * n) break;
                     var rc = Id2RC(next, n);
                     if (board[rc.Item1][rc.Item2]>0)next = board[rc.Item1][rc.Item2];
-                    if (next == n * n) return q.Item2;
+                    if (next == n * n) return q.Item2+1;
                     if (!visit[next])
                     {
                         visit[next] = true;
@@ -82,7 +82,7 @@ namespace Algorithm.DailyExcise
             var r = (id - 1) / n;
             var c = (id - 1) % n;
             if (r % 2 == 1) c = n - 1 - c;
-            return new Tuple<int, int>(r, c);
+            return new Tuple<int, int>(n-1-r, c);
         }
     }
 }
