@@ -48,6 +48,18 @@ namespace Algorithm.DailyExcise
                     new int[] { 2,0,0 },
                     2, 0
                 );//0
+
+            var snakesAndLadersClass = new SnakesAndLaddersClass();
+            var snakesAndLadersResult = snakesAndLadersClass.SnakesAndLadders(
+                new int[][] {
+                    new int[]{ -1, -1, -1, -1, -1, -1 },
+                    new int[]{ -1, -1, -1, -1, -1, -1 },
+                    new int[]{ -1, -1, -1, -1, -1, -1 },
+                    new int[]{ -1, 35, -1, -1, 13, -1 },
+                    new int[]{ -1, -1, -1, -1, -1, -1 },
+                    new int[]{ -1, 15, -1, -1, -1, -1 }
+                }
+                );//4
         }
     }
 }
