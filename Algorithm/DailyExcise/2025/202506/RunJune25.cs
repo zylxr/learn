@@ -26,6 +26,11 @@ namespace Algorithm.DailyExcise
                 new int[][] { new int[] {1,2 },new int[] {3 },new int[] { },new int[] { } },
                 new int[] { 0 }
                 );//16
+
+            var answerStringClass = new AnswerStringClass();
+            var answerStringClassResult = answerStringClass.AnswerString("aann",2);//nn
+            answerStringClassResult = answerStringClass.AnswerString2("aann", 2);//nn
+            answerStringClassResult = answerStringClass.AnswerString3("aann", 2);//nn
         }
     }
 }
