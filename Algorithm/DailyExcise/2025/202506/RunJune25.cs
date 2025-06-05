@@ -34,6 +34,9 @@ namespace Algorithm.DailyExcise
 
             var smallestQuivalenStringClass = new SmallestEquivalentStringClass();
             var smallestQuivalenStrngClassResult = smallestQuivalenStringClass.SmallestEquivalentString("parker", "morris", "parser");//makkek
+        
+            var robotWithStringClass = new RobotWithStringClass();
+            var robotWithStringClassResult = robotWithStringClass.RobotWithString("zza");//azz
         }
     }
 }
