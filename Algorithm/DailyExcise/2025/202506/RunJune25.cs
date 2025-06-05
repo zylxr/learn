@@ -31,6 +31,9 @@ namespace Algorithm.DailyExcise
             var answerStringClassResult = answerStringClass.AnswerString("aann",2);//nn
             answerStringClassResult = answerStringClass.AnswerString2("aann", 2);//nn
             answerStringClassResult = answerStringClass.AnswerString3("aann", 2);//nn
+
+            var smallestQuivalenStringClass = new SmallestEquivalentStringClass();
+            var smallestQuivalenStrngClassResult = smallestQuivalenStringClass.SmallestEquivalentString("parker", "morris", "parser");//makkek
         }
     }
 }
