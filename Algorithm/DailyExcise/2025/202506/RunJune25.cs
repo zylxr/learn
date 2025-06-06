@@ -37,6 +37,9 @@ namespace Algorithm.DailyExcise
         
             var robotWithStringClass = new RobotWithStringClass();
             var robotWithStringClassResult = robotWithStringClass.RobotWithString("zza");//azz
+
+            var clearStarsClass = new ClearStarsClass();
+            var clearStarsClassResult = clearStarsClass.ClearStars("aaba*");//aab
         }
     }
 }
