@@ -40,6 +40,9 @@ namespace Algorithm.DailyExcise
 
             var clearStarsClass = new ClearStarsClass();
             var clearStarsClassResult = clearStarsClass.ClearStars("aaba*");//aab
+
+            var findKthNumberClass = new FindKthNumberClass();
+            var findKthNumberClassResult = findKthNumberClass.FindKthNumber(13,2);//10
         }
     }
 }
