@@ -43,6 +43,9 @@ namespace Algorithm.DailyExcise
 
             var findKthNumberClass = new FindKthNumberClass();
             var findKthNumberClassResult = findKthNumberClass.FindKthNumber(13,2);//10
+
+            var maxDifferenceClass = new MaxDifferenceClass();
+            var maxDifferenceClassResult = maxDifferenceClass.MaxDifference("12233",4);//-1
         }
     }
 }
