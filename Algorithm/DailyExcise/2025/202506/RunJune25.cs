@@ -46,6 +46,11 @@ namespace Algorithm.DailyExcise
 
             var maxDifferenceClass = new MaxDifferenceClass();
             var maxDifferenceClassResult = maxDifferenceClass.MaxDifference("12233",4);//-1
+
+            var minimizeMaxClass = new MinimizeMaxClass();
+            var minimizeMaxClassResult = minimizeMaxClass.MinimizeMax(new int[] { 10, 1, 2, 7, 1, 3 },2);//1
+
+            minimizeMaxClassResult = minimizeMaxClass.MinimizeMax(new int[] { 3, 4, 2, 3, 2, 1, 2 }, 3);//1
         }
     }
 }
