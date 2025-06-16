@@ -54,6 +54,9 @@ namespace Algorithm.DailyExcise
 
             var lrutest = new LRU();
             lrutest.Test();
+
+            var countGoodArrayClass = new CountGoodArraysClass();
+            var countGoodArrayClassResult = countGoodArrayClass.CountGoodArrays(3,2,1);//4
         }
     }
 }
