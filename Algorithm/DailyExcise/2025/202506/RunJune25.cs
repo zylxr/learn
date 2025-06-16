@@ -51,6 +51,9 @@ namespace Algorithm.DailyExcise
             var minimizeMaxClassResult = minimizeMaxClass.MinimizeMax(new int[] { 10, 1, 2, 7, 1, 3 },2);//1
 
             minimizeMaxClassResult = minimizeMaxClass.MinimizeMax(new int[] { 3, 4, 2, 3, 2, 1, 2 }, 3);//1
+
+            var lrutest = new LRU();
+            lrutest.Test();
         }
     }
 }
