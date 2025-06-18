@@ -61,6 +61,9 @@ namespace Algorithm.DailyExcise
             var divideArrayClass = new DivideArrayClass();
             var divideArrayClassResult = divideArrayClass.DivideArray(new int[] { 1, 3, 4, 8, 7, 9, 3, 5, 1 }, 2);//[[1,1,3],[3,4,5],[7,8,9]]
             divideArrayClassResult = divideArrayClass.DivideArray2(new int[] { 1, 3, 4, 8, 7, 9, 3, 5, 1 }, 2);//[[1,1,3],[3,4,5],[7,8,9]]
+
+            var partitionArrayClass = new PartitionArrayClass();
+            var partitionArrayClassResult = partitionArrayClass.PartitionArray(new int[] { 3, 6, 1, 2, 5 },2);//2
         }
     }
 }
