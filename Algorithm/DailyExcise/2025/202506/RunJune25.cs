@@ -57,6 +57,10 @@ namespace Algorithm.DailyExcise
 
             var countGoodArrayClass = new CountGoodArraysClass();
             var countGoodArrayClassResult = countGoodArrayClass.CountGoodArrays(3,2,1);//4
+
+            var divideArrayClass = new DivideArrayClass();
+            var divideArrayClassResult = divideArrayClass.DivideArray(new int[] { 1, 3, 4, 8, 7, 9, 3, 5, 1 }, 2);//[[1,1,3],[3,4,5],[7,8,9]]
+            divideArrayClassResult = divideArrayClass.DivideArray2(new int[] { 1, 3, 4, 8, 7, 9, 3, 5, 1 }, 2);//[[1,1,3],[3,4,5],[7,8,9]]
         }
     }
 }
