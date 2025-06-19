@@ -64,6 +64,10 @@ namespace Algorithm.DailyExcise
 
             var partitionArrayClass = new PartitionArrayClass();
             var partitionArrayClassResult = partitionArrayClass.PartitionArray(new int[] { 3, 6, 1, 2, 5 },2);//2
+
+            var maxDistanceClass = new MaxDistanceClass3();
+            var maxDistanceClassResult = maxDistanceClass.MaxDistance("NWSE",1);//3
+            maxDistanceClassResult = maxDistanceClass.MaxDistance2("NWSE", 1);//3
         }
     }
 }
