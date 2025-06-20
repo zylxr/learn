@@ -68,6 +68,9 @@ namespace Algorithm.DailyExcise
             var maxDistanceClass = new MaxDistanceClass3();
             var maxDistanceClassResult = maxDistanceClass.MaxDistance("NWSE",1);//3
             maxDistanceClassResult = maxDistanceClass.MaxDistance2("NWSE", 1);//3
+
+            var minimumDeletionClass = new MinimumDeletionsClass();
+            var minimumDeletionClassResult = minimumDeletionClass.MinimumDeletions("aabcaba", 0);//3
         }
     }
 }
