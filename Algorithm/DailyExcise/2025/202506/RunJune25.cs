@@ -71,6 +71,9 @@ namespace Algorithm.DailyExcise
 
             var minimumDeletionClass = new MinimumDeletionsClass();
             var minimumDeletionClassResult = minimumDeletionClass.MinimumDeletions("aabcaba", 0);//3
+
+            var kmirrorClass = new KMirrorClass();
+            var kmirrorClassResult = kmirrorClass.KMirror(2,5);//25
         }
     }
 }
