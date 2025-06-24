@@ -74,6 +74,11 @@ namespace Algorithm.DailyExcise
 
             var kmirrorClass = new KMirrorClass();
             var kmirrorClassResult = kmirrorClass.KMirror(2,5);//25
+
+            var kthSmallestProductClass = new KthSmallestProductClass();
+            var kthSmallestProductClassResult = kthSmallestProductClass.KthSmallestProduct(new int[] {2,5 }, new int[] {3,4 },2 );//8
+            kthSmallestProductClassResult = kthSmallestProductClass.KthSmallestProduct2(new int[] { 2, 5 }, new int[] { 3, 4 }, 2);//8
+
         }
     }
 }
