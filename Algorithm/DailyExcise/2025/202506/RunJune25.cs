@@ -79,6 +79,8 @@ namespace Algorithm.DailyExcise
             var kthSmallestProductClassResult = kthSmallestProductClass.KthSmallestProduct(new int[] {2,5 }, new int[] {3,4 },2 );//8
             kthSmallestProductClassResult = kthSmallestProductClass.KthSmallestProduct2(new int[] { 2, 5 }, new int[] { 3, 4 }, 2);//8
 
+            var longestSubClass = new LongestSubsequenceClass();
+            var longestSubClassResult = longestSubClass.LongestSubsequence("1001010",5);//5
         }
     }
 }
