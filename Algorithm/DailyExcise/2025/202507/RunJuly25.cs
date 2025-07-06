@@ -16,6 +16,9 @@ namespace Algorithm.DailyExcise
             var kthCharacterClass = new KthCharacterClass();
             var kthCharacterClassResult = kthCharacterClass.KthCharacter(2, new int[] { 0 });//a
             kthCharacterClassResult = kthCharacterClass.KthCharacter(3, new int[] { 1,0 });//a
+
+            var maxEventsClass = new MaxEventsClass();
+            var maxEventsClassResult = maxEventsClass.MaxEvents(new int[][] { new int[] {1,2 },new int[] {2,3 },new int[] {3,4 } });//3
         }
     }
 }
