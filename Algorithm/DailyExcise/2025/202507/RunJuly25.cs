@@ -19,6 +19,9 @@ namespace Algorithm.DailyExcise
 
             var maxEventsClass = new MaxEventsClass();
             var maxEventsClassResult = maxEventsClass.MaxEvents(new int[][] { new int[] {1,2 },new int[] {2,3 },new int[] {3,4 } });//3
+            
+            var maxValueClass = new MaxValueClass2();
+            var maxValueClass2Result = maxValueClass.MaxValue(new int[][]{ new int[] {1,2,4 },new int[] { 3,4,3},new int[] { 2,3,1} },2);//7
         }
     }
 }
