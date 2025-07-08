@@ -22,6 +22,11 @@ namespace Algorithm.DailyExcise
             
             var maxValueClass = new MaxValueClass2();
             var maxValueClass2Result = maxValueClass.MaxValue(new int[][]{ new int[] {1,2,4 },new int[] { 3,4,3},new int[] { 2,3,1} },2);//7
+        
+            var maxFreeTimeClass = new MaxFreeTimeClass();
+            var maxFreeTimeClassResult = maxFreeTimeClass.MaxFreeTime(5,1,new int[] { 1, 3 },new int[] {2,5 });//2
+
+            maxFreeTimeClassResult = maxFreeTimeClass.MaxFreeTime2(5, 1, new int[] { 1, 3 }, new int[] { 2, 5 });//2
         }
     }
 }
