@@ -27,6 +27,10 @@ namespace Algorithm.DailyExcise
             var maxFreeTimeClassResult = maxFreeTimeClass.MaxFreeTime(5,1,new int[] { 1, 3 },new int[] {2,5 });//2
 
             maxFreeTimeClassResult = maxFreeTimeClass.MaxFreeTime2(5, 1, new int[] { 1, 3 }, new int[] { 2, 5 });//2
+
+            var maxFreeTimeClass2 = new MaxFreeTimeClass2();
+            var maxFreeTimeClass2Result = maxFreeTimeClass2.MaxFreeTime(5,new int[] { 1,3},new int[] {2,5 });//2
+            maxFreeTimeClass2Result = maxFreeTimeClass2.MaxFreeTime2(5, new int[] { 1, 3 }, new int[] { 2, 5 });//2
         }
     }
 }
