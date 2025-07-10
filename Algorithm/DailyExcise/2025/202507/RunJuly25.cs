@@ -31,6 +31,9 @@ namespace Algorithm.DailyExcise
             var maxFreeTimeClass2 = new MaxFreeTimeClass2();
             var maxFreeTimeClass2Result = maxFreeTimeClass2.MaxFreeTime(5,new int[] { 1,3},new int[] {2,5 });//2
             maxFreeTimeClass2Result = maxFreeTimeClass2.MaxFreeTime2(5, new int[] { 1, 3 }, new int[] { 2, 5 });//2
+
+            var countDaysClass = new CountDaysClass();
+            var countDaysClassResult = countDaysClass.CountDays(10,new int[][] { new int[] { 5,7} ,new int[] { 1,3},new int[] { 9,10} });//2
         }
     }
 }
