@@ -34,6 +34,9 @@ namespace Algorithm.DailyExcise
 
             var countDaysClass = new CountDaysClass();
             var countDaysClassResult = countDaysClass.CountDays(10,new int[][] { new int[] { 5,7} ,new int[] { 1,3},new int[] { 9,10} });//2
+
+            var earliestClass = new EarliestAndLatestClass();
+            var earliestClassResult = earliestClass.EarliestAndLatest(11,2,4);//[3,4]
         }
     }
 }
