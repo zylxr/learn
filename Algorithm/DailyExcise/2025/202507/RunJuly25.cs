@@ -37,6 +37,9 @@ namespace Algorithm.DailyExcise
 
             var earliestClass = new EarliestAndLatestClass();
             var earliestClassResult = earliestClass.EarliestAndLatest(11,2,4);//[3,4]
+
+            var maximumLengthClass = new MaximumLengthClass3();
+            var maximumLengthClassResult = maximumLengthClass.MaximumLength(new int[] { 1, 2, 3, 4 });//4
         }
     }
 }
