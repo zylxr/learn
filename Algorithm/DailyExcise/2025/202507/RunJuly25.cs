@@ -40,6 +40,9 @@ namespace Algorithm.DailyExcise
 
             var maximumLengthClass = new MaximumLengthClass3();
             var maximumLengthClassResult = maximumLengthClass.MaximumLength(new int[] { 1, 2, 3, 4 });//4
+
+            var maximumLengthClass4 = new MaximumLengthClass4();
+            var maximumLengthClassResult4 = maximumLengthClass4.MaximumLength(new int[] { 1, 4, 2, 3, 1, 4 },3); //4
         }
     }
 }
