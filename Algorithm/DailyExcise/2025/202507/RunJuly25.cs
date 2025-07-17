@@ -43,6 +43,9 @@ namespace Algorithm.DailyExcise
 
             var maximumLengthClass4 = new MaximumLengthClass4();
             var maximumLengthClassResult4 = maximumLengthClass4.MaximumLength(new int[] { 1, 4, 2, 3, 1, 4 },3); //4
+
+            var minimumDiffClass = new MinimumDifferenceClass2();
+            var minimumDiffClassResult = minimumDiffClass.MinimumDifference(new int[] {3,1,2 });//-1
         }
     }
 }
