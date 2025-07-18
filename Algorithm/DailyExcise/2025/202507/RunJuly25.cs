@@ -46,6 +46,11 @@ namespace Algorithm.DailyExcise
 
             var minimumDiffClass = new MinimumDifferenceClass2();
             var minimumDiffClassResult = minimumDiffClass.MinimumDifference(new int[] {3,1,2 });//-1
+
+            var removeSubfolderClass = new RemoveSubfoldersClass();
+            var removeSubFolderClassResult = removeSubfolderClass.RemoveSubfolders(new string[] { "/a", "/a/b", "/c/d", "/c/d/e", "/c/f" });//["/a","/c/d","/c/f"]
+
+            removeSubFolderClassResult = removeSubfolderClass.RemoveSubfolders2(new string[] { "/a", "/a/b", "/c/d", "/c/d/e", "/c/f" });//["/a","/c/d","/c/f"]
         }
     }
 }
