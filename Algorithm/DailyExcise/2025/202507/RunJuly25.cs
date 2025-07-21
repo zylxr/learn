@@ -51,6 +51,11 @@ namespace Algorithm.DailyExcise
             var removeSubFolderClassResult = removeSubfolderClass.RemoveSubfolders(new string[] { "/a", "/a/b", "/c/d", "/c/d/e", "/c/f" });//["/a","/c/d","/c/f"]
 
             removeSubFolderClassResult = removeSubfolderClass.RemoveSubfolders2(new string[] { "/a", "/a/b", "/c/d", "/c/d/e", "/c/f" });//["/a","/c/d","/c/f"]
+        
+            var maximumUniqueSubarrayClass = new MaximumUniqueSubarrayClass();
+            var maximumUniqueSubArrayClassResult = maximumUniqueSubarrayClass.MaximumUniqueSubarray(new int[] { 4, 2, 4, 5, 6 });//17
+
+            maximumUniqueSubArrayClassResult = maximumUniqueSubarrayClass.MaximumUniqueSubarray2(new int[] { 4, 2, 4, 5, 6 });//17
         }
     }
 }
