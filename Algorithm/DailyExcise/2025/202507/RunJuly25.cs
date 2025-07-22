@@ -56,6 +56,11 @@ namespace Algorithm.DailyExcise
             var maximumUniqueSubArrayClassResult = maximumUniqueSubarrayClass.MaximumUniqueSubarray(new int[] { 4, 2, 4, 5, 6 });//17
 
             maximumUniqueSubArrayClassResult = maximumUniqueSubarrayClass.MaximumUniqueSubarray2(new int[] { 4, 2, 4, 5, 6 });//17
+        
+            var maximumGainClass = new MaximumGainClass();
+            var maximumGainClassResult = maximumGainClass.MaximumGain("cdbcbbaaabab",4,5);//19
+
+            maximumGainClassResult = maximumGainClass.MaximumGain("aabbaaxybbaabb", 5, 4);//20
         }
     }
 }
