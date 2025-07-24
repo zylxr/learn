@@ -61,6 +61,17 @@ namespace Algorithm.DailyExcise
             var maximumGainClassResult = maximumGainClass.MaximumGain("cdbcbbaaabab",4,5);//19
 
             maximumGainClassResult = maximumGainClass.MaximumGain("aabbaaxybbaabb", 5, 4);//20
+
+            var minimuScoreClass = new MinimumScoreClass();
+            var minimumScoreClassResult = minimuScoreClass.MinimumScore(new int[] { 1, 5, 5, 4, 11 },
+                new int[][] { new int[]{0,1 },new int[]{1,2 },
+                new int[]{1,3 },
+                new int[]{3,4 }});//9
+
+            minimumScoreClassResult = minimuScoreClass.MinimumScore2(new int[] { 1, 5, 5, 4, 11 },
+                new int[][] { new int[]{0,1 },new int[]{1,2 },
+                new int[]{1,3 },
+                new int[]{3,4 }});//9
         }
     }
 }
