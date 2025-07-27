@@ -76,7 +76,10 @@ namespace Algorithm.DailyExcise
             var maxSubArrayClass = new MaxSubarraysClass();
             var maxSubArrayClassResult = maxSubArrayClass.MaxSubarrays(4, new int[][]{ new int[] {2,4 },new int[] { 1,4} });//9
         
+            var countMaxOrSubsetsClass = new CountMaxOrSubsetsClass();
+            var countMaxOrSubsetsClassResult = countMaxOrSubsetsClass.CountMaxOrSubsets(new int[] { 1,3});//2
 
+            countMaxOrSubsetsClassResult = countMaxOrSubsetsClass.CountMaxOrSubsets2(new int[] { 1, 3 });//2
         }
     }
 }
