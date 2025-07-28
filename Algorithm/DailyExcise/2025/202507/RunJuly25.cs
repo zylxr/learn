@@ -80,6 +80,9 @@ namespace Algorithm.DailyExcise
             var countMaxOrSubsetsClassResult = countMaxOrSubsetsClass.CountMaxOrSubsets(new int[] { 1,3});//2
 
             countMaxOrSubsetsClassResult = countMaxOrSubsetsClass.CountMaxOrSubsets2(new int[] { 1, 3 });//2
+
+            var smallestSubArrayClass = new SmallestSubarraysClass();
+            var smallestSubArrayClassResult = smallestSubArrayClass.SmallestSubarrays(new int[] { 1, 0, 2, 1, 3 });// [3, 3, 2, 2, 1]
         }
     }
 }
