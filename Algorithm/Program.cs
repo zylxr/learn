@@ -17,37 +17,38 @@ namespace Algorithm
             RunDp.RunDP();
             #endregion
 
-            var kmp = new KMPAlgorithm();
-            var kmpResult = kmp.Search("long text", "pattern");//-1
-            kmpResult = kmp.Search("ababababbababac","ababac");//9
-            kmp.BuildPartialMatchTable("aaabaaa");
-            kmp.BuildPartialMatchTable("aaabaaac");
-            kmp.BuildPartialMatchTable("12d3a12d3de");
-            kmp.BuildNext("aaabaaac");
-            kmp.BuildNext("abababb");
-            kmpResult = kmp.SearchEx("ababababbababac", "ababac");//9
+            //var kmp = new KMPAlgorithm();
+            //var kmpResult = kmp.Search("long text", "pattern");//-1
+            //kmpResult = kmp.Search("ababababbababac","ababac");//9
+            //kmp.BuildPartialMatchTable("aaabaaa");
+            //kmp.BuildPartialMatchTable("aaabaaac");
+            //kmp.BuildPartialMatchTable("12d3a12d3de");
+            //kmp.BuildNext("aaabaaac");
+            //kmp.BuildNext("abababb");
+            //kmpResult = kmp.SearchEx("ababababbababac", "ababac");//9
 
-            RunTree.Run();
-            Algorithm.Graph.RunGraphUtil.RunGraph();
+            //RunTree.Run();
+            //Algorithm.Graph.RunGraphUtil.RunGraph();
 
-            Sort.RunSort.Run();
+            //Sort.RunSort.Run();
 
-            RunDivideAndConquer.Run();
-            RunGreedy.Run();
-            RunBackTracking.Run();
-            RunDailyExcise.Run();
-            RunDailyPartialAugust.Run();
-            RunDailySeptempber.Run();
-            RunOctoberDailyExcercise.Run();
-            RundailyNov24.Run();
-            RunDecember24.Run();
-            RunJan25.Run();
-            RunFeb25.Run();
-            RunMarch25.Run();
-            RunApril25.Run();
-            RunMay25.Run();
-            RunJune25.Run();
-            RunJuly25.Run();
+            //RunDivideAndConquer.Run();
+            //RunGreedy.Run();
+            //RunBackTracking.Run();
+            //RunDailyExcise.Run();
+            //RunDailyPartialAugust.Run();
+            //RunDailySeptempber.Run();
+            //RunOctoberDailyExcercise.Run();
+            //RundailyNov24.Run();
+            //RunDecember24.Run();
+            //RunJan25.Run();
+            //RunFeb25.Run();
+            //RunMarch25.Run();
+            //RunApril25.Run();
+            //RunMay25.Run();
+            //RunJune25.Run();
+            //RunJuly25.Run();
+            Run0825.Run();
             Console.WriteLine("Hello, World!");
         }
     }
