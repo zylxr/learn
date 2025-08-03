@@ -12,6 +12,9 @@ namespace Algorithm.DailyExcise
         {
             var minCostClass3 = new MinCostClass3();
             var minCostClass3Result = minCostClass3.MinCost(new int[] { 4, 2, 2, 2 },new int[] { 1, 4, 1, 2 });//1
+
+            var totalFruitClass = new TotalFruitClass();
+            var totalFruitClassResult = totalFruitClass.TotalFruit(new int[] { 1,0,1,4,1,4,1,2,3});//5
         }
     }
 }
