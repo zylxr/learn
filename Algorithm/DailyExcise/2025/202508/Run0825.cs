@@ -19,6 +19,14 @@ namespace Algorithm.DailyExcise
             var numOfUnplaceFruitClass = new NumOfUnplacedFruitsClass();
             var numOfUnplaceFruitClassResult = numOfUnplaceFruitClass.NumOfUnplacedFruits(new int[] { 4,2,5},new int[] { 3,5,4} );//1
             numOfUnplaceFruitClassResult = numOfUnplaceFruitClass.NumOfUnplacedFruits2(new int[] { 4, 2, 5 }, new int[] { 3, 5, 4 });//1
+
+            var maxCollectionFruitsClass = new MaxCollectedFruitsClass();
+            var maxCollectionFruitsClassResult = maxCollectionFruitsClass.MaxCollectedFruits(new int[][] { 
+                new int[] { 1,2,3,4 },
+                new int[] { 5,6,8,7 },
+                new int[] { 9,10,11,12 },
+                new int[] { 13,14,15,16 }
+            });//100
         }
     }
 }
