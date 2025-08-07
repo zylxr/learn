@@ -27,6 +27,11 @@ namespace Algorithm.DailyExcise
                 new int[] { 9,10,11,12 },
                 new int[] { 13,14,15,16 }
             });//100
+
+            var soupServingClass = new SoupServingsClass();
+            var soupServingClassResult = soupServingClass.SoupServings(50);//0.6250
+
+            soupServingClassResult = soupServingClass.SoupServings2(50);//0.6250
         }
     }
 }
