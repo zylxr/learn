@@ -32,6 +32,13 @@ namespace Algorithm.DailyExcise
             var soupServingClassResult = soupServingClass.SoupServings(50);//0.6250
 
             soupServingClassResult = soupServingClass.SoupServings2(50);//0.6250
+
+            var  productQueriesClass = new ProductQueriesClass();
+            var productQueriesClassResult = productQueriesClass.ProductQueries(15,new int[][] {
+                new int[]{ 0,1 },
+                new int[]{ 2,2 },
+                new int[]{ 0,3}
+            });//[2,4,64]
         }
     }
 }
