@@ -39,6 +39,10 @@ namespace Algorithm.DailyExcise
                 new int[]{ 2,2 },
                 new int[]{ 0,3}
             });//[2,4,64]
+
+            var numberOfWaysClass = new NumberOfWaysClass();
+            var numberOfWaysClassResult = numberOfWaysClass.NumberOfWays(10,2);//1
+            numberOfWaysClassResult = numberOfWaysClass.NumberOfWays2(10, 2);//1
         }
     }
 }
