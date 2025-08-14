@@ -43,6 +43,11 @@ namespace Algorithm.DailyExcise
             var numberOfWaysClass = new NumberOfWaysClass();
             var numberOfWaysClassResult = numberOfWaysClass.NumberOfWays(10,2);//1
             numberOfWaysClassResult = numberOfWaysClass.NumberOfWays2(10, 2);//1
+
+            var isPowerOfFourClass = new IsPowerOfFourClass();
+            var isPowerOfFourClassResult = isPowerOfFourClass.IsPowerOfFour(16);//true
+
+            isPowerOfFourClassResult = isPowerOfFourClass.IsPowerOfFour2(16);//true
         }
     }
 }
