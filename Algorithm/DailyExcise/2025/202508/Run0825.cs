@@ -48,6 +48,9 @@ namespace Algorithm.DailyExcise
             var isPowerOfFourClassResult = isPowerOfFourClass.IsPowerOfFour(16);//true
 
             isPowerOfFourClassResult = isPowerOfFourClass.IsPowerOfFour2(16);//true
+
+            var judgePoint24Class = new JudgePoint24Class();
+            var judgePoint24ClassResult = judgePoint24Class.JudgePoint24(new int[] { 4,1,8,7});//true
         }
     }
 }
