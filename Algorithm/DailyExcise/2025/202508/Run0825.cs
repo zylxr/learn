@@ -51,6 +51,9 @@ namespace Algorithm.DailyExcise
 
             var judgePoint24Class = new JudgePoint24Class();
             var judgePoint24ClassResult = judgePoint24Class.JudgePoint24(new int[] { 4,1,8,7});//true
+
+            var zeroFilledSubArrayClass = new ZeroFilledSubarrayClass();
+            var zeroFilledSubArrayClassResult = zeroFilledSubArrayClass.ZeroFilledSubarray(new int[] { 1, 3, 0, 0, 2, 0, 0, 4 });//6
         }
     }
 }
