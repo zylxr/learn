@@ -54,6 +54,13 @@ namespace Algorithm.DailyExcise
 
             var zeroFilledSubArrayClass = new ZeroFilledSubarrayClass();
             var zeroFilledSubArrayClassResult = zeroFilledSubArrayClass.ZeroFilledSubarray(new int[] { 1, 3, 0, 0, 2, 0, 0, 4 });//6
+
+            var countSquareClass = new CountSquaresClass();
+            var countSquareClassResult = countSquareClass.CountSquares(new int[][] {
+                new int[]{ 0, 1, 1, 1},
+                new int[]{1,1,1,1},
+                new int[]{ 0,1,1,1}
+            });//15
         }
     }
 }
