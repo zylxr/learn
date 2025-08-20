@@ -61,6 +61,25 @@ namespace Algorithm.DailyExcise
                 new int[]{1,1,1,1},
                 new int[]{ 0,1,1,1}
             });//15
+
+            var numSubMatClass = new NumSubmatClass();
+            var numSubMatClassResult = numSubMatClass.NumSubmat(new int[][] {
+                new int[]{ 1, 0, 1 },
+                new int[]{ 1,1,0 },
+                new int[]{ 1,1,0 }
+            });//13
+
+            numSubMatClassResult = numSubMatClass.NumSubmat(new int[][] {
+                new int[]{ 0,1,1,0 },
+                new int[]{0,1,1,1},
+                new int[]{ 1,1,1,0}
+            });//24
+
+            numSubMatClassResult = numSubMatClass.NumSubmat2(new int[][] {
+                new int[]{ 0,1,1,0 },
+                new int[]{0,1,1,1},
+                new int[]{ 1,1,1,0}
+            });//24
         }
     }
 }
