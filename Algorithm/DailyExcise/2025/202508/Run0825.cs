@@ -105,6 +105,19 @@ namespace Algorithm.DailyExcise
                     new int[] { 1, 0, 1 },
                     new int[] { 1, 1,1 }
                 });//5
+
+            var findDiagonalOrderClass = new FindDiagonalOrderClass();
+            var findDiagonalOrderClassResult = findDiagonalOrderClass.FindDiagonalOrder(new int[][] {
+                new int[]{ 1, 2, 3 },
+                new int[]{ 4, 5, 6 },
+                new int[]{ 7, 8, 9 }
+            });//[1,2,4,7,5,3,6,8,9]
+
+            findDiagonalOrderClassResult = findDiagonalOrderClass.FindDiagonalOrder2(new int[][] {
+                new int[]{ 1, 2, 3 },
+                new int[]{ 4, 5, 6 },
+                new int[]{ 7, 8, 9 }
+            });//[1,2,4,7,5,3,6,8,9]
         }
     }
 }
