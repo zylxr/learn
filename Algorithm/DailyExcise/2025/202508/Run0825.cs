@@ -118,6 +118,18 @@ namespace Algorithm.DailyExcise
                 new int[]{ 4, 5, 6 },
                 new int[]{ 7, 8, 9 }
             });//[1,2,4,7,5,3,6,8,9]
+
+            var lenOfVDiagonalClass = new LenOfVDiagonalClass();
+            var lenOfVDiagonalClassResult = lenOfVDiagonalClass.LenOfVDiagonal(
+                new int[][] {
+                    new int[]{ 2,2,1,2,2},
+                    new int[]{2,0,2,2,0 },
+                    new int[]{ 2,0,1,1,0},
+                    new int[]{ 1,0,2,2,2},
+                    new int[]{ 2,0,0,2,2}
+
+                }
+                );//5
         }
     }
 }
