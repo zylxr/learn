@@ -143,6 +143,9 @@ namespace Algorithm.DailyExcise
                 new int[]{ 9,8,2},
                 new int[]{ 4, 5, 6 }
             });//[[8,2,3],[9,6,7],[4,5,1]]
+
+            var flowerGameClass = new FlowerGameClass();
+            var flowerGameClassResult = flowerGameClass.FlowerGame(3,2);//3
         }
     }
 }
