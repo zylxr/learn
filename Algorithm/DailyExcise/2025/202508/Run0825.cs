@@ -130,6 +130,19 @@ namespace Algorithm.DailyExcise
 
                 }
                 );//5
+
+            var sortMatrixClass = new SortMatrixClass();
+            var sortMatrixClassResult = sortMatrixClass.SortMatrix(new int[][] { 
+                new int[]{ 1,7,3},
+                new int[]{ 9,8,2},
+                new int[]{ 4, 5, 6 }
+            });//[[8,2,3],[9,6,7],[4,5,1]]
+
+            sortMatrixClassResult = sortMatrixClass.SortMatrix2(new int[][] {
+                new int[]{ 1,7,3},
+                new int[]{ 9,8,2},
+                new int[]{ 4, 5, 6 }
+            });//[[8,2,3],[9,6,7],[4,5,1]]
         }
     }
 }
