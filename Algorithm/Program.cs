@@ -48,7 +48,8 @@ namespace Algorithm
             //RunMay25.Run();
             //RunJune25.Run();
             //RunJuly25.Run();
-            Run0825.Run();
+            //Run0825.Run();
+            RunSep25.Run();
             Console.WriteLine("Hello, World!");
         }
     }
