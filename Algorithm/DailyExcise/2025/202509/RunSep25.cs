@@ -65,7 +65,18 @@ namespace Algorithm.DailyExcise
                     new int[]{2,6}
                 }
                 );//2
+            var numberOfPairsClass3 = new NumberOfPairsClass3();
+            var numberOfPairsClass3Result = numberOfPairsClass3.NumberOfPairs(new int[][] { 
+                new int[]{1,1 },
+                new int[]{2,2},
+                new int[]{3,3},
+            });//0
+
+            numberOfPairsClass3Result = numberOfPairsClass3.NumberOfPairs2(new int[][] {
+                new int[]{1,1 },
+                new int[]{2,2},
+                new int[]{3,3},
+            });//0
         }
-    
     }
 }
