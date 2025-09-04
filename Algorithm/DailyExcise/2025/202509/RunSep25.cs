@@ -77,6 +77,9 @@ namespace Algorithm.DailyExcise
                 new int[]{2,2},
                 new int[]{3,3},
             });//0
+
+            var makeTheIntegerZeroClass = new MakeTheIntegerZeroClass();
+            var makeTheIntegerZeroClassResult = makeTheIntegerZeroClass.MakeTheIntegerZero(3,-2);//3
         }
     }
 }
