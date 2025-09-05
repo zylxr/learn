@@ -80,6 +80,23 @@ namespace Algorithm.DailyExcise
 
             var makeTheIntegerZeroClass = new MakeTheIntegerZeroClass();
             var makeTheIntegerZeroClassResult = makeTheIntegerZeroClass.MakeTheIntegerZero(3,-2);//3
+
+            var minOperationsClass = new MinOperationsClass3();
+            var minOperationsClassResult = minOperationsClass.MinOperations(new int[][] { 
+                new int[]{3,10 }
+            });//8
+
+            minOperationsClassResult = minOperationsClass.MinOperations(new int[][] {
+                new int[]{6,8 }
+            });//3
+
+            minOperationsClassResult = minOperationsClass.MinOperations(new int[][] {
+                new int[]{19,23 }
+            });//8
+
+            minOperationsClassResult = minOperationsClass.MinOperations2(new int[][] {
+                new int[]{19,23 }
+            });//8
         }
     }
 }
