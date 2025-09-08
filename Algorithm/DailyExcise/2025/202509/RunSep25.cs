@@ -97,6 +97,10 @@ namespace Algorithm.DailyExcise
             minOperationsClassResult = minOperationsClass.MinOperations2(new int[][] {
                 new int[]{19,23 }
             });//8
+
+            var peopleAwareClass = new PeopleAwareOfSecretClass();
+            var peopleAwareClassResult = peopleAwareClass.PeopleAwareOfSecret(6,2,4);//5
+            peopleAwareClassResult = peopleAwareClass.PeopleAwareOfSecret2(6, 2, 4);//5
         }
     }
 }
