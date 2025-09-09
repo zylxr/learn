@@ -101,6 +101,12 @@ namespace Algorithm.DailyExcise
             var peopleAwareClass = new PeopleAwareOfSecretClass();
             var peopleAwareClassResult = peopleAwareClass.PeopleAwareOfSecret(6,2,4);//5
             peopleAwareClassResult = peopleAwareClass.PeopleAwareOfSecret2(6, 2, 4);//5
+
+            var minimumTeachingClass = new MinimumTeachingsClass();
+            var minimumTeachingClassResult = minimumTeachingClass.MinimumTeachings(
+                3,new int[][] { new int[] { 2},new int[] { 1,3},new int[] { 1,2},new int[] { 3} },
+                new int[][] { new int[] { 1, 4 }, new int[] { 1,2},new int[] { 3,4},new int[] { 2,3} }
+                );//2
         }
     }
 }
