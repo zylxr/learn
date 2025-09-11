@@ -112,6 +112,9 @@ namespace Algorithm.DailyExcise
             var sortVowelsClassResult = sortVowelsClass.SortVowels("lEetcOde");//lEOtcede
             sortVowelsClassResult = sortVowelsClass.SortVowels2("lEetcOde");//lEOtcede
             sortVowelsClassResult = sortVowelsClass.SortVowels3("lEetcOde");//lEOtcede
+
+            var doesAliceWinClass = new DoesAliceWinClass();
+            var doesAliceWinClassResult = doesAliceWinClass.DoesAliceWin("leetcoder");//true
         }
     }
 }
