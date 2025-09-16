@@ -115,6 +115,9 @@ namespace Algorithm.DailyExcise
 
             var doesAliceWinClass = new DoesAliceWinClass();
             var doesAliceWinClassResult = doesAliceWinClass.DoesAliceWin("leetcoder");//true
+
+            var replaceNonCoprimeClass = new ReplaceNonCoprimesClass();
+            var replaceNonComprimeClassResult = replaceNonCoprimeClass.ReplaceNonCoprimes(new int[] { 6, 4, 3, 2, 7, 6, 2 });//[12,7,6]
         }
     }
 }
