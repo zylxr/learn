@@ -133,6 +133,22 @@ namespace Algorithm.DailyExcise
             numberContainersClass.Change(1, 10);
             numberContainersClass.Change(1, 20);
             numberContainersClassResult = numberContainersClass.Find(10);//-1
+
+
+            var numberContainersClass1 = new NumberContainersClass();
+            var numberContainersClassResult1 = numberContainersClass1.Find2(10);//-1;
+            numberContainersClass1.Change2(2, 10);
+            numberContainersClass1.Change2(1, 10);
+            numberContainersClass1.Change2(3, 10);
+            numberContainersClass1.Change2(5, 10);
+            numberContainersClassResult1 = numberContainersClass1.Find2(10);//1
+            numberContainersClass1.Change2(1, 20);
+            numberContainersClassResult1 = numberContainersClass1.Find2(10);//2
+
+            numberContainersClass1 = new NumberContainersClass();
+            numberContainersClass1.Change2(1, 10);
+            numberContainersClass1.Change2(1, 20);
+            numberContainersClassResult1 = numberContainersClass1.Find2(10);//-1
         }
     }
 }

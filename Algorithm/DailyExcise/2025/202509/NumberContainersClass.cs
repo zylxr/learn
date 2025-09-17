@@ -47,6 +47,7 @@ namespace Algorithm.DailyExcise
 
         private Dictionary<int, int> dict = new();
         private Dictionary<int,PriorityQueue<int,int>> heaps = new();
+        private Dictionary<int, SortedSet<int>> us = new();
         public NumberContainersClass()
         {
 
@@ -58,6 +59,18 @@ namespace Algorithm.DailyExcise
             }
             dict[index] = number;
             heaps[number].Enqueue(index, index);
+        }
+
+        public void Change2(int index, int number)
+        {
+            if (!us.ContainsKey(number))us[number] = new SortedSet<int>();
+            dict.TryGetValue(index, out var prev);
+            if(prev!=0)
+            {
+                us[prev].Remove(index);
+            }
+            dict[index] = number;
+            us[number].Add(index);
         }
 
         public int Find(int number)
@@ -74,6 +87,13 @@ namespace Algorithm.DailyExcise
             var index = heap.Peek();
             if (dict[index] == number) return index;
             return -1;
+        }
+
+        public int Find2(int number)
+        {
+            us.TryGetValue(number, out var u);
+            if(u==null||u.Count==0) return -1;
+            return u.Min;
         }
     }
 }
