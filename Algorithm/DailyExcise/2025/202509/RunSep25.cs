@@ -149,6 +149,18 @@ namespace Algorithm.DailyExcise
             numberContainersClass1.Change2(1, 10);
             numberContainersClass1.Change2(1, 20);
             numberContainersClassResult1 = numberContainersClass1.Find2(10);//-1
+
+            var taskManagerClass = new TaskManagerClass(new List<IList<int>> {
+                new List<int>{ 1,101,8},
+                new List<int>{ 2, 102, 20 },
+                new List<int>{ 3, 103, 5 }
+            });
+            taskManagerClass.Add(4, 104, 5);
+            taskManagerClass.Edit(102, 9);
+            var taskManagerClassResult = taskManagerClass.ExecTop();//2
+            taskManagerClass.Rmv(101);
+            taskManagerClass.Add(50, 101, 8);
+            taskManagerClassResult = taskManagerClass.ExecTop();//50
         }
     }
 }
