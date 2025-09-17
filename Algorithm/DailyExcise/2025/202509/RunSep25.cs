@@ -118,6 +118,21 @@ namespace Algorithm.DailyExcise
 
             var replaceNonCoprimeClass = new ReplaceNonCoprimesClass();
             var replaceNonComprimeClassResult = replaceNonCoprimeClass.ReplaceNonCoprimes(new int[] { 6, 4, 3, 2, 7, 6, 2 });//[12,7,6]
+
+            var numberContainersClass = new NumberContainersClass();
+            var numberContainersClassResult = numberContainersClass.Find(10);//-1;
+            numberContainersClass.Change(2, 10);
+            numberContainersClass.Change(1, 10);
+            numberContainersClass.Change(3, 10);
+            numberContainersClass.Change(5, 10);
+            numberContainersClassResult = numberContainersClass.Find(10);//1
+            numberContainersClass.Change(1, 20);
+            numberContainersClassResult = numberContainersClass.Find(10);//2
+
+            numberContainersClass = new NumberContainersClass();
+            numberContainersClass.Change(1, 10);
+            numberContainersClass.Change(1, 20);
+            numberContainersClassResult = numberContainersClass.Find(10);//-1
         }
     }
 }
