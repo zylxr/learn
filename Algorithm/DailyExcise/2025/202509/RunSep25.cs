@@ -161,6 +161,11 @@ namespace Algorithm.DailyExcise
             taskManagerClass.Rmv(101);
             taskManagerClass.Add(50, 101, 8);
             taskManagerClassResult = taskManagerClass.ExecTop();//50
+
+            var routerClass = new RouterClass(2);
+            var routerClassAddResult = routerClass.AddPacket(2, 5, 1);//true
+            var forwardResult = routerClass.ForwardPacket();//2,5,1
+            var routerClassGetResult = routerClass.GetCount(5, 1, 1);//0
         }
     }
 }
