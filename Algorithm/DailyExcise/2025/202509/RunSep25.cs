@@ -166,6 +166,9 @@ namespace Algorithm.DailyExcise
             var routerClassAddResult = routerClass.AddPacket(2, 5, 1);//true
             var forwardResult = routerClass.ForwardPacket();//2,5,1
             var routerClassGetResult = routerClass.GetCount(5, 1, 1);//0
+
+            var factionToDecimalClass = new FractionToDecimalClass();
+            var fractionToDecimalClassResult = factionToDecimalClass.FractionToDecimal(4,333);//0.(012)
         }
     }
 }
