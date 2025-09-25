@@ -169,6 +169,10 @@ namespace Algorithm.DailyExcise
 
             var factionToDecimalClass = new FractionToDecimalClass();
             var fractionToDecimalClassResult = factionToDecimalClass.FractionToDecimal(4,333);//0.(012)
+
+            var triangleNumberClass = new TriangleNumberClass();
+            var triangleNumberResult = triangleNumberClass.TriangleNumber(new int[] { 2,2,3,4});//3
+            triangleNumberResult = triangleNumberClass.TriangleNumber2(new int[] { 2, 2, 3, 4 });//3
         }
     }
 }
