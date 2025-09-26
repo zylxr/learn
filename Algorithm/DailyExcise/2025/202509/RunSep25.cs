@@ -173,6 +173,15 @@ namespace Algorithm.DailyExcise
             var triangleNumberClass = new TriangleNumberClass();
             var triangleNumberResult = triangleNumberClass.TriangleNumber(new int[] { 2,2,3,4});//3
             triangleNumberResult = triangleNumberClass.TriangleNumber2(new int[] { 2, 2, 3, 4 });//3
+
+            var largestTriangle = new LargestTriangleAreaClass();
+            var largestTriangleResult = largestTriangle.LargestTriangleArea(new int[][] { 
+                new int[]{ 0,0},
+                new int[]{ 0,1},
+                new int[]{ 1,0},
+                new int[]{ 0,2},
+                new int[]{ 2,0}
+            });//2
         }
     }
 }
