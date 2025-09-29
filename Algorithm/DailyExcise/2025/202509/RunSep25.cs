@@ -186,6 +186,11 @@ namespace Algorithm.DailyExcise
             var minScoreTriangleClass = new MinScoreTriangulationClass();
             var minScoreTriangleClassResult = minScoreTriangleClass.MinScoreTriangulation(new int[] { 2,1,4,4});//24
             minScoreTriangleClassResult = minScoreTriangleClass.MinScoreTriangulation2(new int[] { 2, 1, 4, 4 });//24
+        
+            var triangularSumClass = new TriangularSumClass();
+            var triangularSumClassResult = triangularSumClass.TriangularSum(new int[] { 
+            1,2,3,4,5
+            });//8
         }
     }
 }
