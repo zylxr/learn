@@ -41,6 +41,12 @@ namespace Algorithm.DailyExcise
                 new int[]{ 3,2 },
                 new int[]{ 0,1 }
             });//3
+
+            var avoidFloodClass = new AvoidFloodClass();
+            var avoidFloodClassResult = avoidFloodClass.AvoidFlood(new int[] { 69, 0, 0, 0, 69 }); //[-1,69,1,1,-1]
+
+            var successfulPairClass = new SuccessfulPairsClass();
+            var successfulPairResult = successfulPairClass.SuccessfulPairs(new int[] { 5,1,3},new int[] { 1,2,3,4,5},7);//[4,0,3]
         }
     }
 }
