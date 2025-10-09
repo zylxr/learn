@@ -47,6 +47,9 @@ namespace Algorithm.DailyExcise
 
             var successfulPairClass = new SuccessfulPairsClass();
             var successfulPairResult = successfulPairClass.SuccessfulPairs(new int[] { 5,1,3},new int[] { 1,2,3,4,5},7);//[4,0,3]
+        
+            var minTimeClass = new MinTimeClass();
+            var minTimeClassResult = minTimeClass.MinTime(new int[] { 1,5,2,4}, new int[] {5,1,4,2 });//110
         }
     }
 }
