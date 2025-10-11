@@ -50,6 +50,10 @@ namespace Algorithm.DailyExcise
         
             var minTimeClass = new MinTimeClass();
             var minTimeClassResult = minTimeClass.MinTime(new int[] { 1,5,2,4}, new int[] {5,1,4,2 });//110
+        
+            var maximumTotalDamageClass = new MaximumTotalDamageClass();
+            var maximumTotalDamageClassResult = maximumTotalDamageClass.MaximumTotalDamage(new int[] {1,1,3,4 });//6
+            maximumTotalDamageClassResult = maximumTotalDamageClass.MaximumTotalDamage(new int[] { 7,1,6,3 });//10
         }
     }
 }
