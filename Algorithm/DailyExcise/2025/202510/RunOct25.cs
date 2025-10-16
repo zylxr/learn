@@ -54,6 +54,12 @@ namespace Algorithm.DailyExcise
             var maximumTotalDamageClass = new MaximumTotalDamageClass();
             var maximumTotalDamageClassResult = maximumTotalDamageClass.MaximumTotalDamage(new int[] {1,1,3,4 });//6
             maximumTotalDamageClassResult = maximumTotalDamageClass.MaximumTotalDamage(new int[] { 7,1,6,3 });//10
+        
+            var findSmallestIntegerClass = new FindSmallestIntegerClass();
+            var findSmallestIntegerClassResult = findSmallestIntegerClass.FindSmallestInteger(new int[] {
+                3,0,3,2,4,2,1,1,0,4
+            },
+                5);//10
         }
     }
 }
