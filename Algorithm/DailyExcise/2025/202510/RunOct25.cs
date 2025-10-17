@@ -60,6 +60,9 @@ namespace Algorithm.DailyExcise
                 3,0,3,2,4,2,1,1,0,4
             },
                 5);//10
+
+            var maxPartitionClass = new MaxPartitionsAfterOperationsClass();
+            var maxPartitionClassResult = maxPartitionClass.MaxPartitionsAfterOperations("accca",2);//3
         }
     }
 }
