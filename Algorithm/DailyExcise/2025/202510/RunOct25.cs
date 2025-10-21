@@ -63,6 +63,9 @@ namespace Algorithm.DailyExcise
 
             var maxPartitionClass = new MaxPartitionsAfterOperationsClass();
             var maxPartitionClassResult = maxPartitionClass.MaxPartitionsAfterOperations("accca",2);//3
+        
+            var maxFrequencyClass = new MaxFrequencyClass();
+            var maxFrequenceResult = maxFrequencyClass.MaxFrequency(new int[] { 1, 2, 4, 5 },2,4);//4
         }
     }
 }
