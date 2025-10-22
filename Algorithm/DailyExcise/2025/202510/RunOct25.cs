@@ -66,6 +66,9 @@ namespace Algorithm.DailyExcise
         
             var maxFrequencyClass = new MaxFrequencyClass();
             var maxFrequenceResult = maxFrequencyClass.MaxFrequency(new int[] { 1, 2, 4, 5 },2,4);//4
+
+            var maxFrequncyClass2 = new MaxFrequencyClass2();
+            var maxFrequncyClass2Result = maxFrequncyClass2.MaxFrequency(new int[] {93,45 },1,2);//1
         }
     }
 }
