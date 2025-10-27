@@ -69,6 +69,11 @@ namespace Algorithm.DailyExcise
 
             var maxFrequncyClass2 = new MaxFrequencyClass2();
             var maxFrequncyClass2Result = maxFrequncyClass2.MaxFrequency(new int[] {93,45 },1,2);//1
+
+            var numberOfBeamClass = new NumberOfBeamsClass();
+            var numberOfBeamClassResult = numberOfBeamClass.NumberOfBeams(new string[] {
+            "011001","000000","010100","001000"
+            });//8
         }
     }
 }
