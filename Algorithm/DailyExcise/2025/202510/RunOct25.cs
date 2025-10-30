@@ -74,6 +74,9 @@ namespace Algorithm.DailyExcise
             var numberOfBeamClassResult = numberOfBeamClass.NumberOfBeams(new string[] {
             "011001","000000","010100","001000"
             });//8
+
+            var minNumberClass = new MinNumberOperationsClass();
+            var minNumberClassResult = minNumberClass.MinNumberOperations(new int[] {3,1,1,2 });//4
         }
     }
 }
