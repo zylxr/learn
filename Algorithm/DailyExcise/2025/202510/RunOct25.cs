@@ -77,6 +77,9 @@ namespace Algorithm.DailyExcise
 
             var minNumberClass = new MinNumberOperationsClass();
             var minNumberClassResult = minNumberClass.MinNumberOperations(new int[] {3,1,1,2 });//4
+
+            var getSneakyNumberClass = new GetSneakyNumbersClass();
+            var getSneakyNumberClassResult = getSneakyNumberClass.GetSneakyNumbers(new int[] { 0, 1, 1, 0 });//[0,1];
         }
     }
 }
