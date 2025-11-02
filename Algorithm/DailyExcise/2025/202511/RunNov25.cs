@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Algorithm.DailyExcise
+{
+    public class RunNov25
+    {
+        public static void Run()
+        {
+            var minCostClass4 = new MinCostClass4();
+            var minCostClass4Result = minCostClass4.MinCost("abaac",new int[] { 1, 2, 3, 4, 5 });//3
+        }
+    }
+}
