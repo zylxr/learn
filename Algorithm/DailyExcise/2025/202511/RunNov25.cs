@@ -31,6 +31,9 @@ namespace Algorithm.DailyExcise
                     new int[] { 2,2},
                     new int[]{1,2}
                 });//[3,2,3]
+            var maxPowerClass = new MaxPowerClass();
+            var maxPowerClassResult = maxPowerClass.MaxPower(new int[] { 1, 2, 4, 5, 0 },1,2);//5
         }
+
     }
 }
