@@ -33,6 +33,9 @@ namespace Algorithm.DailyExcise
                 });//[3,2,3]
             var maxPowerClass = new MaxPowerClass();
             var maxPowerClassResult = maxPowerClass.MaxPower(new int[] { 1, 2, 4, 5, 0 },1,2);//5
+
+            var minimuOneBitClass = new MinimumOneBitOperationsClass();
+            var minimuOneBitClassResult = minimuOneBitClass.MinimumOneBitOperations(9);//14
         }
 
     }
