@@ -39,6 +39,17 @@ namespace Algorithm.DailyExcise
 
         //0 <= n <= 109
 
+        public int MinimumOneBitOperations2(int n)
+        {
+            var arr = ToBitArray(n);
+            var ans = 0;
+            for (var i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] == 0) continue;
+                ans = (1 << (i + 1)) - 1 - ans;
+            }
+            return ans;
+        }
         public int MinimumOneBitOperations(int n)
         {
             if (n == 0) return 0;

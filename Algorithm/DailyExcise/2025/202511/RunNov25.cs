@@ -36,6 +36,11 @@ namespace Algorithm.DailyExcise
 
             var minimuOneBitClass = new MinimumOneBitOperationsClass();
             var minimuOneBitClassResult = minimuOneBitClass.MinimumOneBitOperations(9);//14
+
+            minimuOneBitClassResult = minimuOneBitClass.MinimumOneBitOperations2(9);//14
+
+            var minOperationClass = new MinOperationsClass4();
+            var minOperationClassResult = minOperationClass.MinOperations(new int[] { 3, 1, 2, 1 });//3
         }
 
     }
