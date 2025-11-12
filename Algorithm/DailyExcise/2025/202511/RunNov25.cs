@@ -41,6 +41,8 @@ namespace Algorithm.DailyExcise
 
             var minOperationClass = new MinOperationsClass4();
             var minOperationClassResult = minOperationClass.MinOperations(new int[] { 3, 1, 2, 1 });//3
+            var minOperationClass2= new MinOperationsClass5();
+            var minOperationClassResult2 = minOperationClass2.MinOperations(new int[] { 2, 6, 3, 4 });//4 
         }
 
     }
