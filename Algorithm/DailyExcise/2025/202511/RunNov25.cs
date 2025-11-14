@@ -43,6 +43,14 @@ namespace Algorithm.DailyExcise
             var minOperationClassResult = minOperationClass.MinOperations(new int[] { 3, 1, 2, 1 });//3
             var minOperationClass2= new MinOperationsClass5();
             var minOperationClassResult2 = minOperationClass2.MinOperations(new int[] { 2, 6, 3, 4 });//4 
+        
+            var rangeAddQueriesClass = new RangeAddQueriesClass();
+            var rangeAddQueriesClassResult = rangeAddQueriesClass.RangeAddQueries(
+                3,
+                new int[][] { 
+                    new int[]{ 1, 1, 2, 2 },
+                    new int[]{ 0, 0, 1, 1 }
+                });//[[1,1,0],[1,2,1],[0,1,1]]
         }
 
     }
