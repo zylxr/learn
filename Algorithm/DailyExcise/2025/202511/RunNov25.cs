@@ -51,6 +51,9 @@ namespace Algorithm.DailyExcise
                     new int[]{ 1, 1, 2, 2 },
                     new int[]{ 0, 0, 1, 1 }
                 });//[[1,1,0],[1,2,1],[0,1,1]]
+
+            var numberOfSubStringClass = new NumberOfSubstringsClass();
+            var numberOfSubStringClassResult = numberOfSubStringClass.NumberOfSubstrings("00011");//5
         }
 
     }
