@@ -54,6 +54,14 @@ namespace Algorithm.DailyExcise
 
             var numberOfSubStringClass = new NumberOfSubstringsClass();
             var numberOfSubStringClassResult = numberOfSubStringClass.NumberOfSubstrings("00011");//5
+
+            var intersectionClass = new IntersectionSizeTwoClass();
+            var intersectionClassResult = intersectionClass.IntersectionSizeTwo(new int[][] {
+            new int[]{ 1,2 },
+            new int[]{2,3 },
+            new int[]{ 2,4},
+            new int[]{ 4,5} }
+            );//5
         }
 
     }
