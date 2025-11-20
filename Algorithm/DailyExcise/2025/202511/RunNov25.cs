@@ -62,6 +62,9 @@ namespace Algorithm.DailyExcise
             new int[]{ 2,4},
             new int[]{ 4,5} }
             );//5
+
+            var countPalindromicSubClass = new CountPalindromicSubsequenceClass();
+            var countPalindromicSubClassResult = countPalindromicSubClass.CountPalindromicSubsequence("aabca");//3
         }
 
     }
