@@ -65,6 +65,9 @@ namespace Algorithm.DailyExcise
 
             var countPalindromicSubClass = new CountPalindromicSubsequenceClass();
             var countPalindromicSubClassResult = countPalindromicSubClass.CountPalindromicSubsequence("aabca");//3
+
+            var smallestRep = new SmallestRepunitDivByKClass();
+            var smallestRepResult = smallestRep.SmallestRepunitDivByK(3);//3
         }
 
     }
