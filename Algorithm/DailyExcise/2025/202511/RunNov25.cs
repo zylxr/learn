@@ -81,6 +81,9 @@ namespace Algorithm.DailyExcise
                 new int[]{ 3,0,5},
                 new int[]{ 0,7,2}
             }, 3);//2
+
+            var maxSubArraySumClass = new MaxSubarraySumClass();
+            var maxSubArraySumClassResult = maxSubArraySumClass.MaxSubarraySum(new int[] { 1,2},1);//3
         }
 
     }
