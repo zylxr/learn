@@ -68,6 +68,19 @@ namespace Algorithm.DailyExcise
 
             var smallestRep = new SmallestRepunitDivByKClass();
             var smallestRepResult = smallestRep.SmallestRepunitDivByK(3);//3
+
+            var numberOfPathsClass = new NumberOfPathsClass();
+            var numberOfPathClassResult = numberOfPathsClass.NumberOfPaths(new int[][] {
+                new int[]{ 5,2,4},
+                new int[]{ 3,0,5},
+                new int[]{ 0,7,2}
+            },3);//2
+
+            numberOfPathClassResult = numberOfPathsClass.NumberOfPaths2(new int[][] {
+                new int[]{ 5,2,4},
+                new int[]{ 3,0,5},
+                new int[]{ 0,7,2}
+            }, 3);//2
         }
 
     }
