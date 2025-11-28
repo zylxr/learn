@@ -84,6 +84,16 @@ namespace Algorithm.DailyExcise
 
             var maxSubArraySumClass = new MaxSubarraySumClass();
             var maxSubArraySumClassResult = maxSubArraySumClass.MaxSubarraySum(new int[] { 1,2},1);//3
+
+            var maxKDivisibleCompClass = new MaxKDivisibleComponentsClass();
+            var maxKDivisibleCompClassResult = maxKDivisibleCompClass.MaxKDivisibleComponents(5,new int[][]
+            {
+                new int[]{ 0,2 },
+                new int[]{ 1,2},
+                new int[]{ 1,3},
+                new int[]{ 2,4}
+            },
+            new int[] { 1,8,1,4,4},6);//2
         }
 
     }
