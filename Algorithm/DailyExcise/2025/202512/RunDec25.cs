@@ -12,6 +12,15 @@ namespace Algorithm.DailyExcise
         {
             var maxRunTimeClass = new MaxRunTimeClass();
             var maxRunTimeClassResult = maxRunTimeClass.MaxRunTime(2,new int[] { 3,3,3});//4
+            var countTrapezoidsClass = new CountTrapezoidsClass();
+            var countTrapezoidsClassResult = countTrapezoidsClass.CountTrapezoids(
+               new int[][] { 
+                   new int[] { 1,0 },
+                   new int[] { 2,0},
+                   new int[]{ 3,0},
+                   new int[]{2,2 },
+                   new int[]{3,2}
+               });//3
         }
     }
 }
