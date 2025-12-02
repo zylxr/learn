@@ -21,6 +21,15 @@ namespace Algorithm.DailyExcise
                    new int[]{2,2 },
                    new int[]{3,2}
                });//3
+            var countTrapezoidsClass2 = new CountTrapezoidsClass2();
+            var countTrapezoidsClass2Result = countTrapezoidsClass2.CountTrapezoids(new
+                int[][] {
+                    new int[]{ -3, 2 },
+                    new int[]{ 3, 0},
+                    new int[]{ 2, 3},
+                    new int[]{ 3, 2},
+                    new int[]{ 2, -3}
+                });//2
         }
     }
 }
