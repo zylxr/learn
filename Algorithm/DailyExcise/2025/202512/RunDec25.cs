@@ -30,6 +30,10 @@ namespace Algorithm.DailyExcise
                     new int[]{ 3, 2},
                     new int[]{ 2, -3}
                 });//2
+
+            var countCollisionsClass = new CountCollisionsClass();
+            var countCollisionsClassResult = countCollisionsClass.CountCollisions("RLRSLL");//5
+            countCollisionsClassResult = countCollisionsClass.CountCollisions2("RLRSLL");//5
         }
     }
 }
