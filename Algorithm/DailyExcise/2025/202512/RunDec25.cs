@@ -34,6 +34,10 @@ namespace Algorithm.DailyExcise
             var countCollisionsClass = new CountCollisionsClass();
             var countCollisionsClassResult = countCollisionsClass.CountCollisions("RLRSLL");//5
             countCollisionsClassResult = countCollisionsClass.CountCollisions2("RLRSLL");//5
+
+            var countPartitionClass = new CountPartitionsClass();
+            var countPartitionClassResult = countPartitionClass.CountPartitions(new int[] { 9, 4, 1, 3, 7 },4);//6
+            countPartitionClassResult = countPartitionClass.CountPartitions2(new int[] { 9, 4, 1, 3, 7 }, 4);//6
         }
     }
 }
