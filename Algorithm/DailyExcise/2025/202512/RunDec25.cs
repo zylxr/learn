@@ -48,6 +48,9 @@ namespace Algorithm.DailyExcise
 
             var getDescentPeriodsClass = new GetDescentPeriodsClass();
             var getDescentPeriodsCalssResult = getDescentPeriodsClass.GetDescentPeriods(new int[] { 3, 2, 1, 4 });//7
+
+            var maxProfitClass = new MaxProfitClass();
+            var maxProfitClassResult = maxProfitClass.MaxProfit(3,new int[] { 4,6,8}, new int[] {7,9,11 },new int[][] { new int[] { 1,2},new int[] {1,3 } },10);//10
         }
     }
 }
