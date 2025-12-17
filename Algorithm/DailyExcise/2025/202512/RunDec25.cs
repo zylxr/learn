@@ -51,6 +51,9 @@ namespace Algorithm.DailyExcise
 
             var maxProfitClass = new MaxProfitClass();
             var maxProfitClassResult = maxProfitClass.MaxProfit(3,new int[] { 4,6,8}, new int[] {7,9,11 },new int[][] { new int[] { 1,2},new int[] {1,3 } },10);//10
+
+            var maxProfitClass2 = new MaximumProfitClass2();
+            var maxProfitClass2Result = maxProfitClass2.MaximumProfit(new int[] { 1, 7, 9, 8, 2 },2);//14
         }
     }
 }
