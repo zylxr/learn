@@ -59,6 +59,9 @@ namespace Algorithm.DailyExcise
             var maxProfitClass3Result = maxProfitClass3.MaxProfit(new int[] { 9, 2, 9, 5 },new int[] { -1, 0, 1, 1 },4);//14
 
             maxProfitClass3Result = maxProfitClass3.MaxProfit2(new int[] { 9, 2, 9, 5 }, new int[] { -1, 0, 1, 1 }, 4);//14
+
+            var findAllPeopleClass = new FindAllPeopleClass();
+            var findAllPeopleClassResult = findAllPeopleClass.FindAllPeople(6,new int[][] { new int[] { 0,2,1,},new int[] { 1,3,1},new int[] { 4,5,1} },1); //0,1,2,3
         }
     }
 }
