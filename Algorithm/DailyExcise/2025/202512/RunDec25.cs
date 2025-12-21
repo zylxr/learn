@@ -62,6 +62,9 @@ namespace Algorithm.DailyExcise
 
             var findAllPeopleClass = new FindAllPeopleClass();
             var findAllPeopleClassResult = findAllPeopleClass.FindAllPeople(6,new int[][] { new int[] { 0,2,1,},new int[] { 1,3,1},new int[] { 4,5,1} },1); //0,1,2,3
+        
+            var minDeletionSizeClass = new MinDeletionSizeClass();
+            var minDeletionSizeClassResult = minDeletionSizeClass.MinDeletionSize(new string[] { "babca", "bbazb" });//3
         }
     }
 }
