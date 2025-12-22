@@ -65,6 +65,9 @@ namespace Algorithm.DailyExcise
         
             var minDeletionSizeClass = new MinDeletionSizeClass();
             var minDeletionSizeClassResult = minDeletionSizeClass.MinDeletionSize(new string[] { "babca", "bbazb" });//3
+        
+            var maxTwoEventsClass = new MaxTwoEventsClass();
+            var maxTwoEventsClassResult = maxTwoEventsClass.MaxTwoEvents(new int[][] { new int[] { 1,3,2},new int[] { 4,5,2},new int[] { 2,4,3} });//4
         }
     }
 }
