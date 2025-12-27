@@ -68,6 +68,24 @@ namespace Algorithm.DailyExcise
         
             var maxTwoEventsClass = new MaxTwoEventsClass();
             var maxTwoEventsClassResult = maxTwoEventsClass.MaxTwoEvents(new int[][] { new int[] { 1,3,2},new int[] { 4,5,2},new int[] { 2,4,3} });//4
+
+            var mostBookedClass = new MostBookedClass();
+            var mostBookedClassResult = mostBookedClass.MostBooked(3,new int[][] { 
+                new int[]{ 44,50},
+                new int[]{22,37 },
+                new int[]{ 46,49},
+                new int[]{ 35,45},
+                new int[]{11,21 },
+                new int[]{ 31,32},
+                new int[]{ 16, 45 }
+            });//0
+
+            mostBookedClassResult = mostBookedClass.MostBooked(2, new int[][] {
+                new int[]{ 0,10},
+                new int[]{1,5 },
+                new int[]{ 2,7},
+                new int[]{ 3,4}
+            });//0
         }
     }
 }
