@@ -86,6 +86,12 @@ namespace Algorithm.DailyExcise
                 new int[]{ 2,7},
                 new int[]{ 3,4}
             });//0
+
+            var pyramidTransitionClass = new PyramidTransitionClass();
+            var pyramidTransitionClassResult = pyramidTransitionClass.PyramidTransition("BCD",
+                new List<string> {
+                    "BCC","CDE","CEA","FFF"
+                });//true
         }
     }
 }
