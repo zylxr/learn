@@ -92,6 +92,15 @@ namespace Algorithm.DailyExcise
                 new List<string> {
                     "BCC","CDE","CEA","FFF"
                 });//true
+
+            var numMagicSquaresInsideClass = new NumMagicSquaresInsideClass();
+            var numMagicSquareInsideClassResult = numMagicSquaresInsideClass.NumMagicSquaresInside(
+                new int[][] { 
+                    new int[]{ 4, 3, 8, 4 },
+                    new int[]{ 9,5,1,9 },
+                    new int[]{ 2, 7, 6, 2 }
+                }
+                );//1
         }
     }
 }
