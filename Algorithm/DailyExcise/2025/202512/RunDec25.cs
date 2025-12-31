@@ -101,6 +101,16 @@ namespace Algorithm.DailyExcise
                     new int[]{ 2, 7, 6, 2 }
                 }
                 );//1
+
+            var lastDayToCrossClass = new LatestDayToCrossClass();
+            var latestDayToCrossClassResult = lastDayToCrossClass.LatestDayToCross(2,2,new int[][]
+            {
+                new int[]{ 1, 1 },
+                new int[] { 2,1 },
+                new int[] { 1, 2 },
+                new int[] { 2, 2 }
+
+             });//2
         }
     }
 }
