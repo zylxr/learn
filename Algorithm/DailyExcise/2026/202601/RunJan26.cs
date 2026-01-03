@@ -12,6 +12,9 @@ namespace Algorithm.DailyExcise
         {
             var numOfWaysClass = new NumOfWaysClass();
             var numOfWaysClassResult = numOfWaysClass.NumOfWays(2);//54
+
+            var sumFourDivisionClass = new SumFourDivisorsClass();
+            var sumFourDivisionClassResult = sumFourDivisionClass.SumFourDivisors(new int[] { 21,4,7});//32
         }
     }
 }
