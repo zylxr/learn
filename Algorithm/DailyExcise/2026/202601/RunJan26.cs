@@ -22,6 +22,14 @@ namespace Algorithm.DailyExcise
                 new int[] { -2,1,3 },
                 new int[] { 3,2,2 }
             });//15
+
+            var maxLevelSumClass = new MaxLevelSumClass();
+            var r = new TreeNode { val =1,left = new TreeNode { val = 7,
+                left = new TreeNode { val=7},right = new TreeNode { val=-8}
+            },
+                right = new TreeNode { val = 0} };
+            var maxlevelSumClassResult = maxLevelSumClass.MaxLevelSum(r);//2
+            maxlevelSumClassResult = maxLevelSumClass.MaxLevelSum2(r);//2
         }
     }
 }
