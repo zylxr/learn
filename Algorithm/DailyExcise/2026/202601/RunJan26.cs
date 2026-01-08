@@ -30,6 +30,11 @@ namespace Algorithm.DailyExcise
                 right = new TreeNode { val = 0} };
             var maxlevelSumClassResult = maxLevelSumClass.MaxLevelSum(r);//2
             maxlevelSumClassResult = maxLevelSumClass.MaxLevelSum2(r);//2
+
+            var maxDotProductClass = new MaxDotProductClass();
+            var maxDotProductClassResult = maxDotProductClass.MaxDotProduct(
+                new int[] {2,1,-2,5 },
+                new int[] { 3,0,-6});//18
         }
     }
 }
