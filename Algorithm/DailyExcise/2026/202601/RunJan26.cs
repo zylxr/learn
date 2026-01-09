@@ -35,6 +35,9 @@ namespace Algorithm.DailyExcise
             var maxDotProductClassResult = maxDotProductClass.MaxDotProduct(
                 new int[] {2,1,-2,5 },
                 new int[] { 3,0,-6});//18
+
+            var minimumDeleteSumClass = new MinimumDeleteSumClass();
+            var minimumDeleteSumClassResult = minimumDeleteSumClass.MinimumDeleteSum("sea","eat");//231
         }
     }
 }
