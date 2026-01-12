@@ -38,6 +38,9 @@ namespace Algorithm.DailyExcise
 
             var minimumDeleteSumClass = new MinimumDeleteSumClass();
             var minimumDeleteSumClassResult = minimumDeleteSumClass.MinimumDeleteSum("sea","eat");//231
+
+            var separateSquaresClass = new SeparateSquaresClass();
+            var separateSquaresClassResult = separateSquaresClass.SeparateSquares(new int[][] { new int[] { 0, 0, 1 },new int[] { 2, 2, 1 } });//1
         }
     }
 }
