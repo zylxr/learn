@@ -41,6 +41,12 @@ namespace Algorithm.DailyExcise
 
             var separateSquaresClass = new SeparateSquaresClass();
             var separateSquaresClassResult = separateSquaresClass.SeparateSquares(new int[][] { new int[] { 0, 0, 1 },new int[] { 2, 2, 1 } });//1
+
+            var largestSquareAreaClass = new LargestSquareAreaClass();
+            var largestSquareAreaClassResult = largestSquareAreaClass.LargestSquareArea(
+                new int[][] { new int[] { 1, 1 },new int[] { 2, 2 },new int[] { 3, 1 } },
+                new int[][] { new int[] { 3, 3 },new int[] { 4, 4 },new int[] { 6, 6 } }
+                );//1
         }
     }
 }
