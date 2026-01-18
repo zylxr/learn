@@ -47,6 +47,19 @@ namespace Algorithm.DailyExcise
                 new int[][] { new int[] { 1, 1 },new int[] { 2, 2 },new int[] { 3, 1 } },
                 new int[][] { new int[] { 3, 3 },new int[] { 4, 4 },new int[] { 6, 6 } }
                 );//1
+
+            var maxSideLengthClass = new MaxSideLengthClass();
+            var maxSideLengthClassResult = maxSideLengthClass.MaxSideLength(new int[][] { 
+                new int[]{ 1, 1, 3, 2, 4, 3, 2 },
+                new int[]{1,1,3,2,4,3,2 },
+                new int[]{ 1, 1, 3, 2, 4, 3, 2 }
+            },4);//2
+
+            maxSideLengthClassResult = maxSideLengthClass.MaxSideLength2(new int[][] {
+                new int[]{ 1, 1, 3, 2, 4, 3, 2 },
+                new int[]{1,1,3,2,4,3,2 },
+                new int[]{ 1, 1, 3, 2, 4, 3, 2 }
+            }, 4);//2
         }
     }
 }
