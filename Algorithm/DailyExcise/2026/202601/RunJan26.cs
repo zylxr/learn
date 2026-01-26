@@ -66,6 +66,12 @@ namespace Algorithm.DailyExcise
 
             var minPairSumClass = new MinPairSumClass();
             var minPairSumClassResult = minPairSumClass.MinPairSum(new int[] { 3,5,2,3});//7
+
+            var minCostClass5 = new MinCostClass5();
+            var minCostClass5Result = minCostClass5.MinCost(4,new int[][] { 
+                new int[]{0,1,3 },
+                new int[]{ 3,1,1}, new int[]{2,3,4 },new int[]{0,2,2}
+            });//5
         }
     }
 }
