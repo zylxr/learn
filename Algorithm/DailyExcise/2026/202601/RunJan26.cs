@@ -72,6 +72,12 @@ namespace Algorithm.DailyExcise
                 new int[]{0,1,3 },
                 new int[]{ 3,1,1}, new int[]{2,3,4 },new int[]{0,2,2}
             });//5
+
+            var minCostClass6 = new MinCostClass6();
+            var minCostClass6Result = minCostClass6.MinCost(new int[][] { 
+                new int[]{ 1, 3, 3 },
+                new int[]{ 2,5,4}, new int[]{ 4, 3, 5 }
+            },2);//7
         }
     }
 }
