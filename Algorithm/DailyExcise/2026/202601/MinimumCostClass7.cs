@@ -133,7 +133,7 @@ namespace Algorithm.DailyExcise
             {
                 var idx = original[i] - 'a';
                 var idy = changed[i] - 'a';
-                g[idx, idy] = cost[i];
+                g[idx, idy] = Math.Min(g[idx, idy], cost[i]);
             }
             for(var k=0;k<26;k++)
             {
@@ -149,7 +149,7 @@ namespace Algorithm.DailyExcise
                 }
             }
             var n = source.Length;
-            var ans = 0;
+            var ans = 0L;
             for(var i=0;i<n;i++)
             {
                 var idx = source[i] - 'a';
