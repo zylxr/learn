@@ -78,6 +78,18 @@ namespace Algorithm.DailyExcise
                 new int[]{ 1, 3, 3 },
                 new int[]{ 2,5,4}, new int[]{ 4, 3, 5 }
             },2);//7
+
+            var minimumCostClass7 = new MinimumCostClass7();
+            var minimumCostClass7Result = minimumCostClass7.MinimumCost("abcd", "acbe",
+                new char[] { 'a', 'b', 'c', 'c', 'e', 'd' },
+                new char[] { 'b', 'c', 'b', 'e', 'b', 'e' },
+                new int[] { 2, 5, 5, 1, 2, 20 }
+                );//28
+            minimumCostClass7Result = minimumCostClass7.MinimumCost2("abcd", "acbe",
+                new char[] { 'a', 'b', 'c', 'c', 'e', 'd' },
+                new char[] { 'b', 'c', 'b', 'e', 'b', 'e' },
+                new int[] { 2, 5, 5, 1, 2, 20 }
+                );//28
         }
     }
 }
