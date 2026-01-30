@@ -90,6 +90,10 @@ namespace Algorithm.DailyExcise
                 new char[] { 'b', 'c', 'b', 'e', 'b', 'e' },
                 new int[] { 2, 5, 5, 1, 2, 20 }
                 );//28
+            var minimumCostClass8 = new MinimumCostClass8();
+            var minimumCostClass8Result = minimumCostClass8.MinimumCost(
+                "abcd", "acbe",new string[] { "a", "b", "c", "c", "e", "d" },new string[] { "b", "c", "b", "e", "b", "e" },new int[] { 2, 5, 5, 1, 2, 20 }
+                );//28
         }
     }
 }
