@@ -18,6 +18,10 @@ namespace Algorithm.DailyExcise
             var isTionicClass = new IsTrionicClass();
             var isTrionicClassResult = isTionicClass.IsTrionic(new int[] { 4, 1, 5, 2, 3 });//false
             isTrionicClassResult = isTionicClass.IsTrionic(new int[] { 1, 3, 5, 4, 2, 6 });//true
+
+            var maxsumTrionicClass  = new MaxSumTrionicClass();
+            var maxsumTrionicClassResult = maxsumTrionicClass.MaxSumTrionic(new int[] { 0, -2, -1, -3, 0, 2, -1 });//-4
+
         }
     }
 }
