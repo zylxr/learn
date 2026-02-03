@@ -14,6 +14,10 @@ namespace Algorithm.DailyExcise
             var minimuCostClass9Result = minimumCostClass9.MinimumCost(new int[] {
                 1,3,2,6,4,2
             },3,3);//5
+
+            var isTionicClass = new IsTrionicClass();
+            var isTrionicClassResult = isTionicClass.IsTrionic(new int[] { 4, 1, 5, 2, 3 });//false
+            isTrionicClassResult = isTionicClass.IsTrionic(new int[] { 1, 3, 5, 4, 2, 6 });//true
         }
     }
 }
