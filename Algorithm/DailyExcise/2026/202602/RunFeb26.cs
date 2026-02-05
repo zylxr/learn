@@ -22,6 +22,9 @@ namespace Algorithm.DailyExcise
             var maxsumTrionicClass  = new MaxSumTrionicClass();
             var maxsumTrionicClassResult = maxsumTrionicClass.MaxSumTrionic(new int[] { 0, -2, -1, -3, 0, 2, -1 });//-4
 
+            var minRemovalClass = new MinRemovalClass();
+            var minRemovalClassResult = minRemovalClass.MinRemoval(new int[] { 1, 6, 2, 9 },3);//2
+
         }
     }
 }
