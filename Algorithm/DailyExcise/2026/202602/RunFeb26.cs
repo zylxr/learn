@@ -25,6 +25,9 @@ namespace Algorithm.DailyExcise
             var minRemovalClass = new MinRemovalClass();
             var minRemovalClassResult = minRemovalClass.MinRemoval(new int[] { 1, 6, 2, 9 },3);//2
 
+            var minimudeletionClass2 = new MinimumDeletionsClass2();
+            var minimudeletionClass2Result = minimudeletionClass2.MinimumDeletions("aababbab");//2
+
         }
     }
 }
