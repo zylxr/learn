@@ -28,6 +28,19 @@ namespace Algorithm.DailyExcise
             var minimudeletionClass2 = new MinimumDeletionsClass2();
             var minimudeletionClass2Result = minimudeletionClass2.MinimumDeletions("aababbab");//2
 
+            var balanceBSTClass = new BalanceBSTClass();
+            var root = new BalanceBSTClass.TreeNode(
+                1,null,
+                new BalanceBSTClass.TreeNode(
+                    2,null,
+                    new BalanceBSTClass.TreeNode(
+                        3,null,
+                        new BalanceBSTClass.TreeNode(4)
+                    )
+                )
+            );
+            var balanceBSTClassResult = balanceBSTClass.BalanceBST(root);//[2,1,3,null,null,null,4]
+
         }
     }
 }
