@@ -41,6 +41,9 @@ namespace Algorithm.DailyExcise
             );
             var balanceBSTClassResult = balanceBSTClass.BalanceBST(root);//[2,1,3,null,null,null,4]
 
+            var longestBalancedClass = new LongestBalancedClass();
+            var longestBalancedClassResult = longestBalancedClass.LongestBalanced(new int[] { 2, 5, 4, 3 });//4
+
         }
     }
 }
