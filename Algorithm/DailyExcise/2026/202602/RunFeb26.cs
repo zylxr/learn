@@ -47,6 +47,9 @@ namespace Algorithm.DailyExcise
             var longestBalanceClass2 = new LongestBalancedClass2();
             var longestBalanceClass2Result = longestBalanceClass2.LongestBalanced(new int[] { 2, 5, 4, 3 });//4
 
+            var longestBalancedClass3 = new LongestBalancedClass3();
+            var longestBalancedClass3Result = longestBalancedClass3.LongestBalanced("zzabccy");//4
+
         }
     }
 }
