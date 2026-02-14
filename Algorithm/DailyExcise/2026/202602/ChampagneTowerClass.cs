@@ -44,7 +44,6 @@ namespace Algorithm.DailyExcise
         public double ChampagneTower(int poured, int query_row, int query_glass)
         {
             double[] row = { poured };
-            int[] d = { 3,5,6 };
             for (var i = 1; i <= query_row; i++)
             {
                 double[] nextrow = new double[i + 1];
