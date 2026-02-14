@@ -50,6 +50,9 @@ namespace Algorithm.DailyExcise
             var longestBalancedClass3 = new LongestBalancedClass3();
             var longestBalancedClass3Result = longestBalancedClass3.LongestBalanced("zzabccy");//4
 
+            var champagnTowerClass = new ChampagneTowerClass();
+            var champagnTowerClassResult = champagnTowerClass.ChampagneTower(2,1,1);//0.5
+
         }
     }
 }
