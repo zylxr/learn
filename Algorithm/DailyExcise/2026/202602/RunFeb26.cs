@@ -56,6 +56,22 @@ namespace Algorithm.DailyExcise
             var readBinanryWatchClass = new ReadBinaryWatchClass();
             var readBinaryWatchClassResult = readBinanryWatchClass.ReadBinaryWatch(1);//["0:01","0:02","0:04","0:08","0:16","0:32","1:00","2:00","4:00","8:00"]
 
+            var sumRootToLeafClass = new SumRootToLeafClass();
+            var root1 = new TreeNode
+            {
+                val = 1,
+                left = new TreeNode(0)
+                {
+                    left = new TreeNode(0),
+                    right = new TreeNode(1)
+                },
+                right = new TreeNode(1) { 
+                    left = new TreeNode(0),
+                    right = new TreeNode(1)
+                }
+            };
+            var sumRootToLeafClassResult = sumRootToLeafClass.SumRootToLeaf(root1);//22
+
         }
     }
 }
