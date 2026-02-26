@@ -72,6 +72,9 @@ namespace Algorithm.DailyExcise
             };
             var sumRootToLeafClassResult = sumRootToLeafClass.SumRootToLeaf(root1);//22
 
+            var numStepsClass = new NumStepsClass();
+            var numStepClassResult = numStepsClass.NumSteps("1101");//6
+
         }
     }
 }
