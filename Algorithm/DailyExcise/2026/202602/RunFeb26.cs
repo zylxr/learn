@@ -75,6 +75,8 @@ namespace Algorithm.DailyExcise
             var numStepsClass = new NumStepsClass();
             var numStepClassResult = numStepsClass.NumSteps("1101");//6
 
+            var minOperationsClass = new MinOperationsClass6();
+            var minOperationClassResult = minOperationsClass.MinOperations("0101",3);//2
         }
     }
 }
