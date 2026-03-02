@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Algorithm.DailyExcise
+{
+    public class RunMarch26
+    {
+        public static void Run()
+        {
+            var minSwapClass2 = new MinSwapsClass2();
+            var minSwapClass2Result = minSwapClass2.MinSwaps(new int[][] {
+                new int[]{ 0,0,1},
+                new int[]{ 1,1,0},
+                new int[]{ 1,0,0}
+            });//3
+        }
+    }
+}
