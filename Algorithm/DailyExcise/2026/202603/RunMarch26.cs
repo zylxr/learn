@@ -16,6 +16,9 @@ namespace Algorithm.DailyExcise
                 new int[]{ 1,1,0},
                 new int[]{ 1,0,0}
             });//3
+
+            var findKthBitClass = new FindKthBitClass();
+            var findKthBitClassResult = findKthBitClass.FindKthBit(4,11);//"1"
         }
     }
 }
