@@ -19,6 +19,9 @@ namespace Algorithm.DailyExcise
 
             var findKthBitClass = new FindKthBitClass();
             var findKthBitClassResult = findKthBitClass.FindKthBit(4,11);//"1"
+
+            var minFlipsClass3 = new MinFlipsClass3();
+            var minFlipsClass3Result = minFlipsClass3.MinFlips("111000");//2
         }
     }
 }
