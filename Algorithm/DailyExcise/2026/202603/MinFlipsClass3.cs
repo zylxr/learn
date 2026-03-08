@@ -70,5 +70,35 @@ namespace Algorithm.DailyExcise
             }
             return ans;
         }
+        public int MinFlips2(string s)
+        {
+            var n = s.Length;
+            var alt1 = new int[2 * n];
+            var alt2 = new int[2 * n];
+            for(var i=0;i<2*n;i++)
+            {
+                alt1[i] = i % 2;
+                alt2[i] = (i+1) % 2;
+            }
+            int diff1 = 0, diff2 = 0;
+            for(var i=0;i<n;i++)
+            {
+                var ch = s[i] - '0';
+                if (ch != alt1[i]) diff1++;
+                if (ch != alt2[i]) diff2++;
+            }
+            var ans = Math.Min(diff1, diff2);
+            for(var i=1;i<=n;i++)
+            {
+                var ch = s[i - 1] - '0';
+                if (ch != alt1[i-1]) diff1--;
+                if (ch != alt2[i-1]) diff2--;
+                if (ch != alt1[i+n-1]) diff1++;
+                if (ch != alt2[i+n-1]) diff2++;
+                ans = Math.Min(diff1, ans);
+                ans = Math.Min(diff2, ans);
+            }
+            return ans;
+        }
     }
 }
