@@ -23,6 +23,9 @@ namespace Algorithm.DailyExcise
             var minFlipsClass3 = new MinFlipsClass3();
             var minFlipsClass3Result = minFlipsClass3.MinFlips("111000");//2
             minFlipsClass3Result = minFlipsClass3.MinFlips2("111000");//2
+
+            var minNumberOfSeconds = new MinNumberOfSecondsClass();
+            var minNumberOfSecondsResult = minNumberOfSeconds.MinNumberOfSeconds(4,new int[] {2,1,1 });//3
         }
     }
 }
