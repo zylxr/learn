@@ -40,6 +40,13 @@ namespace Algorithm.DailyExcise
                     new int[]{ 4, 3, 2, 2, 5 }
                 }
                 );//[228,216,211]
+
+            var largestSubmatrixClass = new LargestSubmatrixClass();
+            var largestSubmatrixClassResult = largestSubmatrixClass.LargestSubmatrix(new int[][] { 
+                new int[]{ 0, 0, 1 },
+                new int[]{ 1,1,1},
+                new int[]{ 1,0,1 }
+            });//4
         }
     }
 }
