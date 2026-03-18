@@ -47,6 +47,12 @@ namespace Algorithm.DailyExcise
                 new int[]{ 1,1,1},
                 new int[]{ 1,0,1 }
             });//4
+
+            var countSubMatriceClass = new CountSubmatricesClass();
+            var countSubMatriceClassResult = countSubMatriceClass.CountSubmatrices(new int[][] {
+                new int[]{ 7,6,3},
+                new int[]{ 6, 6, 1 }
+            },18);//4
         }
     }
 }
