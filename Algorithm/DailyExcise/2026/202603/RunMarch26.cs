@@ -53,6 +53,9 @@ namespace Algorithm.DailyExcise
                 new int[]{ 7,6,3},
                 new int[]{ 6, 6, 1 }
             },18);//4
+
+            var minAbsDiffClass = new MinAbsDiffClass();
+            var minAbsDiffClassResult = minAbsDiffClass.MinAbsDiff(new int[][] { new int[] { 1,-2,3},new int[] { 2,3,5} },2);//[[1,2]]
         }
     }
 }
