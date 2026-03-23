@@ -56,6 +56,13 @@ namespace Algorithm.DailyExcise
 
             var minAbsDiffClass = new MinAbsDiffClass();
             var minAbsDiffClassResult = minAbsDiffClass.MinAbsDiff(new int[][] { new int[] { 1,-2,3},new int[] { 2,3,5} },2);//[[1,2]]
+
+            var maxProductPathClass = new MaxProductPathClass();
+            var maxProductPathClassResult = maxProductPathClass.MaxProductPath(new int[][] { 
+                new int[]{1,-2,1 },
+                new int[]{1,-2,1 },
+                new int[]{ 3, -4, 1 }
+            });//8
         }
     }
 }
