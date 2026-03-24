@@ -63,6 +63,9 @@ namespace Algorithm.DailyExcise
                 new int[]{1,-2,1 },
                 new int[]{ 3, -4, 1 }
             });//8
+
+            var constructProductMatrixClass = new ConstructProductMatrixClass();
+            var constructProductMatrixClassResult = constructProductMatrixClass.ConstructProductMatrix(new int[][] { new int[] { 12345 }, new int[] { 2 }, new int[] { 1} });//[[2],[0],[0]]
         }
     }
 }
