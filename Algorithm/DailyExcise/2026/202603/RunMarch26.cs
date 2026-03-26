@@ -66,6 +66,12 @@ namespace Algorithm.DailyExcise
 
             var constructProductMatrixClass = new ConstructProductMatrixClass();
             var constructProductMatrixClassResult = constructProductMatrixClass.ConstructProductMatrix(new int[][] { new int[] { 12345 }, new int[] { 2 }, new int[] { 1} });//[[2],[0],[0]]
+
+            var canPartitionGridClass = new CanPartitionGridClass();
+            var canPartitionGridClassResult = canPartitionGridClass.CanPartitionGrid(new int[][] { 
+                new int[]{ 1,4 },
+                new int[]{ 2,3 }
+            });//true
         }
     }
 }
