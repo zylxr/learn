@@ -80,6 +80,11 @@ namespace Algorithm.DailyExcise
                 new int[]{ 2, 0, 2, 0 },
                 new int[]{ 0, 1, 0, 1 }
             });//"abab"
+
+            var checkStringsClass = new CheckStringsClass();
+            var checkStringsClassResult = checkStringsClass.CheckStrings("abcdba", "cabdab");//true
+
+            checkStringsClassResult = checkStringsClass.CheckStrings("oyjngnej", "oynjjeng");//false
         }
     }
 }
