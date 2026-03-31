@@ -85,6 +85,9 @@ namespace Algorithm.DailyExcise
             var checkStringsClassResult = checkStringsClass.CheckStrings("abcdba", "cabdab");//true
 
             checkStringsClassResult = checkStringsClass.CheckStrings("oyjngnej", "oynjjeng");//false
+
+            var generateStringClass = new GenerateStringClass();
+            var generateStringClassResult = generateStringClass.GenerateString("TFTF", "ab");//"ababa"
         }
     }
 }
