@@ -23,6 +23,11 @@ namespace Algorithm.DailyExcise
                 new int[]{ 1, -2, 3 },
                 new int[]{ 2, -3, 4 }
             });
+
+            var maxWallsClass = new MaxWallsClass();
+            var maxWallsClassResult = maxWallsClass.MaxWalls(new int[] { 10, 2 },new int[] { 5, 1 },new int[] { 5, 2, 7 });//3
+
+            maxWallsClassResult = maxWallsClass.MaxWalls(new int[] { 1, 2 }, new int[] { 100, 1 }, new int[] { 10 });//0
         }
     }
 }
