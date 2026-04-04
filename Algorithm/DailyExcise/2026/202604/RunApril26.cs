@@ -28,6 +28,9 @@ namespace Algorithm.DailyExcise
             var maxWallsClassResult = maxWallsClass.MaxWalls(new int[] { 10, 2 },new int[] { 5, 1 },new int[] { 5, 2, 7 });//3
 
             maxWallsClassResult = maxWallsClass.MaxWalls(new int[] { 1, 2 }, new int[] { 100, 1 }, new int[] { 10 });//0
+
+            var minCostClass8 = new MinCostClass8();
+            var minCostClass8Result = minCostClass8.MinCost(new int[] { 1,0},new int[] { 2,3},new int[] { 5,4,3},new int[] { 8,2,6,7});//18
         }
     }
 }
