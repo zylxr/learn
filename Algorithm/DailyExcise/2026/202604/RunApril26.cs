@@ -31,6 +31,9 @@ namespace Algorithm.DailyExcise
 
             var minCostClass8 = new MinCostClass8();
             var minCostClass8Result = minCostClass8.MinCost(new int[] { 1,0},new int[] { 2,3},new int[] { 5,4,3},new int[] { 8,2,6,7});//18
+
+            var robotSimClass = new RobotSimClass();
+            var robotSimClassResult = robotSimClass.RobotSim(new int[] { 4, -1, 4, -2, 4 },new int[][]{ new[] { 2, 4 }});//65
         }
     }
 }
