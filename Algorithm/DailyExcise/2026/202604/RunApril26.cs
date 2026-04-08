@@ -34,6 +34,9 @@ namespace Algorithm.DailyExcise
 
             var robotSimClass = new RobotSimClass();
             var robotSimClassResult = robotSimClass.RobotSim(new int[] { 4, -1, 4, -2, 4 },new int[][]{ new[] { 2, 4 }});//65
+
+            var xorAfterQueryClass = new XorAfterQueriesClass();
+            var xorAfterQueryClassResult = xorAfterQueryClass.XorAfterQueries(new int[] { 2, 3, 1, 5, 4 },new int[][] { new int[] { 1, 4, 2, 3 },new int[] { 0, 2, 1, 2 } });//31
         }
     }
 }
