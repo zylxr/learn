@@ -37,6 +37,9 @@ namespace Algorithm.DailyExcise
 
             var xorAfterQueryClass = new XorAfterQueriesClass();
             var xorAfterQueryClassResult = xorAfterQueryClass.XorAfterQueries(new int[] { 2, 3, 1, 5, 4 },new int[][] { new int[] { 1, 4, 2, 3 },new int[] { 0, 2, 1, 2 } });//31
+
+            var xorAfterQueryClass2 = new XorAfterQueriesClass2();
+            var xorAfterQueryClassResult2 = xorAfterQueryClass.XorAfterQueries(new int[] { 2, 3, 1, 5, 4 }, new int[][] { new int[] { 1, 4, 2, 3 }, new int[] { 0, 2, 1, 2 } });//31
         }
     }
 }
