@@ -40,6 +40,13 @@ namespace Algorithm.DailyExcise
 
             var xorAfterQueryClass2 = new XorAfterQueriesClass2();
             var xorAfterQueryClassResult2 = xorAfterQueryClass.XorAfterQueries(new int[] { 2, 3, 1, 5, 4 }, new int[][] { new int[] { 1, 4, 2, 3 }, new int[] { 0, 2, 1, 2 } });//31
+
+            var minimuToClass = new MinimumTotalDistanceClass();
+            var minimuToClassResult = minimuToClass.MinimumTotalDistance(new int[] { 0, 4, 6 },new int[][] { new int[] { 2, 2 },new int[] { 6, 2 } });//4
+            minimuToClassResult = minimuToClass.MinimumTotalDistance(new int[] { 9, 11, 99, 101 }, new int[][] { new int[] { 10, 1 }, new int[] { 7, 1 },
+                new int[] {14,1 },
+                new int[] { 100,1}, new int[] { 96,1},new int[]{ 103, 1 }
+            });//6
         }
     }
 }
