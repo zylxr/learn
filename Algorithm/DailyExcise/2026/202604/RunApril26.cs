@@ -47,6 +47,10 @@ namespace Algorithm.DailyExcise
                 new int[] {14,1 },
                 new int[] { 100,1}, new int[] { 96,1},new int[]{ 103, 1 }
             });//6
+
+            var solveQueriesClass = new SolveQueriesClass();
+            var solveQueriesClassResult = solveQueriesClass.SolveQueries(new int[] { 1, 3, 1, 4, 1, 3, 2 },new int[] { 0, 3, 5 });//[2,-1,3]
+            solveQueriesClassResult = solveQueriesClass.SolveQueries(new int[] { 6, 12, 17, 9, 16, 7, 6 }, new int[] { 5, 6, 0, 4 });//[-1,1,1,-1]
         }
     }
 }
